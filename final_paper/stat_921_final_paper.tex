@@ -1,0 +1,200 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\title{Multiple Causal Discoveries with Sensitivity Analyses using NHANES Data --- A Report and User Manual}
+\author{Statistics 921, Dylan Small, Final Paper \\ Adam Kapelner and Joshua Magarick \\ \small{Department of Statistics, The Wharton School of the University of Pennsylvania}}
+
+\date{December 21, 2011}
+
+\begin{document}
+\maketitle
+
+%%% TODO
+% ME: editing, open-sourcing
+% You: write about gamma sensitivity stuff, then editing
+
+\begin{abstract}
+We present an open-source research tool, \texttt{HANESinator}, that investigates causal relationships among measurements in the National Health and Nutrition Examination Survey (NHANES). The platform allows specification of multiple measurements that are considered the ``response'', multiple measurements that are considered the ``binary treatment'', as well as a multitude of measurements that are considered ``control'' variables. After specification, the program outputs the effect size(s), Bonferroni-corrected $p$-value(s) for their significance(s), as well as sensitivity analyses, which are corrected for multiple comparisons. We introduce NHANES in section \ref{sec:NHANES_data}, explain the methods in section \ref{sec:one_comp_methods}, demonstrate the system in section \ref{sec:examples}, conclude in section \ref{sec:conclusion}, and present the code and a user guide in appendix \ref{app:code_and_guide}.
+\end{abstract}
+
+\section{The NHANES Data}\label{sec:NHANES_data}
+
+\subsection{Background}
+
+In 1956, the United States was concerned that they had no way of getting general health reading on the population. Surveys to that time were provincial either in a local geographical region, or if they were widespread, they only asked specific questions. Congress passed the National Health Survey Act which authorized an annual survey. In 1971 this effort was expanded to create a National Health and Nutrition Examination Survey (NHANES), ``a program of studies designed to assess the health and nutritional status of adults and children in the United States", which was run once every five years. In 1999, NHANES became annual; every year about 10,000 Americans are included. The sampling is stratified to oversample from the elderly and minorities. 
+
+NHANES is interested in demographic, socioeconomic, dietary, and health-related measurements. The first three categories are queried via questionnaires. The last category in recent years involves sophisticated in-depth physical examination (e.g. audiometry, body-fat caliper measurements, X-ray absorption of the femur, a retinal imaging battery, dental information tooth-by-tooth, etc) as well as comprehensive blood and urine tests in a laboratory (e.g. lead and arsenic levels, pesticides in urine, sexually transmitted disease testing, thyroid profile, glucose and insulin, etc). 
+
+NHANES data mining has been used in ways that affect our everyday lives. The ``growth charts'' graphics for children's height we see in the doctor's offices, the national mandate to add Folate and Iron to cereal, the nationwide efforts to reduce cholesterol have all been influenced by trends seen in the data. Furthermore, it is cheap to locate all sorts of associations among different health measurements. 
+
+We hope to provide a data mining platform that allows researchers to uncover not only associations but \textit{causal} relationships.
+
+\subsection{The data used in this platform} %ref id A135443554
+
+The 2007 dataset was arbitrarily chosen for use in this platform. We include about 2400 measurements per individual which is all data save the detailed dietary questionnaires where every food type and supplement was queried. Creating measurements from the dietary portion of the data would be a tedious process consisting of cross-linking the variable codes to their names, and then coding new covariates of interest by hand.
+
+Note that there is a large amount of missing data; many of the covariates are spotty and some are all blank with the exception of a few individuals. 
+
+
+\section{Methods for one Causal Investigation}\label{sec:one_comp_methods}
+
+In short, we match individuals who received the treatment to individuals who received the control using estimated propensity scores and we calculate effect size, significance, and conduct a sensitivity analysis using this matched set.
+
+\subsection{Data Selection}
+
+The first step is to select \textit{one} response variable, $R_i$. The machinery developed employs theory that assumes the response to be continuous interval data.\footnote{It will also work if the response is binary or ordinal categorical, although you will have to think carefully about how to interpret the effect sizes, significance, and sensitivity metrics.} The next step will be to choose \textit{one} treatment variable, $Z_i$ which must be binary\footnote{We allow the user to specify a function which will code a non-binary variable into 0's and 1's.} (we will use the convention of $Z_i = 1$ indicates the individual was ``treated'' and $Z_i = 0$ indicates no treatment). The final step is to select a host of control variables $X_{\cdot i} \triangleq X_{i1}, X_{i2}, \ldots, X_{ip}$ which can be any type of data.\footnote{If a control variable is categorical nominal, dummy variables will be automatically generated. Categorical ordinal variables can be kept as-is which has the added benefit of reduction of computation time, or chosen to be coded as dummy variables as well.} We refer to the full data matrix as $\X = \bracks{Z, X_1, \ldots, X_{p^+}}$ where $p^+$ indicates a number possibly larger that $p$ due to the hydrating of dummy variables.
+
+Our platform does not handle missing data.\footnote{Handling missing data in our platform is a worthy future endeavor.} Therefore, if there are any missing observations in any of the treatment, response, or controls, that record will be \textit{discarded} during the analysis. Let $n_C$ denote the number of records in the full design matrix where $Z_i = 0$ after cleaning out the missing measurements and let $n_T$ denote the analagous number of treatment records.
+
+Note that this significantly limtis what our final conclusions can be. If indeed NHANES is a true sample of the American population as claimed, then using our platform\footnote{after correcting for the NHANES stratified sampling (the over and under sampling of the elderly and minorities)} we are allowed to infer causal results for the American population. However, since we discarded any individual with missing data, we are now biasing our sampling, possibly unfairly so. Therefore, the \textit{only inference we can make} with this platform is inference for the ``type'' of person that has a ``full record'' in the NHANES data for the specific treatment, response, and control variables specified.
+
+\subsection{Matching}
+
+In data from a randomized study, we would expect balance among the covariates. Since the NHANES data is observational by definition, we will expect selection bias. To mitigate such bias, we attempt to match individuals from the control group to individuals from the treatment group as best as possible. Let $\propscore{X_{i \cdot}}$ be the likelihood the $i$th individual receives the treatment based on his or her control measurements; this likelihood is known as the ``propensity score.'' Since we know who received treatment, $Z_i$, we can match two records which share the same propensity score:
+
+\beqn
+(i,j) ~~ \text{as a matched pair means that:} \quad Z_i = 1,~~ Z_j = 0 \mathand \propscore{X_{i \cdot}} = \propscore{X_{j \cdot}}
+\eeqn
+
+It can be shown that individuals that share the same propensity score share the same distribution of the control variables. Thus, on average, treated individuals and control individuals matched in pairs exhibit the same property as treated individuals and control individuals in a randomized experimental design (assuming that we haven't left out any useful covariates, a point we will discuss in the next section).
+
+We model the estimated propensity scores as follows:
+
+\beqn
+\propscore{X_{\cdot j}} = \prob{Z_i = 1 | X_{i \cdot}} \approx \estpropscore{X_{\cdot i}} = \frac{\exp{\beta_0 + \beta_1 X_{i1} + \ldots + \beta_{p^+} X_{ip^+}}}{1 + \exp{{\beta_0 + \beta_1 X_{i1} + \ldots + \beta_{p^+} X_{ip^+}}}}
+\eeqn
+
+where $\beta_0, \beta_1, \ldots, \beta_{p^+}$ are estimated using the maximum likelihood machinery of a vanilla logistic regression.
+
+After estimates of the scores are obtained, we create $n^* = \min\braces{n_C, n_T}$ matches by solving the minimum cost flow problem where estimate propensity score differences are considered the ``cost.''\footnote{The library in \texttt{R} called \texttt{optmatch} is a convenient way to employ this type of pair matching using the latest algorithms.}
+
+After matching, we can then compute the paired wilcoxon rank sum test to test the significance level of the median difference between response in the matched treated and control group. We also compute a $\pval$ for the 2-sample paired t-test for difference in means, and report a $\pval$ for the treatment effect in an ordinary least squares regression.
+
+\subsection{Sensitivity Analysis}
+
+What if there is some unmeasured covariate that we did not account for? It is plausible that such a measurement can induce ``hidden'' selection bias. If we were able to measure it, then we could find ourselves in the paradoxical situation of our effect becoming insignificant, or worse, the effect direction could flip. If we find a particularly strong association, only a particularly ``strong'' hidden covariate can be powerful enough to inflict such a paradox. By ``powerful enough'' we mean power to move an individual into or out of the treatment group with a high probability. 
+
+We formalize this notion as follows. Assume two individuals are equal on all observed covariates \ie $X_{j \cdot} = X_{k \cdot}$ and note that the odds ratio of the $j$th unit belonging to the treatment would be $\frac{\propscore{X_{j \cdot}}}{1 - \propscore{X_{j \cdot}}}$ and the odds ratio of the $k$th unit belonging to the treatment would be the analagous fraction indexed by $k$. If their propensities to belong to the treated group are not equal \ie $\propscore{X_{j \cdot}} \neq \propscore{X_{k \cdot}}$, we can be sure there is some unobserved covariate, call it $X_H$, that is responsible for inducing this hidden bias. This covariate would have to be strong enough to move the ratio of the two odds ratios. We define the sensitivity metric $\Gamma$ below:
+
+\beqn
+\frac{\dfrac{\propscore{X_{j \cdot}}}{1 - \propscore{X_{j \cdot}}}}{\dfrac{\propscore{X_{k \cdot}}}{1 - \propscore{X_{k \cdot}}}} \leq \Gamma \mathand \frac{\dfrac{\propscore{X_{j \cdot}}}{1 - \propscore{X_{k \cdot}}}}{\dfrac{\propscore{X_{j \cdot}}}{1 - \propscore{X_{j \cdot}}}} \leq \Gamma
+\eeqn
+
+This metric measures to what degree $X_H$ can allow $\propscore{X_{j \cdot}} \neq \propscore{X_{k \cdot}}$. A $\Gamma = 1$ will force the propensity scores to be equal thereby the study would be free of hidden bias. A $\Gamma = 2$ would allow $X_H$ to move one of the two equal records into the treatment at double the odds ratio.
+
+In practice, you ...
+
+
+\subsection{Adjusting results for multiple comparisons}
+
+To adjust for $\pval$'s we simply use a Bonferroni correction. This approach is overly-conservative since we should be able to exploit some symmetry among the comparisons due to the shared control variables.  
+
+To sdjust for the $\Gamma$ sensitivities,  is a bit harder. We use the BLAH method
+
+\section{Examples of Analyses}\label{sec:examples}
+
+We were originally inspired to look into the NHANES data to find measurements that have a causal effect on sleep. In this section, we demonstrate the platform using the response variable of average number of hours of sleep on the treatments ``ever been told you had a thyroid problem?'' and ``do you do vigorous work activity?'' We include about 100 control measurements spanning the gamut of the NHANES pantheon.
+
+\begin{verbatim}
+Testing 2 comparison(s)
+
+comparison #1:
+treatment: MCQ160M (Ever told you had a thyroid problem)
+response: SLD010H (How much sleep do you get (hours)?)
+num controls obs = 2591, num treatment obs = 268 (total n = 2859)
+
+effect size is
+  -0.0149
+Bonf-adj wilcox test pval / 2-samp t-test / OLS t-test pval =
+  1.7814 / 1.8205 / 1.7795
+Sensitivity Analysis, Gamma =
+  1
+
+comparison #2:
+treatment: PAQ605 (Vigorous work activity)
+response: SLD010H (How much sleep do you get (hours)?)
+num controls obs = 2257, num treatment obs = 602 (total n = 2859)
+
+effect size is
+  -0.2608
+Bonf-adj wilcox test pval / 2-samp t-test / OLS t-test pval =
+  0.0026 / 0.0033 / 0.0016
+Sensitivity Analysis, Gamma =
+  1.11
+\end{verbatim}
+
+In the first analysis, we conclude that ever having a thyroid problem has no causal effect on average sleep duration. In the second analysis, we conclude that vigorous work activity reduced average sleep duration by about 15 minutes, but the result is not robust to hidden bias as evidenced by $\Gamma = 1.16$.
+
+\section{Our System and Concluding Remarks}\label{sec:conclusion}
+
+We developed \texttt{HANESinator}, a platform that can investigate causal effects in the NHANES data by specifying any possible binary treatment, and any possible continuous response. The output consists of effect size, significance level, and a sensitivity analysis to test for a covariate that may introduce hidden bias. This is a veritably powerful research tool which is freely availably via open-source and fully documented. \\
+
+The platform can be improved. Specifically, we would like to work on implementing the following features. Some of these may require theoretical advances:
+
+\begin{enumerate}
+\item Use propensity score caliper full matching via rank-based Mahalanobis distance.
+\item Output balance diagnostics after matching using the cross-match test.
+\item Using records with missing data which will allow inference of the causal results to the general American population.
+\item Bonferroni is overly conservative for both the $\pval$ and $\Gamma$ calculations. We would like to develop theory to compute less realistic multiple comparisons.
+\item Generalize to use different years of NHANES data or better yet, combine years of NHANES data together in a sensible way.
+\end{enumerate}
+
+\subsection*{Acknowledgments}
+
+We would like to extend a big thanks to Professor Dylan Small for not only teaching the course in observational studies, but for inspiring us to do this project, and his patient mentoring. We would also like to thank our classmates for helpful discussions and brainstorming.
+
+
+\appendix
+\section{\texttt{R} Code and User Guide to Running Analyses}\label{app:code_and_guide}
+
+This code has been open sourced under GPL and is publically available on github.\footnote{Insert URL link here} This section will explain the functionality of each script..
+
+\subsection{Code for the end-user}
+
+The file shown below is the ``main portal.'' Here you set your working directory, the multiple response variables, and the multiple treatments of which you would like to test a causal relationship. You specify variables by NHANES filename and then by the unique NHANES variable keycode. You can alter the response variable by choosing to exclude a subset of the values. You can also choose a non-binary treatment and specify a function that will map the values to $\braces{0, 1}$.
+
+As detailed in the methods section, we remove any NHANES record which has missing data in \textit{any} of the treatment(s), response, or controls. Therefore we strongly encourage the user to select treatments, response, and controls that retain a large sample size.
+
+By sourcing this file alone, the entire analysis will be run and results will be printed to the screen. The code also generates a variable, \texttt{causal\_results} which caches the results.
+
+\lstinputlisting{../R/00_set_resp_trts_and_run_NHANES_analysis.R}
+\vspace{0.3cm}
+
+In the following file, you define the covariates you wish to control for in your analysis. You specify by NHANES filename and then code. You also have to manually tell the program which of the covariates should be treated as categorical (so the program can create the necessary dummy variables). Further in the file, you will manually specify which values of certain variables (treatments, responses, and controls) should be ignored. It is normal to turn control variables on/off for certain tests. This can be done effortlessly by via commenting.
+
+You can also specify the verbosity of the output. If turn on \texttt{PRINT\_CONTROLS}, the program will print the name of each control and exactly the effective sample size after the individuals with missing data are discarded. If turn on \texttt{PRINT\_COV\_CHARACTERISTICS}, the program will print before \textit{and} after matching the table of covariate means, standard deviations for both the treatment and control, standardized differences, with testing and $\pval$'s for the null of no difference.
+
+\lstinputlisting{../R/02_set_controls_and_params.R}
+\vspace{0.3cm}
+
+\subsection{Code for the developer only}
+
+The user's job is now finished and we move on to the computation. We recommend not touching this portion of the codebase unless you wish to alter the methodology found in section \ref{sec:one_comp_methods}.
+
+The following file will load the raw data from the SAS files downloaded from the official NHANES website.
+
+\lstinputlisting{../R/01_load_NHANES_data.R}
+\vspace{0.3cm}
+
+This code will then select out the rows of the raw data that contain information about the response, treatment and control variables. If the row has any missing data on those variables, it will be ignored.
+
+\lstinputlisting{../R/03_create_info_about_covariates.R}
+\vspace{0.3cm}
+
+Using the rows selected in the previous code, we now construct a design matrix. We make sure that we convert categorical variables to dummy indicator columns and we make sure to delete observations with illegal values specified by the user.
+
+\lstinputlisting{../R/04_create_design_matrix.R}
+\vspace{0.3cm}
+
+We now estimate propensity scores, run the matching algorithm, compute effect sizes and Bonferroni-corrected significance levels to investigate whether or not there is a causal relationship.
+
+\lstinputlisting{../R/05_prop_score_and_matching.R}
+\vspace{0.3cm}
+
+Lastly, we run a sensitivity analysis on this comparison using the Bonferroni-corrected $\Gamma$ metric.
+
+\lstinputlisting{../R/06_gamma_sensitivity.R}
+
+
+\end{document}

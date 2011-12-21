@@ -1,0 +1,520 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Pesticide Use" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Pesticide Use Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Questionnaire page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Pesticide Use Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="PUQMEC_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="PUQMEC_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="PUQMEC_E.htm#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+        </li>
+        <li>
+          <a href="PUQMEC_E.htm#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+        </li>
+        <li>
+          <a href="PUQMEC_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="PUQMEC_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="PUQMEC_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="PUQMEC_E.htm#PUQ100">PUQ100 - Products used in home to control insects</a>
+              </li>
+              <li>
+                <a href="PUQMEC_E.htm#PUQ110">PUQ110 - Products used to kill weeds?</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Pesticide Use (PUQMEC_E)
+            </h3>
+        <h4>
+                Data File: PUQMEC_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: September, 2009</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Pesticide Use
+                (PUQMEC_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>September, 2009<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>The Pesticide Use questions provides data on pesticide use in the home and lawn or garden  during the past 7 days.<br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>The Pesticide Use section (variable name prefix PUQ) provides survey participant level interview data on pesticide use in the home and lawn or garden during the past 7 days.</p>
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>The questions in this section were asked of proxy respondents for children 6 and 7 years of age; and were asked of respondents 8 years of age and older.</p>
+<h2><a name="Interview_Setting_and_Mode_of_Administration"></a>Interview Setting and Mode of Administration</h2><p>A trained interviewer administered these questions to the survey participants during the MEC interview and of proxy respondents for children 6 and 7 years in the Dietary Recall.</p>
+<h2><a name="Quality_Assurance_&amp;_Quality_Control"></a>Quality Assurance &amp; Quality Control</h2><p>The pesticide use questionnaire (PUQ) data were systematically reviewed for logical, processing, and data input errors on a periodic basis during the process of data collection.</p>
+<p>The computer CAPI system had built-in consistency checks, online information screens that provided the interviewers with information about the terms used in the questionnaires, and hard and soft edit checks to reduce the number of keying entry errors. All of the data were reviewed by the NHANES field office staff for accuracy and completeness.</p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>The data were reviewed and edited for completeness, consistency, and illogical values.</p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>The Pesticide Use section (variable name prefix PUQ) was administered in the MEC interview for all participants aged 8 years and older. These questions were asked of proxy respondents for children 6 and 7 years in the Dietary Recall. Two questions on pesticide use in the home and lawn or garden during the past 7 days were administered.</p>
+<p>Although these data were collected as part of the household questionnaire, if they are merged with the MEC exam data, exam sample weights should be used for the analyses.</p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues. The Analytic Guidelines are available on the NHANES website.</p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>6 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PUQ100"></a>PUQ100 - Products used in home to control insects</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PUQ100</dd>
+            <dt>SAS Label: </dt>
+            <dd>Products used in home to control insects</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past 7 days, were any chemical products used in {your/his/her} home to control fleas, roaches, ants, termites, or other insects?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>6 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">833</td>
+                <td class="values" align="right">833</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">6728</td>
+                <td class="values" align="right">7561</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7561</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">64</td>
+                <td class="values" align="right">7625</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">507</td>
+                <td class="values" align="right">8132</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PUQ110"></a>PUQ110 - Products used to kill weeds?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PUQ110</dd>
+            <dt>SAS Label: </dt>
+            <dd>Products used to kill weeds?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past 7 days, were any chemical products used in {your/his/her} lawn or garden to kill weeds?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>6 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">486</td>
+                <td class="values" align="right">486</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">7008</td>
+                <td class="values" align="right">7494</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7494</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">131</td>
+                <td class="values" align="right">7625</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">507</td>
+                <td class="values" align="right">8132</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

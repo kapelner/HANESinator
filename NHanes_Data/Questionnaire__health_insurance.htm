@@ -1,0 +1,1306 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Health Insurance" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Health Insurance Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Questionnaire page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Health Insurance Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="HIQ_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="HIQ_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="HIQ_E.htm#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+        </li>
+        <li>
+          <a href="HIQ_E.htm#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+        </li>
+        <li>
+          <a href="HIQ_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="HIQ_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="HIQ_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ011">HIQ011 - Covered by health insurance</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031A">HIQ031A - Covered by private insurance</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031B">HIQ031B - Covered by Medicare</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031C">HIQ031C - Covered by Medi-Gap</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031D">HIQ031D - Covered by Medicaid</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031E">HIQ031E - Covered by SCHIP</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031F">HIQ031F - Covered by military health care</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031G">HIQ031G - Covered by Indian Health Service</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031H">HIQ031H - Covered by state-sponsored health plan</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031I">HIQ031I - Covered by other government insurance</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031J">HIQ031J - Covered by single service plan</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ031AA">HIQ031AA - No coverage of any type</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ065">HIQ065 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ259">HIQ259 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ260">HIQ260 - Have Medicare?</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ105">HIQ105 - Insurance card available or not</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ269">HIQ269 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ270">HIQ270 - Do plans cover prescriptions?</a>
+              </li>
+              <li>
+                <a href="HIQ_E.htm#HIQ210">HIQ210 - Time when no insurance in past year?</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Health Insurance (HIQ_E)
+            </h3>
+        <h4>
+                Data File: HIQ_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: September, 2009</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Health Insurance
+                (HIQ_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>September, 2009<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>Questionnaire information for each survey participant on the types of health insurance coverage they had, whether it included prescription drug coverage, and whether they were uninsured during the past 12 months.<br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>The Health Insurance section (variable name prefix HIQ) provides SP level interview data on insurance coverage, type of insurance coverage, coverage of prescription drugs, and uninsured during the past 12 months.</p>
+
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>Each survey participant responds for him- or herself, except when a proxy is required.  There are no exclusion criteria.</p>
+<h2><a name="Interview_Setting_and_Mode_of_Administration"></a>Interview Setting and Mode of Administration</h2><p>The Health Insurance questionnaire was done before the physical examination, in the home, using the Computer-Assisted Personal Interviewing-CAPI (interviewer administered) system.</p>
+<p>Persons 16 years of age and older and emancipated minors were interviewed directly. A proxy provided information for survey participants who were under 16 years of age and for individuals who could not answer the questions themselves.</p>
+<h2><a name="Quality_Assurance_&amp;_Quality_Control"></a>Quality Assurance &amp; Quality Control</h2><p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire.</p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>One Survey Participant had a response to HIQ260 which was changed to a missing value. This person should not have answered HIQ260 based upon automated consistency checks, but did so because of their response to an earlier survey question which was subsequently changed. There were no other edits.</p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>The Health Insurance questionnaire for 2007-2008 is comparable to the Health Insurance questionnaire for 2005-2006, with the exception of two changes. These are:</p>
+<ol>
+    <li>Check box HIQ065 had a change to the second part of the criteria. In 2007-2008 it reads “If Age&gt;=65 and HIQ031 not= 15 then go to HIQ260. If HIQ031=15 then go to HIQ105. Otherwise - continue.” In 2005-2006 it read “If Age&gt;=65 and HIQ031 not= 15 then go to HIQ260. If Age &gt;=65 and HIQ031=15 then go to HIQ105. Otherwise - continue.” We removed the age specification of “If Age &gt;=65…” for 2007-2008. We now keep all responses of HIQ031=15 because persons may have Medicare insurance while under the age of 65. For 2007-2008, there were 155 Survey Participants who responded either yes or no to HIQ105 based upon the revised criteria, who would not have been asked HIQ105 based upon the former criteria. </li>
+    <li>The English Instructions to HIQ270 were modified to add this additional prompt for Survey Participants: “CAPI INSTRUCTION: IF HIQ031B = 15 or HIQ260 = 1, DISPLAY: [If you are enrolled in Medicare Part D, also known as the Medicare Prescription Drug Plan, you have some prescription drug coverage.]” The reason for the additional prompt was because Medicare Part D was implemented in 2006 and we wanted to be sure that Survey Participants with Medicare Part D – Prescription Drug coverage were captured in HIQ270. </li>
+</ol>
+<p>The 2007-2008 Health Insurance questionnaire is comparable to 2005-2006, but not to the 1999-2004 versions. The module was completely redesigned for 2005-2006. Please see the documentation for HIQ 2005-2006 in order to understand those differences and how to create variables which will be comparable to the 1999-2004 Health Insurance questions.</p>
+<p>Although the health insurance data were collected as part of the household questionnaire, if they are merged with the MEC exam data, exam sample weights should be used for the analyses.</p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues. The Analytic Guidelines are available on the NHANES website. </p>
+<p>Special use data files, which include HIQ500, will be available through the NCHS Research Data Center (RDC).</p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ011"></a>HIQ011 - Covered by health insurance</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ011</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by health insurance</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The (first/next) questions are about health insurance. {Are you/Is SP} covered by health insurance or some other kind of health care plan?  [Include health insurance obtained through employment or purchased directly as well as government programs like Medicare and Medicaid that provide medical care or help pay medical bills.]</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">8145</td>
+                <td class="values" align="right">8145</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">1983</td>
+                <td class="values" align="right">10128</td>
+                <td class="values">HIQ065  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">10135</td>
+                <td class="values">HIQ065  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">HIQ065  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031A"></a>HIQ031A - Covered by private insurance</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by private insurance</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} covered by private insurance?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">14</th>
+                <td class="values">Covered by private insurance</td>
+                <td class="values" align="right">4880</td>
+                <td class="values" align="right">4880</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">4883</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">4901</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5248</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031B"></a>HIQ031B - Covered by Medicare</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by Medicare</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} covered by Medicare?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">15</th>
+                <td class="values">Covered by Medicare</td>
+                <td class="values" align="right">1506</td>
+                <td class="values" align="right">1506</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8643</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031C"></a>HIQ031C - Covered by Medi-Gap</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by Medi-Gap</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} covered by Medi-Gap?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">16</th>
+                <td class="values">Covered by Medi-Gap</td>
+                <td class="values" align="right">37</td>
+                <td class="values" align="right">37</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">10112</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031D"></a>HIQ031D - Covered by Medicaid</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by Medicaid</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} covered by Medicaid?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">17</th>
+                <td class="values">Covered by Medicaid</td>
+                <td class="values" align="right">1694</td>
+                <td class="values" align="right">1694</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8455</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031E"></a>HIQ031E - Covered by SCHIP</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031E</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by SCHIP</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} covered by SCHIP (State Children's Health Insurance Program)?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">18</th>
+                <td class="values">Covered by SCHIP</td>
+                <td class="values" align="right">125</td>
+                <td class="values" align="right">125</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">10024</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031F"></a>HIQ031F - Covered by military health care</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031F</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by military health care</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} covered by military health plan (Tricare/VA/Champ-VA)?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">19</th>
+                <td class="values">Covered by military health care</td>
+                <td class="values" align="right">217</td>
+                <td class="values" align="right">217</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9932</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031G"></a>HIQ031G - Covered by Indian Health Service</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031G</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by Indian Health Service</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} covered by Indian Health Service?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">20</th>
+                <td class="values">Covered by Indian Health Service</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">10147</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031H"></a>HIQ031H - Covered by state-sponsored health plan</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031H</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by state-sponsored health plan</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} covered by state-sponsored health plan?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">21</th>
+                <td class="values">Covered by state-sponsored health plan</td>
+                <td class="values" align="right">452</td>
+                <td class="values" align="right">452</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9697</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031I"></a>HIQ031I - Covered by other government insurance</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031I</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by other government insurance</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} covered by other government insurance?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">22</th>
+                <td class="values">Covered by other government insurance</td>
+                <td class="values" align="right">311</td>
+                <td class="values" align="right">311</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9838</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031J"></a>HIQ031J - Covered by single service plan</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031J</dd>
+            <dt>SAS Label: </dt>
+            <dd>Covered by single service plan</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Are you/Is SP} covered by any single service plan?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">23</th>
+                <td class="values">Covered by single service plan</td>
+                <td class="values" align="right">228</td>
+                <td class="values" align="right">228</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9921</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ031AA"></a>HIQ031AA - No coverage of any type</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ031AA</dd>
+            <dt>SAS Label: </dt>
+            <dd>No coverage of any type</dd>
+            <dt>English Text: </dt>
+            <dd class="info">No coverage of any type.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">40</th>
+                <td class="values">No coverage of any type</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">10145</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ065"></a>HIQ065 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ065</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">If Age&gt;=65 and HIQ031B not= 15 then go to HIQ260. 
+If HIQ031B=15 then go to HIQ105. 
+Otherwise - continue.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ259"></a>HIQ259 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ259</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">If Age &lt; 65 and HIQ011=1(Yes) and HIQ031AA not=40(No coverage) then go to HIQ270.
+If Age &lt; 65 and (HIQ011=2/7/9 or HIQ031AA=40) then go to END of section.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 64 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ260"></a>HIQ260 - Have Medicare?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ260</dd>
+            <dt>SAS Label: </dt>
+            <dd>Have Medicare?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Do you/Does SP} have Medicare?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">This is a health insurance program that virtually all persons 65 and older are eligible for.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>65 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">148</td>
+                <td class="values" align="right">148</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">90</td>
+                <td class="values" align="right">238</td>
+                <td class="values">HIQ269  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">239</td>
+                <td class="values">HIQ269  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">248</td>
+                <td class="values">HIQ269  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9901</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ105"></a>HIQ105 - Insurance card available or not</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ105</dd>
+            <dt>SAS Label: </dt>
+            <dd>Insurance card available or not</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Insurance card available or not.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1070</td>
+                <td class="values" align="right">1070</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">111</td>
+                <td class="values" align="right">1181</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">8968</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ269"></a>HIQ269 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ269</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">If (HIQ011=1 and HIQ031AA not= 40) or HIQ260=1 then continue. Otherwise go to END of section.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ270"></a>HIQ270 - Do plans cover prescriptions?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ270</dd>
+            <dt>SAS Label: </dt>
+            <dd>Do plans cover prescriptions?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Does this plan/Do any of these plans} cover any part of the cost of prescriptions?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION: IF HIQ031B = 15 or HIQ260 = 1, DISPLAY: [If you are enrolled in Medicare Part D, also known as the Medicare Prescription Drug Plan, you have some prescription drug coverage.]</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">7570</td>
+                <td class="values" align="right">7570</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">509</td>
+                <td class="values" align="right">8079</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">8081</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">80</td>
+                <td class="values" align="right">8161</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1988</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="HIQ210"></a>HIQ210 - Time when no insurance in past year?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">HIQ210</dd>
+            <dt>SAS Label: </dt>
+            <dd>Time when no insurance in past year?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past 12 months, was there any time when {you/SP} did not have any health insurance coverage?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">593</td>
+                <td class="values" align="right">593</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">7563</td>
+                <td class="values" align="right">8156</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">8156</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">8158</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1991</td>
+                <td class="values" align="right">10149</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

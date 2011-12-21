@@ -1,0 +1,1416 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Early Childhood" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Early Childhood Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Questionnaire page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Early Childhood Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="ECQ_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="ECQ_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="ECQ_E.htm#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+        </li>
+        <li>
+          <a href="ECQ_E.htm#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+        </li>
+        <li>
+          <a href="ECQ_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="ECQ_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="ECQ_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECD010">ECD010 - Mother's age when born</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECQ020">ECQ020 - Mother smoked when pregnant</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECQ030">ECQ030 - Mother quit smoking while pregnant</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECQ040">ECQ040 - Mother quit smoking while pregnant (mo)</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECQ060">ECQ060 - Receive newborn care at health facility</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECD070A">ECD070A - Weight at birth, pounds</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECD070B">ECD070B - Weight at birth, ounces</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECQ075">ECQ075 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECQ080">ECQ080 - Weight more/less than 5.5 lbs</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECQ090">ECQ090 - Weight more/less than 9.0 lbs</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECQ095">ECQ095 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#WHQ030E">WHQ030E - How do you consider {SP} weight</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#MCQ080E">MCQ080E - Doctor told you that {SP} was overweight</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECQ150">ECQ150 - Doing anything to help control weight?</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#ECQ115">ECQ115 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="ECQ_E.htm#FSQ121">FSQ121 - Now attend headstart</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Early Childhood (ECQ_E)
+            </h3>
+        <h4>
+                Data File: ECQ_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: September, 2009</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Early Childhood
+                (ECQ_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>September, 2009<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>Personal interview data for children, including birth weight, age of mother at birth, mother smoking during pregnancy, and Head Start attendance. <br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>The Early Childhood section of the Sample Person Questionnaire (variable name prefix ECQ) provides personal interview data for children, including the age of the biological mother when the child survey participant was born, smoking habits of the mother while she was pregnant with the participant, birth weight, the proxy’s assessment of the participant’s weight, and attendance at Head Start.  Many of the questions were included in NHANES III.</p><h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>The target sample for the questions in this section is persons from birth to 15 years of age. However, target samples for some questions in this section vary. Please review the codebook carefully. Frequency counts were verified during the preparation of the file. </p>
+<h2><a name="Interview_Setting_and_Mode_of_Administration"></a>Interview Setting and Mode of Administration</h2><p>The questions were asked in the household interview, using an interviewer-administered Computer Assisted Personal Interviewing (CAPI) system.</p>
+<p>For details on the administration of the Early Childhood (ECQ_E) section, please refer to the NHANES 2007-08 Interviewer Procedure Manuals and the Early Childhood Sample Person Questionnaire on the NHANES website. </p>
+<h2><a name="Quality_Assurance_&amp;_Quality_Control"></a>Quality Assurance &amp; Quality Control</h2><p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire.</p>
+<p>For details on the quality control/quality assurance process for this component, please refer to the NHANES 2007-08 Interviewer Procedure Manuals on the NHANES website.</p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>For ECD070A (weight at birth, pounds) and ECD070B (weight at birth, ounces), all responses of 13 pounds or over were collapsed into a single category, with ECD070A coded as '13' and ECD070B coded as '0'. This was done to protect the confidentiality of survey participants. </p>
+<p>For ECD010 (age of biological mother when the survey participant was born), any reported values under 14 years were coded as 14 years and younger. This was done to protect the confidentiality of participants. </p>
+<p>Frequency counts were verified during the preparation of the file. </p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>Although data in this file were collected as part of the household questionnaire, if they are merged with the MEC exam data, exam sample weights should be used for the analyses. </p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues. The Analytic Guidelines are available on the NHANES website. </p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECD010"></a>ECD010 - Mother's age when born</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECD010</dd>
+            <dt>SAS Label: </dt>
+            <dd>Mother's age when born</dd>
+            <dt>English Text: </dt>
+            <dd class="info">First I have some questions about {SP NAME's} birth. How old was {SP NAME's} biological mother when {s/he} was born?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 59</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">15 to 44</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3561</td>
+                <td class="values" align="right">3561</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">14</th>
+                <td class="values">14 years or younger</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">3574</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">45</th>
+                <td class="values">45 years or older</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">3576</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3576</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">3602</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECQ020"></a>ECQ020 - Mother smoked when pregnant</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECQ020</dd>
+            <dt>SAS Label: </dt>
+            <dd>Mother smoked when pregnant</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did {SP NAME's} biological mother smoke at any time while she was pregnant with {him/her}?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">513</td>
+                <td class="values" align="right">513</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">3054</td>
+                <td class="values" align="right">3567</td>
+                <td class="values">ECQ060  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3567</td>
+                <td class="values">ECQ060  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">35</td>
+                <td class="values" align="right">3602</td>
+                <td class="values">ECQ060  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECQ030"></a>ECQ030 - Mother quit smoking while pregnant</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECQ030</dd>
+            <dt>SAS Label: </dt>
+            <dd>Mother quit smoking while pregnant</dd>
+            <dt>English Text: </dt>
+            <dd class="info">At any time during the pregnancy, did {SP NAME's} biological mother quit or refrain from smoking for the rest of the pregnancy?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">202</td>
+                <td class="values" align="right">202</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">301</td>
+                <td class="values" align="right">503</td>
+                <td class="values">ECQ060  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">503</td>
+                <td class="values">ECQ060  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">513</td>
+                <td class="values">ECQ060  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3090</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECQ040"></a>ECQ040 - Mother quit smoking while pregnant (mo)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECQ040</dd>
+            <dt>SAS Label: </dt>
+            <dd>Mother quit smoking while pregnant (mo)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">About what month of the pregnancy did {SP NAME's} biological mother stop smoking?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">USE ROUNDING RULE IF NECESSARY.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">First month</td>
+                <td class="values" align="right">52</td>
+                <td class="values" align="right">52</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Second month</td>
+                <td class="values" align="right">31</td>
+                <td class="values" align="right">83</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Third month</td>
+                <td class="values" align="right">36</td>
+                <td class="values" align="right">119</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Fourth month</td>
+                <td class="values" align="right">31</td>
+                <td class="values" align="right">150</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">5</th>
+                <td class="values">Fifth month</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">166</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">6</th>
+                <td class="values">Sixth month</td>
+                <td class="values" align="right">19</td>
+                <td class="values" align="right">185</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Seventh month</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">187</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">8</th>
+                <td class="values">Eighth month</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">190</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Ninth month</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">198</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">198</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">202</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3401</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECQ060"></a>ECQ060 - Receive newborn care at health facility</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECQ060</dd>
+            <dt>SAS Label: </dt>
+            <dd>Receive newborn care at health facility</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did {SP NAME} receive any newborn care in an intensive care unit, premature nursery, or any other type of special care facility?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">434</td>
+                <td class="values" align="right">434</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">3155</td>
+                <td class="values" align="right">3589</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3589</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">3602</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECD070A"></a>ECD070A - Weight at birth, pounds</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECD070A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Weight at birth, pounds</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How much did {SP NAME} weigh at birth?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF ANSWER GIVEN IN POUNDS ONLY, PROBE FOR OUNCES.  IF ANSWER GIVEN IN EXACT POUNDS, ENTER NUMBER OF POUNDS AND 0 OUNCES.  ENTER NUMBER OF POUNDS.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 12</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3538</td>
+                <td class="values" align="right">3538</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">13</th>
+                <td class="values">13 pounds or more</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">3542</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3542</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">60</td>
+                <td class="values" align="right">3602</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECD070B"></a>ECD070B - Weight at birth, ounces</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECD070B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Weight at birth, ounces</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How much did {SP NAME} weigh at birth?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF OUNCES</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 15</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 15</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3493</td>
+                <td class="values" align="right">3493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">49</td>
+                <td class="values" align="right">3542</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">61</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECQ075"></a>ECQ075 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECQ075</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 1.  CHECK ITEM:  IF REFUSED (CODE 7777) OR DON'T KNOW (CODE 9999) TO ECD070A, CONTINUE; OTHERWISE, GO TO ECQ095 (BOX 2).</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECQ080"></a>ECQ080 - Weight more/less than 5.5 lbs</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECQ080</dd>
+            <dt>SAS Label: </dt>
+            <dd>Weight more/less than 5.5 lbs</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did {SP NAME} weigh . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">More than 5-1/2 lbs. (2500 g), or</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">33</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Less than 5-1/2 lbs. (2500 g)?</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">43</td>
+                <td class="values">ECQ095  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">43</td>
+                <td class="values">ECQ095  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">17</td>
+                <td class="values" align="right">60</td>
+                <td class="values">ECQ095  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3543</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECQ090"></a>ECQ090 - Weight more/less than 9.0 lbs</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECQ090</dd>
+            <dt>SAS Label: </dt>
+            <dd>Weight more/less than 9.0 lbs</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Did {SP NAME} weigh . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">More than 9 lbs. (4100 g), or</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Less than 9 lbs. (4100 g)?</td>
+                <td class="values" align="right">30</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">33</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3570</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECQ095"></a>ECQ095 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECQ095</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 2.  CHECK ITEM ECQ095:  IF SP AGE = 2-15 YEARS CONTINUE; OTHERWISE, GO TO BOX 3 (ECQ115).</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ030E"></a>WHQ030E - How do you consider {SP} weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ030E</dd>
+            <dt>SAS Label: </dt>
+            <dd>How do you consider {SP} weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Do you consider {SP} now to be . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>2 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Overweight,</td>
+                <td class="values" align="right">395</td>
+                <td class="values" align="right">395</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Underweight, or</td>
+                <td class="values" align="right">188</td>
+                <td class="values" align="right">583</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">About the right weight?</td>
+                <td class="values" align="right">2229</td>
+                <td class="values" align="right">2812</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2812</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">2813</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">790</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="MCQ080E"></a>MCQ080E - Doctor told you that {SP} was overweight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">MCQ080E</dd>
+            <dt>SAS Label: </dt>
+            <dd>Doctor told you that {SP} was overweight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Has a doctor or health professional ever told you that {SP} was overweight?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>2 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">323</td>
+                <td class="values" align="right">323</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">2489</td>
+                <td class="values" align="right">2812</td>
+                <td class="values">ECQ115  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2812</td>
+                <td class="values">ECQ115  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">2813</td>
+                <td class="values">ECQ115  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">790</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECQ150"></a>ECQ150 - Doing anything to help control weight?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECQ150</dd>
+            <dt>SAS Label: </dt>
+            <dd>Doing anything to help control weight?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Are you now doing anything to help {SP} control {his/her} weight?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>2 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">239</td>
+                <td class="values" align="right">239</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">84</td>
+                <td class="values" align="right">323</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">323</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">323</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3280</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="ECQ115"></a>ECQ115 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ECQ115</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 3.  CHECK ITEM ECQ115:  IF SP AGE = 0-5, CONTINUE.  OTHERWISE, GO TO END OF SECTION.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 15 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="FSQ121"></a>FSQ121 - Now attend headstart</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">FSQ121</dd>
+            <dt>SAS Label: </dt>
+            <dd>Now attend headstart</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Is {SP} now attending {Head Start/Early Head Start}?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTIONS:  IF SP AGE = 0-3, DISPLAY "EARLY HEAD START".  IF SP AGE = 4-5, DISPLAY "HEAD START".</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>0 YEARS - 5 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">165</td>
+                <td class="values" align="right">165</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">1546</td>
+                <td class="values" align="right">1711</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1711</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1712</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1891</td>
+                <td class="values" align="right">3603</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

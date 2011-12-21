@@ -1,0 +1,1295 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Fasting Questionnaire " />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Fasting Questionnaire  Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Laboratory page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Fasting Questionnaire  Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="FASTQX_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="FASTQX_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="FASTQX_E.htm#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+        </li>
+        <li>
+          <a href="FASTQX_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="FASTQX_E.htm#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+        </li>
+        <li>
+          <a href="FASTQX_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="FASTQX_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHQ020">PHQ020 - Coffee or tea with cream or sugar?</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHACOFHR">PHACOFHR - Coffee/tea fast time (hours)</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHACOFMN">PHACOFMN - Coffee/tea fast time (minutes)</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHQ030">PHQ030 - Alcohol, such as beer, wine, or liquor?</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHAALCHR">PHAALCHR - Alcohol fast time (hours)</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHAALCMN">PHAALCMN - Alcohol fast time (minutes)</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHQ040">PHQ040 - Gum, mints, lozenges or cough drops</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHAGUMHR">PHAGUMHR - Gum, mints cough drops fast time (hours)</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHAGUMMN">PHAGUMMN - Gum, mints, cough fast time (minutes)</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHQ050">PHQ050 - Antacids, laxatives, or anti-diarrheals?</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHAANTHR">PHAANTHR - Antacids, laxatives fast time (hours)</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHAANTMN">PHAANTMN - Antacids, laxatives fast time (minutes)</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHQ060">PHQ060 - Dietary supplements?</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHASUPHR">PHASUPHR - Dietary supplements fast time (hours)</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHASUPMN">PHASUPMN - Dietary supplements fast time (minutes)</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHAFSTHR">PHAFSTHR - Total length of "food fast," hours</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHAFSTMN">PHAFSTMN - Total length of  "food fast," minutes</a>
+              </li>
+              <li>
+                <a href="FASTQX_E.htm#PHDSESN">PHDSESN - Session in which SP was examined</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Fasting Questionnaire  (FASTQX_E)
+            </h3>
+        <h4>
+                Data File: FASTQX_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: September, 2009</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Fasting Questionnaire 
+                (FASTQX_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>September, 2009<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>The survey participants were asked:  "When was the last time you ate or drank anything other than plain water?  Do not include diet soda or black coffee or tea with artificial sweeteners like Sweet'N Low, NutraSweet, Equal, or Splenda."    Survey participants were then asked questions PHQ020 to PHQ060:  "Have you had any of the following since the last time you ate or drank anything other than plain water? <br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>The phlebotomy component of NHANES involved the collection of blood specimens. Prior to blood collection, the MEC phlebotomist administered a questionnaire to screen for conditions that would exclude participants from the blood draw. At this time, fasting status was determined. Blood specimens for basic hematology, nutritional biochemistry, and special studies were obtained.</p>
+<p>Blood specimens were collected on participants aged one year and older in the Mobile Examination Center (MEC). </p>
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>Participants aged 1 year and older were tested.</p>
+
+<h2><a name="Description_of_Laboratory_Methodology"></a>Description of Laboratory Methodology</h2><p>The MEC phlebotomist drew blood from the participant’s arm. Participants with hemophilia or who received cancer chemotherapy in the past four weeks or will receive it in the future four weeks were excluded from the venipuncture.</p>
+<p>Detailed phlebotomy collection and processing instructions are discussed in the <span style="text-decoration: underline;">NHANES Laboratory/Medical Technologists Procedures Manual</span> (LPM). </p>
+<p>See <strong>Analytic Notes</strong> section for a general description of the fasting questions and calculation of fasting time in hours and minutes since the survey participant last ate or drank anything and the time of venipuncture draw. </p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>Phlebotomy data were recorded directly into a computerized database; all forms used in the MEC were automated.</p>
+<h2><a name="Laboratory_Quality_Assurance_and_Monitoring"></a>Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM).</p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>The analysis of NHANES 2007-2008 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2007-2008 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN.</p>
+<p>Use PHAFSTHR and PHAFSTMN to determine the duration of fasting in hours and minutes, respectively. When calculating a fasting time in hours and minutes, pay careful attention to the other times in hours and minutes. For example, the survey participants were asked: "When was the last time you ate or drank anything other than plain water? Do not include diet soda or black coffee or tea with artificial sweeteners like Sweet'N Low, NutraSweet, Equal, or Splenda." Survey participants were then asked questions PHQ020 to PHQ060: "Have you had any of the following since the last time you ate or drank anything other than plain water? Coffee or tea with cream or sugar (Include milk or non-dairy creamers); Alcohol, such as beer, wine, or liquor; Gum, breath mints, lozenges, cough drops, or cold remedies; Antacids, laxatives, or anti-diarrheal; Dietary supplements such as vitamins and minerals."</p>
+<p>If you are using fasting status in any of your analyses, please consider the answers to PHACOFHR/PHACOFMN, PHAALCHR/PHAALCMN, PHAGUMHR/PHAGUMMN/ PHAANTHR/PHAANTMN, and PHASUPHR/PHASUPMN with the times in hours and minutes in addition to the PHAFSTHR and PHSFSTMN times.</p>
+<p>Use PHDSESN to determine the session in which the participant was examined.</p>
+<p>MEC Exam sample weights should be used for analyses. Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues. The Analytic Guidelines are available on the NHANES website. </p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHQ020"></a>PHQ020 - Coffee or tea with cream or sugar?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHQ020</dd>
+            <dt>SAS Label: </dt>
+            <dd>Coffee or tea with cream or sugar?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Coffee or tea with cream or sugar?  [Include milk or non-dairy creamers.]</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Have you had any of the following since " today at" or "yesterday at" fasting time in PHQ010.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">25</td>
+                <td class="values" align="right">25</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">8807</td>
+                <td class="values" align="right">8832</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">475</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHACOFHR"></a>PHACOFHR - Coffee/tea fast time (hours)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHACOFHR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Coffee/tea fast time (hours)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in hours) since the examinee last drank coffee or tea with cream or sugar.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 12</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">25</td>
+                <td class="values" align="right">25</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9282</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHACOFMN"></a>PHACOFMN - Coffee/tea fast time (minutes)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHACOFMN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Coffee/tea fast time (minutes)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in minutes) since the examinee last drank coffee or tea with cream or sugar.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">2 to 58</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">25</td>
+                <td class="values" align="right">25</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9282</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHQ030"></a>PHQ030 - Alcohol, such as beer, wine, or liquor?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHQ030</dd>
+            <dt>SAS Label: </dt>
+            <dd>Alcohol, such as beer, wine, or liquor?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Alcohol, such as beer, wine, or liquor?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Have you had any of the following since "today at" or "yesterday at" the fasting time in PHQ010.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">8825</td>
+                <td class="values" align="right">8832</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">475</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHAALCHR"></a>PHAALCHR - Alcohol fast time (hours)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHAALCHR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Alcohol fast time (hours)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in hours) the examinee last drank alcohol suchs as beer, wine, or liquor.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 15</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9300</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHAALCMN"></a>PHAALCMN - Alcohol fast time (minutes)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHAALCMN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Alcohol fast time (minutes)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in minutes) the examinee last drank alcohol such as beer, wine, or liquor.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">3 to 42</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9300</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHQ040"></a>PHQ040 - Gum, mints, lozenges or cough drops</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHQ040</dd>
+            <dt>SAS Label: </dt>
+            <dd>Gum, mints, lozenges or cough drops</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Gum, breath mints, lozenges or cough drops, or other cough or cold remedies?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Have you had any of the following since "today at" or "yesterday at" the fasting time in PHQ010?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">88</td>
+                <td class="values" align="right">88</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">8744</td>
+                <td class="values" align="right">8832</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">475</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHAGUMHR"></a>PHAGUMHR - Gum, mints cough drops fast time (hours)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHAGUMHR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Gum, mints cough drops fast time (hours)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in hours) the examinee last had gum, breath mints, lozenges or cough drops, or other cough or cold remedies.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 15</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">88</td>
+                <td class="values" align="right">88</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9219</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHAGUMMN"></a>PHAGUMMN - Gum, mints, cough fast time (minutes)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHAGUMMN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Gum, mints, cough fast time (minutes)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in minutes) the examinee last had gum, breath mints, lozenges or cough drops, or other cough or cold remedies.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 57</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">88</td>
+                <td class="values" align="right">88</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9219</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHQ050"></a>PHQ050 - Antacids, laxatives, or anti-diarrheals?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHQ050</dd>
+            <dt>SAS Label: </dt>
+            <dd>Antacids, laxatives, or anti-diarrheals?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Antacids, laxatives, or anti-diarrheals?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Have you had any of the following since "today at" or "yesterday at" the fasting time in PHQ010.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">8827</td>
+                <td class="values" align="right">8832</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">475</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHAANTHR"></a>PHAANTHR - Antacids, laxatives fast time (hours)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHAANTHR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Antacids, laxatives fast time (hours)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in hours) the examinee last had antacids, laxatives or anti-diarrheals.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 8</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9302</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHAANTMN"></a>PHAANTMN - Antacids, laxatives fast time (minutes)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHAANTMN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Antacids, laxatives fast time (minutes)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in minutes) the examinee last had antacids, laxatives or anti-diarrheals.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">9 to 30</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9302</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHQ060"></a>PHQ060 - Dietary supplements?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHQ060</dd>
+            <dt>SAS Label: </dt>
+            <dd>Dietary supplements?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Dietary supplements such as vitamins and minerals? [Include multivitamins and single nutrient supplements.]</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Have you had any of the following since "today at" or "yesterday at" the fasting time in PHQ010.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">16</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">8816</td>
+                <td class="values" align="right">8832</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">475</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHASUPHR"></a>PHASUPHR - Dietary supplements fast time (hours)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHASUPHR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Dietary supplements fast time (hours)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in hours) the examinee last had dietary supplements such as vitamins and minerals.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 11</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">16</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9291</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHASUPMN"></a>PHASUPMN - Dietary supplements fast time (minutes)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHASUPMN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Dietary supplements fast time (minutes)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in minutes) the examinee last had dietary supplements such as vitamins and minerals.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 58</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">16</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9291</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHAFSTHR"></a>PHAFSTHR - Total length of "food fast," hours</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHAFSTHR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total length of "food fast," hours</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in hours) between when the examinee last ate or drank anything other than water and the time of the venipuncture.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 52</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8832</td>
+                <td class="values" align="right">8832</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">475</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHAFSTMN"></a>PHAFSTMN - Total length of  "food fast," minutes</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHAFSTMN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total length of  "food fast," minutes</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in minutes) between when the examinee last ate or drank anything other than water and the time of the venipuncture.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 59</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8832</td>
+                <td class="values" align="right">8832</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">475</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHDSESN"></a>PHDSESN - Session in which SP was examined</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHDSESN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Session in which SP was examined</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Session in which SP was examined</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">morning</td>
+                <td class="values" align="right">4311</td>
+                <td class="values" align="right">4311</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">afternoon</td>
+                <td class="values" align="right">3356</td>
+                <td class="values" align="right">7667</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">evening</td>
+                <td class="values" align="right">1640</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

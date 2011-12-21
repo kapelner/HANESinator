@@ -1,0 +1,3478 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Smoking - Cigarette Use" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Smoking - Cigarette Use Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Questionnaire page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Smoking - Cigarette Use Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="SMQ_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="SMQ_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="SMQ_E.htm#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+        </li>
+        <li>
+          <a href="SMQ_E.htm#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+        </li>
+        <li>
+          <a href="SMQ_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="SMQ_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="SMQ_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ020">SMQ020 - Smoked at least 100 cigarettes in life</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD030">SMD030 - Age started smoking cigarettes regularly</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ040">SMQ040 - Do you now smoke cigarettes</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ050Q">SMQ050Q - How long since quit smoking cigarettes</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ050U">SMQ050U - Unit of measure (day/week/month/year)</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD055">SMD055 - Age last smoked cigarettes regularly</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD057">SMD057 - # cigarettes smoked per day when quit</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ077">SMQ077 - How soon after waking do you smoke</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD641">SMD641 - # days smoked cigs during past 30 days</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD650">SMD650 - Avg # cigarettes/day during past 30 days</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD093">SMD093 - May I please see the pack of cigarettes </a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMDUPCA">SMDUPCA - Cig 12-digit Universal Product Code-UPC</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD100BR">SMD100BR - Cigarette Brand/sub-brand</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD100FL">SMD100FL - Filter type</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD100MN">SMD100MN - Menthol indicator </a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD100LN">SMD100LN - Length </a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD100TR">SMD100TR - FTC Tar Content </a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD100NI">SMD100NI - FTC Nicotine Content </a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD100CO">SMD100CO - FTC Carbon Monoxide Content </a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ620">SMQ620 - Ever tried cigarette smoking</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMD630">SMD630 - Age first smoked whole cigarette</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ660">SMQ660 - Brands of cigarettes smoked/past mo</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ664M">SMQ664M - Menthol or non-menthol Marlboro</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ664C">SMQ664C - Menthol or non-menthol Camels</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ664W">SMQ664W - Menthol or non-menthol Winston</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ664B">SMQ664B - Menthol or non-menthol BensonHedges</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ664O">SMQ664O - Menthol or non-menthol other brand</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ666M">SMQ666M - Regular, light or ultralite Marlboro</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ666C">SMQ666C - Regular, light or ultralite Camels</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ666K">SMQ666K - Regular, light or ultralite Kools</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ666W">SMQ666W - Regular, light or ultralite Winston</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ666B">SMQ666B - Regular, light or ultralite BensonHedges</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ666S">SMQ666S - Regular, light or ultralite Salem</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ666O">SMQ666O - Regular, light or ultralite other brand</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMQ670">SMQ670 - Tried to quit smoking</a>
+              </li>
+              <li>
+                <a href="SMQ_E.htm#SMAQUEX2">SMAQUEX2 - Questionnaire Mode Flag</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="SMQ_E.htm#Appendix:_Variable_names_across_cycles">Appendix: Variable names across cycles</a>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Smoking - Cigarette Use (SMQ_E)
+            </h3>
+        <h4>
+                Data File: SMQ_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: September, 2009</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Smoking - Cigarette Use
+                (SMQ_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>September, 2009<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>Cigarette use including history of use, age of initiation, current use, past 30 day prevalence, amount and other related details.<br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>This smoking data file provides data on cigarette use; history of use, age at initiation, current use, past 30 day prevalence, amount, cigarette brand and other related details.</p>
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>All survey participants 12 years and older were eligible.</p>
+<h2><a name="Interview_Setting_and_Mode_of_Administration"></a>Interview Setting and Mode of Administration</h2><p>For adults 20+ years, the questions were asked in the household interview in the home, using the Computer-Assisted Personal Interviewing -CAPI (interviewer administered) system.</p>
+<p>For youths, the questions were asked at the Mobile Examination Center (MEC) in the MEC Interview Room. Youths 12-19 years responded for themselves uing the Audio Computer &#8211; Assisted Self Interview (ACASI) technique, in English or Spanish only.</p>
+<h2><a name="Quality_Assurance_&amp;_Quality_Control"></a>Quality Assurance &amp; Quality Control</h2><p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire.</p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>The data were reviewed and edited for completeness, consistency and illogical values. Note that because data are self-reported, there may still be inconsistencies in the data. For example, some respondents who reported smoking &#8220;everyday&#8221; in SMQ040 , report smoking fewer than 30 days in SMQ080 . Analysts should review responses to questions carefully prior to analysis.</p>
+<p>The cigarette brand was verified using the the uniform product codes (UPC) found on the cigarette data pack shown to interviewers by the survey participant. As part of the data processing effort, UPCs were matched to an updated UPC cigarette data base consisting of ACNielsen cigarette listings with detailed product descriptions for domestic and imported cigarettes sold in the United States (as of December 2008). Domestic cigarettes were also linked with machine-measured tar, nicotine and carbon monoxide content data obtained from the Federal Trade Commission. The data base was prepared for the CDC&#8217;s Office on Smoking and Health by RTI.</p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>SMAQUEX2: Data from the household questionnaire and MEC examination are combined for the data file. This variable can be used to determine mode of interview. 1=Adults: 20+ years - household interview; 2=Youth 12-19 years, ACASI interview.</p>
+<p>If both youth and adult data are analyzed together or if the adult data are merged with the MEC exam data, exam sample weights should be used for the analyses.</p>
+<p>Two variables, previously included in the SMQ data file, are no longer collected and therefore not included in the 2007-8 release: SMQD070 and SMD075.</p>
+<p>Additional data related to smoking and tobacco use are found in other data files. The SMQRTU file has data on recent tobacco use collected during the MEC Interview. The SMQFAM file has data about exposure to tobacco in the home.</p>
+<p>Please refer to the NHANES Analytic Guidelines and the on-line NHANES Tutorial for further details on the use of sample weights and other analytic issues. Both of these are available on the NHANES website.</p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ020"></a>SMQ020 - Smoked at least 100 cigarettes in life</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ020</dd>
+            <dt>SAS Label: </dt>
+            <dd>Smoked at least 100 cigarettes in life</dd>
+            <dt>English Text: </dt>
+            <dd class="info">These next questions are about cigarette smoking and other tobacco use. {Have you/Has SP} smoked at least 100 cigarettes in {your/his/her} entire life?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2802</td>
+                <td class="values" align="right">2802</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">3127</td>
+                <td class="values" align="right">5929</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">5931</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">5935</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1210</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD030"></a>SMD030 - Age started smoking cigarettes regularly</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD030</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age started smoking cigarettes regularly</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} first started to smoke cigarettes fairly regularly?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER AGE IN YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">7 to 74</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2667</td>
+                <td class="values" align="right">2667</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">Never smoked cigarettes regularly</td>
+                <td class="values" align="right">122</td>
+                <td class="values" align="right">2789</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">80</th>
+                <td class="values">80 years or older</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2789</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2789</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">2802</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4343</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ040"></a>SMQ040 - Do you now smoke cigarettes</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ040</dd>
+            <dt>SAS Label: </dt>
+            <dd>Do you now smoke cigarettes</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Do you/Does SP} now smoke cigarettes . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Every day</td>
+                <td class="values" align="right">1105</td>
+                <td class="values" align="right">1105</td>
+                <td class="values">SMQ077  </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Some days</td>
+                <td class="values" align="right">214</td>
+                <td class="values" align="right">1319</td>
+                <td class="values">SMD641  </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Not at all</td>
+                <td class="values" align="right">1482</td>
+                <td class="values" align="right">2801</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">2802</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2802</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4343</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ050Q"></a>SMQ050Q - How long since quit smoking cigarettes</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ050Q</dd>
+            <dt>SAS Label: </dt>
+            <dd>How long since quit smoking cigarettes</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long has it been since {you/SP} quit smoking cigarettes?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 366</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 66</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1474</td>
+                <td class="values" align="right">1474</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1474</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">1482</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5663</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ050U"></a>SMQ050U - Unit of measure (day/week/month/year)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ050U</dd>
+            <dt>SAS Label: </dt>
+            <dd>Unit of measure (day/week/month/year)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">UNIT OF MEASURE</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER UNIT</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Days</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">10</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Weeks</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">26</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Months</td>
+                <td class="values" align="right">108</td>
+                <td class="values" align="right">134</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Years</td>
+                <td class="values" align="right">1340</td>
+                <td class="values" align="right">1474</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1474</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1474</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5671</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD055"></a>SMD055 - Age last smoked cigarettes regularly</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD055</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age last smoked cigarettes regularly</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old {were you/was SP} when {you/s/he} last smoked cigarettes {fairly regularly}?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CAPI INSTRUCTION:  DISPLAY "FAIRLY REGULARLY" EXCEPT WHEN SMD.030 = 0 (NEVER SMOKED CIGARETTES REGULARLY).  ENTER AGE IN YEARS.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">10 to 78</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1345</td>
+                <td class="values" align="right">1345</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">80</th>
+                <td class="values">80 years or older</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">1351</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1351</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">1363</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5782</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD057"></a>SMD057 - # cigarettes smoked per day when quit</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD057</dd>
+            <dt>SAS Label: </dt>
+            <dd># cigarettes smoked per day when quit</dd>
+            <dt>English Text: </dt>
+            <dd class="info">At that time, about how many cigarettes did {you/SP} usually smoke per day?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">1 PACK EQUALS 20 CIGARETTES.  IF LESS THAN 1 PER DAY, ENTER 1.  IF 95 OR MORE PER DAY, ENTER 95.  ENTER NUMBER (OF CIGARETTES).</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 95</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">2 to 90</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1210</td>
+                <td class="values" align="right">1210</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">1 cigarette or less</td>
+                <td class="values" align="right">137</td>
+                <td class="values" align="right">1347</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">95</th>
+                <td class="values">95 cigarettes or more</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">1362</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1362</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1363</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5782</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ077"></a>SMQ077 - How soon after waking do you smoke</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ077</dd>
+            <dt>SAS Label: </dt>
+            <dd>How soon after waking do you smoke</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How soon after you wake up do you smoke? Would you say...</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Within 5 minutes</td>
+                <td class="values" align="right">401</td>
+                <td class="values" align="right">401</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">From 6 to 30 minutes</td>
+                <td class="values" align="right">352</td>
+                <td class="values" align="right">753</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">From more than 30 minutes to one hour</td>
+                <td class="values" align="right">214</td>
+                <td class="values" align="right">967</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">More than one hour</td>
+                <td class="values" align="right">268</td>
+                <td class="values" align="right">1235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">1239</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">1244</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5901</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD641"></a>SMD641 - # days smoked cigs during past 30 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD641</dd>
+            <dt>SAS Label: </dt>
+            <dd># days smoked cigs during past 30 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">On how many of the past 30 days did {you/SP} smoke a cigarette?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER (OF DAYS)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 30</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 30</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1596</td>
+                <td class="values" align="right">1596</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1596</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1598</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5547</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD650"></a>SMD650 - Avg # cigarettes/day during past 30 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD650</dd>
+            <dt>SAS Label: </dt>
+            <dd>Avg # cigarettes/day during past 30 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 30 days, on the days that {you/SP} smoked, about how many cigarettes did {you/s/he} smoke per day?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">1 PACK EQUALS 20 CIGARETTES.  IF LESS THAN 1 PER DAY, ENTER 1.  IF 95 OR MORE PER DAY, ENTER 95.  ENTER NUMBER (OF CIGARETTES) (PER DAY).</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 95</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">2 to 90</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1284</td>
+                <td class="values" align="right">1284</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">1 cigarette or less</td>
+                <td class="values" align="right">174</td>
+                <td class="values" align="right">1458</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">95</th>
+                <td class="values">95 cigarettes or more</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">1469</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1470</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1473</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5672</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD093"></a>SMD093 - May I please see the pack of cigarettes </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD093</dd>
+            <dt>SAS Label: </dt>
+            <dd>May I please see the pack of cigarettes </dd>
+            <dt>English Text: </dt>
+            <dd class="info">May I please see the pack for the brand of cigarettes {you usually smoke/SP usually smokes}.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">817</td>
+                <td class="values" align="right">817</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">464</td>
+                <td class="values" align="right">1281</td>
+                <td class="values">SMD100BR</td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">No usual brand</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">1301</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Rolls own</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">1319</td>
+                <td class="values">SMD100BR</td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5826</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMDUPCA"></a>SMDUPCA - Cig 12-digit Universal Product Code-UPC</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMDUPCA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cig 12-digit Universal Product Code-UPC</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cigarette 12-digit Universal Product Code (UPC)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">Cig 12-digit Universal Product Code-UPC</th>
+                <td class="values">Value was recorded</td>
+                <td class="values" align="right">817</td>
+                <td class="values" align="right">817</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">&lt; blank &gt;</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6328</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD100BR"></a>SMD100BR - Cigarette Brand/sub-brand</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD100BR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cigarette Brand/sub-brand</dd>
+            <dt>English Text: </dt>
+            <dd class="info">BRAND OF CIGARETTES SMOKED BY SP (SUB-BRAND INCLUDED IF APPLICABLE AND AVAILABLE)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">Cigarette Brand/sub-brand</th>
+                <td class="values">Value was recorded</td>
+                <td class="values" align="right">1256</td>
+                <td class="values" align="right">1256</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">&lt; blank &gt;</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5889</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD100FL"></a>SMD100FL - Filter type</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD100FL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Filter type</dd>
+            <dt>English Text: </dt>
+            <dd class="info">CIGARETTE PRODUCT FILTERED OR NON-FILTERED</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">Non-filter</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Filter</td>
+                <td class="values" align="right">1249</td>
+                <td class="values" align="right">1256</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5889</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD100MN"></a>SMD100MN - Menthol indicator </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD100MN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Menthol indicator </dd>
+            <dt>English Text: </dt>
+            <dd class="info">CIGARETTE PRODUCT MENTHOLATED OR NON-MENTHOLATED</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">Non-menthol</td>
+                <td class="values" align="right">882</td>
+                <td class="values" align="right">882</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Menthol</td>
+                <td class="values" align="right">374</td>
+                <td class="values" align="right">1256</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5889</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD100LN"></a>SMD100LN - Length </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD100LN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Length </dd>
+            <dt>English Text: </dt>
+            <dd class="info">CIGARETTE PRODUCT LENGTH</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Regular (68-72 mm)</td>
+                <td class="values" align="right">164</td>
+                <td class="values" align="right">164</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">King (79-88 mm)</td>
+                <td class="values" align="right">678</td>
+                <td class="values" align="right">842</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Long (94-101 mm)</td>
+                <td class="values" align="right">396</td>
+                <td class="values" align="right">1238</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Ultra long (110-121 mm)</td>
+                <td class="values" align="right">17</td>
+                <td class="values" align="right">1255</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5890</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD100TR"></a>SMD100TR - FTC Tar Content </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD100TR</dd>
+            <dt>SAS Label: </dt>
+            <dd>FTC Tar Content </dd>
+            <dt>English Text: </dt>
+            <dd class="info">CIGARETTE TAR CONTENT</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 25</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1196</td>
+                <td class="values" align="right">1196</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5949</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD100NI"></a>SMD100NI - FTC Nicotine Content </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD100NI</dd>
+            <dt>SAS Label: </dt>
+            <dd>FTC Nicotine Content </dd>
+            <dt>English Text: </dt>
+            <dd class="info">CIGARETTE NICOTINE CONTENT</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.1 to 1.8</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1196</td>
+                <td class="values" align="right">1196</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5949</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD100CO"></a>SMD100CO - FTC Carbon Monoxide Content </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD100CO</dd>
+            <dt>SAS Label: </dt>
+            <dd>FTC Carbon Monoxide Content </dd>
+            <dt>English Text: </dt>
+            <dd class="info">CIGARETTE CARBON MONOXIDE CONTENT</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 22</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1196</td>
+                <td class="values" align="right">1196</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5949</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ620"></a>SMQ620 - Ever tried cigarette smoking</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ620</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever tried cigarette smoking</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The following questions are about cigarette smoking and other tobacco use. Have you ever tried cigarette smoking, even 1 or 2 puffs?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP: Please select Yes, No.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">403</td>
+                <td class="values" align="right">403</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">699</td>
+                <td class="values" align="right">1102</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1102</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1102</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6043</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMD630"></a>SMD630 - Age first smoked whole cigarette</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMD630</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age first smoked whole cigarette</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old were you when you smoked a whole cigarette for the first time?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">IF R SAYS LESS THAN 6 YEARS, ENTER 6 YEARS. VERBAL INSTRUCTIONS TO SP: Please enter an age or select Never smoked a whole cigarette. CAPI INSTRUCTION: ACCEPTABLE VALUES: 6-19 YEARS. ENTER AGE.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">6 to 19</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">7 to 19</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">277</td>
+                <td class="values" align="right">277</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">6</th>
+                <td class="values">6 years or less</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">279</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">55</th>
+                <td class="values">Never smoked a whole cigarette</td>
+                <td class="values" align="right">123</td>
+                <td class="values" align="right">402</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">403</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">403</td>
+                <td class="values">SMAQUEX2</td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6742</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ660"></a>SMQ660 - Brands of cigarettes smoked/past mo</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ660</dd>
+            <dt>SAS Label: </dt>
+            <dd>Brands of cigarettes smoked/past mo</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 30 days, on the days that you smoked, which brand of cigarettes did you usually smoke?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select one of the following choices:  Marlboro, Camel, Newport, Kool, Winston, Benson and Hedges, Salem, Some other brand.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Marlboro</td>
+                <td class="values" align="right">62</td>
+                <td class="values" align="right">62</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Camel</td>
+                <td class="values" align="right">30</td>
+                <td class="values" align="right">92</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Newport</td>
+                <td class="values" align="right">43</td>
+                <td class="values" align="right">135</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Kool</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">5</th>
+                <td class="values">Winston</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">6</th>
+                <td class="values">Benson and hedges</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">142</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Salem</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">142</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">8</th>
+                <td class="values">Some other brand</td>
+                <td class="values" align="right">17</td>
+                <td class="values" align="right">159</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">160</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">161</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6984</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ664M"></a>SMQ664M - Menthol or non-menthol Marlboro</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ664M</dd>
+            <dt>SAS Label: </dt>
+            <dd>Menthol or non-menthol Marlboro</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the Marlboro cigarettes menthol or non-menthol?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select menthol, non-menthol.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS} Marlboro.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Menthol</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Non-menthol</td>
+                <td class="values" align="right">41</td>
+                <td class="values" align="right">61</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">62</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">62</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7083</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ664C"></a>SMQ664C - Menthol or non-menthol Camels</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ664C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Menthol or non-menthol Camels</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the Camel cigarettes menthol or non-menthol?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select menthol, non-menthol.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS} Camel.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Menthol</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Non-menthol</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">30</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">30</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">30</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7115</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ664W"></a>SMQ664W - Menthol or non-menthol Winston</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ664W</dd>
+            <dt>SAS Label: </dt>
+            <dd>Menthol or non-menthol Winston</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the Winston cigarettes menthol or non-menthol?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select menthol, non-menthol.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS} Winston.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Menthol</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Non-menthol</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7145</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ664B"></a>SMQ664B - Menthol or non-menthol BensonHedges</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ664B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Menthol or non-menthol BensonHedges</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the Benson and Hedges cigarettes menthol or non-menthol?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select menthol, non-menthol.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS} Benson and Hedges.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Menthol</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Non-menthol</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7144</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ664O"></a>SMQ664O - Menthol or non-menthol other brand</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ664O</dd>
+            <dt>SAS Label: </dt>
+            <dd>Menthol or non-menthol other brand</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the other brand cigarettes menthol or non-menthol?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select menthol, non-menthol.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS} other brand.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Menthol</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Non-menthol</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">17</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">17</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">17</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7128</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ666M"></a>SMQ666M - Regular, light or ultralite Marlboro</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ666M</dd>
+            <dt>SAS Label: </dt>
+            <dd>Regular, light or ultralite Marlboro</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the Marlboro cigarettes regulars, lights, or ultra-lights?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select regulars, lights, ultra-lights.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS}  Marlboro.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Regulars</td>
+                <td class="values" align="right">41</td>
+                <td class="values" align="right">41</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Lights</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">62</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Ultralights</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">62</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">62</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">62</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7083</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ666C"></a>SMQ666C - Regular, light or ultralite Camels</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ666C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Regular, light or ultralite Camels</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the Camel cigarettes regulars, lights, or ultra-lights?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select regulars, lights, ultra-lights.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS}  Camel.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Regulars</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">18</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Lights</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">28</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Ultralights</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">29</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">29</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">30</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7115</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ666K"></a>SMQ666K - Regular, light or ultralite Kools</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ666K</dd>
+            <dt>SAS Label: </dt>
+            <dd>Regular, light or ultralite Kools</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the Kool cigarettes regulars, lights, or ultra-lights?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select regulars, lights, ultra-lights.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS}  Kool.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Regulars</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">4</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Lights</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Ultralights</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7139</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ666W"></a>SMQ666W - Regular, light or ultralite Winston</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ666W</dd>
+            <dt>SAS Label: </dt>
+            <dd>Regular, light or ultralite Winston</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the Winston cigarettes regulars, lights, or ultra-lights?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select regulars, lights, ultra-lights.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS}  Winston.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Regulars</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Lights</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Ultralights</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7145</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ666B"></a>SMQ666B - Regular, light or ultralite BensonHedges</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ666B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Regular, light or ultralite BensonHedges</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the Benson and Hedges cigarettes regulars, lights, or ultra-lights?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select regulars, lights, ultra-lights.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS}  Benson and Hedges.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Regulars</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Lights</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Ultralights</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7144</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ666S"></a>SMQ666S - Regular, light or ultralite Salem</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ666S</dd>
+            <dt>SAS Label: </dt>
+            <dd>Regular, light or ultralite Salem</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the Salem cigarettes regulars, lights, or ultra-lights?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select regulars, lights, ultra-lights.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS}  Salem.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Regulars</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Lights</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Ultralights</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7145</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ666O"></a>SMQ666O - Regular, light or ultralite other brand</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ666O</dd>
+            <dt>SAS Label: </dt>
+            <dd>Regular, light or ultralite other brand</dd>
+            <dt>English Text: </dt>
+            <dd class="info">{Were/Was} the other brand cigarettes regulars, lights, or ultra-lights?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select regulars, lights, ultra-lights.  CAPI INSTRUCTION:  IF SMQ.660 = 8, DISPLAY {WAS}  other brand.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Regular</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">10</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Light</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Ultralight</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">17</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">17</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">17</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">7128</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMQ670"></a>SMQ670 - Tried to quit smoking</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMQ670</dd>
+            <dt>SAS Label: </dt>
+            <dd>Tried to quit smoking</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 12 months, have you stopped smoking for one day or longer because you were trying to quit smoking?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select Yes, No.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">143</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">130</td>
+                <td class="values" align="right">273</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">278</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">279</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6866</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="SMAQUEX2"></a>SMAQUEX2 - Questionnaire Mode Flag</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SMAQUEX2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Questionnaire Mode Flag</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Questionnaire Mode Flag</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Home Interview (20+ Yrs)</td>
+                <td class="values" align="right">5935</td>
+                <td class="values" align="right">5935</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">A-CASI (12 - 19 Yrs)</td>
+                <td class="values" align="right">1210</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7145</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="Appendices" xmlns="">
+        <div id="Appendix"><a name="Appendix:_Variable_names_across_cycles"></a><h2>Appendix: Variable names across cycles</h2><table bordercolor="#000000" border="1">
+    <caption valign="top" align="left">Variable names across cycles</caption>
+    <thead>
+        <tr>
+            <td><b>1999-2000</b></td>
+            <td><b>2001-2002</b></td>
+            <td><b>2003-2004</b></td>
+            <td><b>2005-2006</b></td>
+            <td><b>2007-2008</b></td>
+            <td><b>Label</b></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SMQ020</td>
+            <td>SMQ020</td>
+            <td>SMQ020</td>
+            <td>SMQ020</td>
+            <td>SMQ020</td>
+            <td>Smoked at least 100 cigarettes in life</td>
+        </tr>
+        <tr>
+            <td>SMD030</td>
+            <td>SMD030</td>
+            <td>SMD030</td>
+            <td>SMD030</td>
+            <td>SMD030</td>
+            <td>Age started smoking cigarettes regularly</td>
+        </tr>
+        <tr>
+            <td>SMQ040</td>
+            <td>SMQ040</td>
+            <td>SMQ040</td>
+            <td>SMQ040</td>
+            <td>SMQ040</td>
+            <td>Do you now smoke cigarettes</td>
+        </tr>
+        <tr>
+            <td>SMQ050Q</td>
+            <td>SMQ050Q</td>
+            <td>SMQ050Q</td>
+            <td>SMQ050Q</td>
+            <td>SMQ050Q</td>
+            <td>How long since quit smoking cigarettes</td>
+        </tr>
+        <tr>
+            <td>SMQ050U</td>
+            <td>SMQ050U</td>
+            <td>SMQ050U</td>
+            <td>SMQ050U</td>
+            <td>SMQ050U</td>
+            <td>Unit of measure (day/week/month/year)</td>
+        </tr>
+        <tr>
+            <td>SMD055</td>
+            <td>SMD055</td>
+            <td>SMD055</td>
+            <td>SMD055</td>
+            <td>SMD055</td>
+            <td>Age last smoked cigarettes regularly</td>
+        </tr>
+        <tr>
+            <td>SMD057</td>
+            <td>SMD057</td>
+            <td>SMD057</td>
+            <td>SMD057</td>
+            <td>SMD057</td>
+            <td># cigarettes smoked per day when quit</td>
+        </tr>
+        <tr>
+            <td>SMD070</td>
+            <td>SMD070</td>
+            <td>SMD070</td>
+            <td>SMD070</td>
+            <td>n/a</td>
+            <td># cigarettes smoked per day now</td>
+        </tr>
+        <tr>
+            <td>SMD075</td>
+            <td>SMD075</td>
+            <td>SMD075</td>
+            <td>SMD075</td>
+            <td>n/a</td>
+            <td>How many years smoked this amount</td>
+        </tr>
+        <tr>
+            <td>SMQ077</td>
+            <td>SMQ077</td>
+            <td>SMQ077</td>
+            <td>SMQ077</td>
+            <td>SMQ077</td>
+            <td>How soon after waking do you smoke</td>
+        </tr>
+        <tr>
+            <td>SMD080</td>
+            <td>SMD080</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td># days smoked cigs during past 30 days</td>
+        </tr>
+        <tr>
+            <td>SMD090</td>
+            <td>SMD090</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Avg # cigarettes/day during past 30 days</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>SMD092</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>May I please see the pack of cigarettes</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMD093</td>
+            <td>SMD093</td>
+            <td>SMD093</td>
+            <td>May I please see the pack of cigarettes</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>SMD100BR</td>
+            <td>SMD100BR</td>
+            <td>SMD100BR</td>
+            <td>SMD100BR</td>
+            <td>Cigarette Brand/sub-brand</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>SMD100CO</td>
+            <td>SMD100CO</td>
+            <td>SMD100CO</td>
+            <td>SMD100CO</td>
+            <td>FTC Carbon Monoxide Content</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>SMD100FL</td>
+            <td>SMD100FL</td>
+            <td>SMD100FL</td>
+            <td>SMD100FL</td>
+            <td>Filter type</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>SMD100LN</td>
+            <td>SMD100LN</td>
+            <td>SMD100LN</td>
+            <td>SMD100LN</td>
+            <td>Length</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>SMD100MN</td>
+            <td>SMD100MN</td>
+            <td>SMD100MN</td>
+            <td>SMD100MN</td>
+            <td>Menthol indicator</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>SMD100NI</td>
+            <td>SMD100NI</td>
+            <td>SMD100NI</td>
+            <td>SMD100NI</td>
+            <td>FTC Nicotine Content</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>SMD100TR</td>
+            <td>SMD100TR</td>
+            <td>SMD100TR</td>
+            <td>SMD100TR</td>
+            <td>FTC Tar Content</td>
+        </tr>
+        <tr>
+            <td>SMQ120</td>
+            <td>SMQ120</td>
+            <td>SMQ120</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Smoked a pipe at least 20 times in life</td>
+        </tr>
+        <tr>
+            <td>SMD130</td>
+            <td>SMD130</td>
+            <td>SMD130</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Age started pipe smoking regularly</td>
+        </tr>
+        <tr>
+            <td>SMQ140</td>
+            <td>SMQ140</td>
+            <td>SMQ140</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Do you now smoke a pipe</td>
+        </tr>
+        <tr>
+            <td>SMQ143</td>
+            <td>SMQ143</td>
+            <td>SMQ143</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td># pipefuls of tobacco smoked per day</td>
+        </tr>
+        <tr>
+            <td>SMQ145</td>
+            <td>SMQ145</td>
+            <td>SMQ145</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td># years smoked this amount of pipes</td>
+        </tr>
+        <tr>
+            <td>SMQ150</td>
+            <td>SMQ150</td>
+            <td>SMQ150</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Smoked cigars at least 20 times in life</td>
+        </tr>
+        <tr>
+            <td>SMD160</td>
+            <td>SMD160</td>
+            <td>SMD160</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Age started cigar smoking regularly</td>
+        </tr>
+        <tr>
+            <td>SMQ170</td>
+            <td>SMQ170</td>
+            <td>SMQ170</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Do you now smoke cigars</td>
+        </tr>
+        <tr>
+            <td>SMQ173</td>
+            <td>SMQ173</td>
+            <td>SMQ173</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td># cigars smokes per day</td>
+        </tr>
+        <tr>
+            <td>SMQ175</td>
+            <td>SMQ175</td>
+            <td>SMQ175</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td># years smoked this amount of cigars</td>
+        </tr>
+        <tr>
+            <td>SMQ180</td>
+            <td>SMQ180</td>
+            <td>SMQ180</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Used snuff at least 20 times in life</td>
+        </tr>
+        <tr>
+            <td>SMD190</td>
+            <td>SMD190</td>
+            <td>SMD190</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Age started using snuff regularly</td>
+        </tr>
+        <tr>
+            <td>SMQ200</td>
+            <td>SMQ200</td>
+            <td>SMQ200</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Do you now use snuff</td>
+        </tr>
+        <tr>
+            <td>SMD203</td>
+            <td>SMD203</td>
+            <td>SMD203</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td># snuff pinches/dips/rubs per day</td>
+        </tr>
+        <tr>
+            <td>SMQ205</td>
+            <td>SMQ205</td>
+            <td>SMQ205</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td># years used this amount of snuff</td>
+        </tr>
+        <tr>
+            <td>SMQ210</td>
+            <td>SMQ210</td>
+            <td>SMQ210</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Used chewing tobacco 20 times in life</td>
+        </tr>
+        <tr>
+            <td>SMD220</td>
+            <td>SMD220</td>
+            <td>SMD220</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Age started chewing tobacco regularly</td>
+        </tr>
+        <tr>
+            <td>SMQ230</td>
+            <td>SMQ230</td>
+            <td>SMQ230</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Do you now use chewing tobacco</td>
+        </tr>
+        <tr>
+            <td>SMD233</td>
+            <td>SMD233</td>
+            <td>SMD233</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td># chewing plugs/wads/chaws per day</td>
+        </tr>
+        <tr>
+            <td>SMD235</td>
+            <td>SMD235</td>
+            <td>SMD235</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td># years used this chewing tobacco amount</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ620</td>
+            <td>SMQ620</td>
+            <td>Ever tried cigarette smoking</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMD630</td>
+            <td>SMD630</td>
+            <td>Age first smoked whole cigarette</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMD641</td>
+            <td>SMD641</td>
+            <td>SMD641</td>
+            <td># days smoked cigs during past 30 days</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMD650</td>
+            <td>SMD650</td>
+            <td>SMD650</td>
+            <td>Avg # cigarettes/day during past 30 days</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ660</td>
+            <td>SMQ660</td>
+            <td>Brands of cigarettes smoked/past mo</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ664B</td>
+            <td>SMQ664B</td>
+            <td>Menthol or non-menthol BensonHedges</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ664C</td>
+            <td>SMQ664C</td>
+            <td>Menthol or non-menthol Camels</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ664M</td>
+            <td>SMQ664M</td>
+            <td>Menthol or non-menthol Marlboro</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ664O</td>
+            <td>SMQ664O</td>
+            <td>Menthol or non-menthol other brand</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ664W</td>
+            <td>SMQ664W</td>
+            <td>Menthol or non-menthol Winston</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ666B</td>
+            <td>SMQ666B</td>
+            <td>Regular, light or ultralite BensonHedges</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ666C</td>
+            <td>SMQ666C</td>
+            <td>Regular, light or ultralite Camels</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ666K</td>
+            <td>SMQ666K</td>
+            <td>Regular, light or ultralite Kools</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ666M</td>
+            <td>SMQ666M</td>
+            <td>Regular, light or ultralite Marlboro</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ666O</td>
+            <td>SMQ666O</td>
+            <td>Regular, light or ultralite other brand</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ666S</td>
+            <td>SMQ666S</td>
+            <td>Regular, light or ultralite Salem</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ666W</td>
+            <td>SMQ666W</td>
+            <td>Regular, light or ultralite Winston</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMQ670</td>
+            <td>SMQ670</td>
+            <td>Tried to quit smoking</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>SMAQUEX2</td>
+            <td>SMAQUEX2</td>
+            <td>Questionnaire Mode Flag</td>
+        </tr>
+        <tr>
+            <td>n/a</td>
+            <td>SMDUPCA</td>
+            <td>SMDUPCA</td>
+            <td>SMDUPCA</td>
+            <td>SMDUPCA</td>
+            <td>Cig 12-digit Universal Product Code-UPC</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+      </div>
+    </div>
+  </body>
+</html>

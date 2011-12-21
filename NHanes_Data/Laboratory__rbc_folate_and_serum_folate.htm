@@ -1,0 +1,611 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,RBC Folate and Serum Folate" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: RBC Folate and Serum Folate Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Laboratory page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: RBC Folate and Serum Folate Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="FOLATE_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="FOLATE_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="FOLATE_E.htm#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+        </li>
+        <li>
+          <a href="FOLATE_E.htm#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+        </li>
+        <li>
+          <a href="FOLATE_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="FOLATE_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="FOLATE_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="FOLATE_E.htm#LBDRBF">LBDRBF - RBC folate (ng/mL)</a>
+              </li>
+              <li>
+                <a href="FOLATE_E.htm#LBXRBFSI">LBXRBFSI - RBC folate (nmol/L)</a>
+              </li>
+              <li>
+                <a href="FOLATE_E.htm#LBDFOL">LBDFOL - Serum folate (ng/mL)</a>
+              </li>
+              <li>
+                <a href="FOLATE_E.htm#LBXFOLSI">LBXFOLSI - Serum folate ( nmol/L)</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>RBC Folate and Serum Folate (FOLATE_E)
+            </h3>
+        <h4>
+                Data File: FOLATE_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: June, 2011</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>RBC Folate and Serum Folate
+                (FOLATE_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>June, 2011<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>RBC Folate and Serum Folate<br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>The objectives of this component are: </p>
+<ol>
+    <li>to provide data for monitoring secular trends in measures of nutritional status in the U.S. population; </li>
+    <li>to evaluate the effect of people's habits and behaviors such as physical activity and the use of alcohol, tobacco, and dietary supplements on people's nutritional status; and </li>
+    <li>to evaluate the effect of changes in nutrition and public health policies including welfare reform legislation, food fortification policy, and child nutrition programs on the nutritional status of the U.S. population. </li>
+</ol>
+<p>These data will be used to estimate deficiencies and toxicities of specific nutrients in the population and subgroups, to provide population reference data, and to estimate the contribution of diet, supplements, and other factors to serum levels of nutrients. Data will be used for research to further define nutrient requirements as well as optimal levels for disease prevention and health promotion.</p><h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>Participants aged 1 year and older who do not meet any of the exclusion criteria are eligible.</p><h2><a name="Description_of_Laboratory_Methodology"></a>Description of Laboratory Methodology</h2><p>There were no changes (from the previous 2 years of NHANES) to the lab site. However, there were changes (from the previous 2 years of NHANES) to equipment, and lab method. In 2005-2006, RBC folates and serum folates were measured using the Bio-Rad Laboratories "Quantaphase II Folate" radioassay kit. In 2007-2008, RBC folates and serum folates were measured using the microbiologic assay.</p>
+<p>Microbiological assays have been used for many years to estimate the concentration of folate in blood and other tissues. In the 1990's robust and reliable procedures were introduced that use microtitre plates for higher throughput and a cryopreserved antibiotic resistant microorganism to avoid having to work under aseptic conditions. The herein described procedure is an adaptation of&nbsp;such a method. Diluted serum or whole blood is added to an assay medium containing Lactobacillus casei (NCIB 10463) and all of the nutrients necessary for the growth of L. casei except folate. The inoculated medium is incubated for 45 hours at 37<sup>o</sup>C. Since the growth of L. casei is proportional to the amount of total folate present in serum or whole blood samples, the total folate level can be assessed by measuring the turbidity of the inoculated medium at 590 nm in a PowerWave X340 Microplate reader (Bio-Tek Instrument). We calibrate the assay with 5-methyltetrahydrofolic acid (5MeTHF) from Epro.</p>
+<p>A detailed description of the <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/lab_methods_07_08.htm" target="_blank">laboratory method </a>used can be found on the NHANES website.</p><h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>Division of&nbsp;Laboratory Sciences, National Center for Environmental Health, and Centers for Disease Control and Prevention for analysis. </p>
+<p>Detailed specimen collection and processing instructions are discussed in the NHANES LPM. Vials are stored under appropriate frozen (&ndash;20&deg;C) conditions until they are shipped to National Center for Environmental Health for testing. </p>
+<p>Detailed instructions on <a href="http://www.cdc.gov/nchs/data/nhanes/nhanes_07_08/manual_lab.pdf" target="_blank">specimen collection and processing </a>can be found on the NHANES website.</p><h2><a name="Laboratory_Quality_Assurance_and_Monitoring"></a>Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. </p>
+<p>A detailed description of the <a href="http://www.cdc.gov/nchs/data/nhanes/nhanes_07_08/manual_lab.pdf" target="_blank">quality assurance and quality control procedures </a>can be found on the NHANES website.</p><h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p><strong><span style="text-decoration: underline;">Serum folate regression equations to compare 2007-2008 and 1999-2006 data:</span></strong></p>
+<p><strong><span style="text-decoration: underline;"></span></strong>&nbsp;<strong><span style="text-decoration: underline;">Background:<br />
+</span></strong>There was a change in serum folate methods from 1999-2006 to 2007-2008. In 1999-2006, serum folate was performed using the Bio-Rad (BR) Quantaphase II radioassay. In 2007-2008, serum folate was measured using a microbiological assay (MA). Serum folate levels were much higher in 2007-2008 using the MA method compared with previous data (1999-2006) using the BR method. There are two variables for serum folate: one expressed in conventional units (ng/mL) and one in SI units (nmol/L). For 1999-2006, they were LBXFOL (ng/mL) and LBDFOLSI (nmol/L), and for 2007-2008, they were LBDFOL (ng/mL) and LBXFOLSI (nmol/L). To convert conventional units (ng/mL) to SI units (nmol/L), multiply by 2.265. </p>
+<p>A crossover study was performed between the BR and MA methods by the NCEH/CDC laboratory as described by Fazili et al. (Fazili Z, Pfeiffer CM, Zhang M. Comparison of serum folate species analyzed by LC-MS/MS with total folate measured by microbiological assay and Bio-Rad assay. Clin. Chem. 53(4):781-4, 2007). Several regression methods were examined to relate the BR assay and the MA including linear, Deming, piecewise linear, and fractional polynomial. The fractional polynomial regression method best fit the Fazili crossover data. The forward fractional polynomial regression equation is recommended to trend the serum folate data since the MA method is a more accurate &ldquo;gold standard&rdquo; method and the BR method is no longer available. </p>
+<p><strong><span style="text-decoration: underline;">Forward regression of 1999-2006 BR results (nmol/L) to match 2007-2008 MA results (nmol/L):<br />
+</span></strong>Convert the 1999-2006 BR serum folate (FOL, nmol/L) results to 2007-2008 equivalent values to match the MA serum folate (FOL<sub>adjusted</sub>, nmol/L) results using the following fractional polynomial regression equation:</p>
+<p>FOL<sub>adjusted</sub> = 10**(0.0188 * x<sup>3 </sup>- 2.7109 * x<sup>-1/2</sup> + 3.8276), where X = Log<sub>10</sub>FOL</p>
+<p><strong><span style="text-decoration: underline;">Example calculation: </span></strong></p>
+<p>For NHANES 2005-2006, sequence number (SEQN) = 31128, serum folate (LBDFOLSI) = 30.4 nmol/L</p>
+<p>FOL<sub>adjusted </sub>&nbsp;= 10**[0.0188 * (Log<sub>10</sub>30.4)<sup>3 </sup>&ndash; 2.7109 * (Log<sub>10</sub>30.4)<sup>-1/2</sup> + 3.8276]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 10**(0.0188 * 1.48287<sup>3</sup> &ndash; 2.7109 * 1.48287<sup>-1/2</sup> + 3.8276)&nbsp;&nbsp;= 45.9955<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp; 46 nmol/L&nbsp; </p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong></strong></span></p>
+<p><span style="text-decoration: underline;"><strong>Red blood cell folate - Comparison of 2007-2008 and 1999-2006 data:</strong></span></p>
+<p><strong><span style="text-decoration: underline;">Background:&nbsp;<br />
+</span></strong>There was a change in red blood cell (RBC) folate methods from 1999-2006 to 2007-2008. In 1999-2006, RBC folate measurements were performed using the Bio-Rad (BR) Quanta Phase II radioassay. In 2007-2008, RBC folate was measured using a microbiological assay (MA). RBC folate levels were much higher in 2007-2008 using the MA method compared with previous data (1999-2006) using the BR method. There are two variables for RBC folate: one expressed in conventional units (ng/mL) and one in SI units (nmol/L). For 1999-2006, they were LBXRBF (ng/mL) and LBDRBFSI (nmol/L), and for 2007-2008, they were LBDRBF (ng/mL) and LBXRBFSI (nmol/L). To convert conventional units (ng/mL) to SI units (nmol/L), multiply by 2.265. </p>
+<p>A crossover study for whole blood folate (WBF) was performed between the BR and MA assays by the NCEH/CDC laboratory as described by Fazili et al. (Fazili Z, Pfeiffer CM, Zhang M, Jain RB, Koontz D. Influence of 5,10-methylenetetrahydrofolate reductase polymorphism on whole-blood folate concentrations measured by LC-MS/MS, microbiologic assay, and Bio-Rad radioassay. Clin. Chem. 54(1):197-201, 2008). The authors showed that while the WBF values for the BR assay measured lower than the MA (average 45%), there was a different relationship between the two assays depending on the 5,10-methylenetetrahydrofolate reductase (MTHFR) C677T polymorphism. Whole blood samples from persons with the T/T genotype showed a smaller difference between the two assays (average 31%) compared to whole blood samples from persons with the C/C and C/T genotype (average 48%). The reason for this was that the BR assay recovered the various folate forms differently compared to the MA assay.</p>
+<p>The MTHFR genotype information is not available for NHANES 1999-2008 and the genotype-specific regression equations reported by Fazili et al. cannot be used. Using the crossover data for all genotypes presented in the Fazili et al. paper, several regression methods were evaluated to relate the BR assay and the MA method for the WBF data for 1999-2008. These regression methods included the linear, Deming, piecewise linear, and fractional polynomial models. The linear regression model for WBF best fit the Fazili crossover data. As presented in the analytic note on serum folate, the fractional polynomial regression model was applied to adjust the serum folate data. This was necessary because serum folate is part of the equation to calculate RBC folate. A forward regression model is recommended to trend the RBC folate data since the MA method is considered a more accurate &ldquo;gold standard&rdquo; method and the BR method is no longer available. </p>
+<p><span style="text-decoration: underline;"><strong>Forward regression of 1999-2006 BR results (nmol/L) to match 2007-2008 MA results (nmol/L):</strong></span></p>
+<p>Since the Fazili crossover study presents WBF data rather than RBC folate data, it is necessary to first convert RBC folate data to WBF data before applying any regression equation to make the data sets comparable. </p>
+<p>The following algorithm is recommended: <br />
+1) Convert the 1999-2006 BR RBC folate (RBF, nmol/L) to whole-blood folate (WBF, nmol/L) using the hematocrit (HCT, %) and the BR serum folate (FOL, nmol/L) in the following equation:</p>
+<p>WBF = (RBF * HCT/100) + FOL * [1.0 - (HCT/100)]</p>
+<p>The hematocrit can be obtained from the NHANES hematology files containing the complete blood count.</p>
+<p>2) Apply the following forward linear regression to obtain an adjusted WBF (WBF<sub>adjusted</sub>) using WBF from step 1 to match the 2007-2008 MA WBF:</p>
+<p>WBF<sub>adjusted</sub> = 10**[0.2204 + (1.017 * Log<sub>10</sub>WBF)]</p>
+<p>3) Convert the 1999-2006 BR serum folate (FOL, nmol/L) results to 2007-2008 equivalent values to match the MA serum folate (FOL<sub>adjusted</sub>, nmol/L) results using the forward fractional polynomial regression equation specified in the analytic note on serum folate:</p>
+<p>&nbsp;FOL<sub>adjusted</sub> = 10**(0.0188 * X<sup>3</sup> &ndash; 2.7109 * X<sup>-1/2</sup> + 3.8276), where X = Log<sub>10</sub>FOL</p>
+<p>4) Calculate RBF<sub>adjusted</sub> by using WBF<sub>adjusted</sub> (from step 2) and FOL<sub>adjusted</sub> (from step 3):</p>
+<p>RBF<sub>adjusted </sub>= {WBF<sub>adjusted</sub> &ndash; [FOL<sub>adjusted</sub> * (1.0 - (HCT/100))]} / (HCT/100)&nbsp;&nbsp;</p>
+<p>The analyst is cautioned that trending RBC folate by this procedure does not use genotype-specific equations as the MTHFR genotype was not determined in NHANES. This may slightly underestimate RBC folate concentrations for some participants and overestimate concentrations for others.&nbsp;&nbsp;</p>
+<p><strong><span style="text-decoration: underline;">&nbsp;Example calculation:</span></strong></p>
+<p>1) WBF&nbsp;&nbsp; = (378.3* 41.4/100) + 30.4 * [1.0 - (41.4/100)] <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 174.4306 nmol/L</p>
+<p>2) WBF<sub>adjusted </sub>&nbsp;= 10**(0.2204 + 1.017 * Log<sub>10</sub>174.4306)&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 10**(0.2204 + 1.017 * 2.24162) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 316.323 nmol/L&nbsp;</p>
+<p>3) FOL<sub>adjusted </sub>&nbsp;= 10**[0.0188 * (Log<sub>10</sub>30.4)<sup>3 </sup>&ndash; 2.7109 * (Log<sub>10</sub>30.4)<sup>-1/2</sup> + 3.8276]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp; 10**(0.0188 * 1.48287<sup>3</sup> &ndash; 2.7109 * 1.48287<sup>-1/2</sup> + 3.8276)&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp; 45.9955 nmol/L&nbsp;</p>
+<p>4) RBF<sub>adjusted</sub>&nbsp; = {316.323 &ndash; [45.9955 * (1.0 - (41.4/100))]} / (41.4/100) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&asymp; 699 nmol/L&nbsp;</p>
+<p>&nbsp;The analysis of NHANES laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. The Household Questionnaire Data Files also contain all survey design variables and sample weights required to analyze these data. The Phlebotomy Examination file includes auxiliary information on duration of fasting, the time of day of the venipuncture, and the conditions precluding venipuncture. The Household Questionnaire and Phlebotomy Exam files may be linked to the laboratory data file using the unique survey participant identifier SEQN.</p></div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDRBF"></a>LBDRBF - RBC folate (ng/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDRBF</dd>
+            <dt>SAS Label: </dt>
+            <dd>RBC folate (ng/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">RBC folate (ng/mL)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">85.7 to 2984.5</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8243</td>
+                <td class="values" align="right">8243</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1064</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXRBFSI"></a>LBXRBFSI - RBC folate (nmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXRBFSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>RBC folate (nmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">RBC folate (nmol/L)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">194 to 6760</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8243</td>
+                <td class="values" align="right">8243</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1064</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDFOL"></a>LBDFOL - Serum folate (ng/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDFOL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Serum folate (ng/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Serum folate (ng/mL)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">2.2 to 209.3</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8205</td>
+                <td class="values" align="right">8205</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1102</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXFOLSI"></a>LBXFOLSI - Serum folate ( nmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXFOLSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Serum folate ( nmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Serum folate ( nmol/L)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">5 to 474</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8205</td>
+                <td class="values" align="right">8205</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1102</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

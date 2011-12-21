@@ -1,0 +1,228 @@
+\documentclass[presentation]{beamer}
+
+\include{preamble}
+
+%presentation preamble
+\usetheme{progressbar}
+\usecolortheme{progressbar} 
+\usefonttheme{progressbar} 
+\useoutertheme{progressbar}
+\useinnertheme{progressbar}
+%\progressbaroptions{headline=sections, frametitle=normal}
+
+\title[Obs. Study on Sleep]{Analysis of NHANES Sleep Data}
+\author[KM]{Adam Kapelner, Josh Magarick \\ {\tiny (Special Thanks to Dylan Small)}}
+\institute[Wharton, Statistics]{Department of Statistics \\ The Wharton School, University of Pennsylvania}
+\date[11/29/11]{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/nhanes07_08.htm
+
+\section{NHANES}
+
+\begin{frame}
+	\frametitle{NHANES}
+
+Since the National Health Survey Act of 1956, \pause the US thought it was important to get readings on the population's health status. In 1971, this was coined... \pause 
+
+\vspace{0.5cm}
+
+\begin{quotation}
+``The National Health and Nutrition Examination Survey (NHANES)... a program of studies designed to assess the health and nutritional status of adults and children in the United States.''
+\end{quotation}
+
+\begin{columns}
+		\begin{column}{.2\textwidth}
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.75in]{nhanes_logo.jpg}
+%\caption{Point estimation problem figure}
+%\label{fig:point_estimation}
+\end{figure}
+\FloatBarrier
+		\end{column}
+		\begin{column}{.8\textwidth}
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2.5in]{dohhs_logo.jpg}
+%\caption{Point estimation problem figure}
+%\label{fig:point_estimation}
+\end{figure}
+\FloatBarrier
+		\end{column}
+	\end{columns}
+
+\vspace{0.5cm}
+
+\pause
+
+\footnotesize
+Nationally representative sample of about 10,000 people every year by using a stratified sample of households from a sample of geographical units (deliberate oversampling of the elderly and minorities).
+\normalsize
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{The data (Part I)}
+
+They try to measure various indicators:
+
+\begin{itemize}
+\item demographic
+\item socioeconomic
+\item dietary
+\item health-related
+\end{itemize}
+
+\pause
+
+The first three indicators are queried via surveys (both in-person interviews and computer-aided). \pause The health related data collection is a combination of surveying and a sophisticated: \pause
+
+\begin{itemize}
+\item in-depth physical examination \pause
+(e.g. audiometry, \pause all the physical measurements, \pause X-ray absorption, \pause retinal imaging battery, \pause dental decay, etc.)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{The data (Part II)}
+
+\begin{itemize}
+\item in-depth laboratory tests \pause
+(e.g. lead and heavy metals in blood, \pause pesticides in urine, \pause testing for common STDs, \pause thyroid profile, \pause  glucose and insulin) \pause
+\end{itemize}
+
+How did they collect this data? \pause Via ``mobile equipment centers'':
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=4.5in]{mec.jpg}
+%\caption{Point estimation problem figure}
+%\label{fig:point_estimation}
+\end{figure}
+\FloatBarrier
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Why is this useful?}
+
+Even via univariate analyses a la Stat 101, the NHANES data has been instrumental in: \pause
+
+\begin{itemize}
+\item Constructing growth charts
+\item National mandate to add folate and Iron to cereal
+\item Measuring lead poisoning
+\item Nationwide efforts to reduce cholesterol
+\end{itemize}
+
+\pause
+
+And, using basic regression a la Stat 102, you can detect ``associations'' and actually publish papers. \pause And, using the methods of this class, hopefully we can find causal relationships...
+
+\end{frame}
+
+\section{Sleep}
+
+\begin{frame}
+	\frametitle{What are we interested in?}
+
+\pause
+
+\begin{center}
+What \textit{causes} \Huge{ Sleep}
+\end{center}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=3in]{sleep.jpg}
+%\caption{Point estimation problem figure}
+%\label{fig:point_estimation}
+\end{figure}
+\FloatBarrier
+
+Why? \pause Because it's pretty important... and...
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Previous Studies using NHANES and Sleep}
+
+We searched google scholar for ``\texttt{sleep}'' AND ``\texttt{NHANES}'' and of the first 100 results, we found 13 papers... \pause
+
+\begin{itemize}
+\item 10 / 13 use sleep as covariate to predict something else \pause
+\item NONE of the papers use any methods from this class 
+\end{itemize}
+
+$\Rightarrow$ \pause We are interested in proving certain lifestyles \textit{cause} a good (or bad) night's sleep.
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Our Dataset}
+
+\footnotesize
+We used the 2007/8 data $n = 9,762$ \pause (chosen because of some covariates which later turned out to be not important, so the choice was arbitrary).  \pause We threw out nutritional data, so $p = 2,355$.  \pause Our Response variable was chosen to be ``\texttt{SLD010H}''. 
+
+
+\vspace{0.2cm}
+
+\begin{quotation}
+How much sleep do you usually get at night on weekdays or workdays? ENTER HOURS. 
+\end{quotation}
+
+$n_0 = 6,498 \approx \frac{2}{3}n$ answered this question. \pause What about other covariates?
+\normalsize
+
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=2.75in]{cov_by_response.jpg}
+%\caption{Point estimation problem figure}
+%\label{fig:point_estimation}
+\end{figure}
+\FloatBarrier
+
+\pause
+
+\end{frame}
+
+\section{The Analysis}
+
+\begin{frame}
+	\frametitle{Preprocessing}
+
+\begin{itemize}
+\item Download and label all data
+\item Merge all data tables  \pause
+\item Pick covariates that are not missing for records that have sleep variables \pause
+\item Pick a treatment variable ``\texttt{PAQ635}'' \pause  - Walk or bicycle
+
+\begin{quotation}
+... I would like to ask you about the usual way you travel to and from places. For example to work, for shopping, to school. Do you walk or use a bicycle for at least 10 minutes continuously to get to and from places?
+\end{quotation}  \pause
+
+\item Set intersect all records available for all covariates
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{What are our control variables?}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=4in]{covariates.jpg}
+\end{figure}
+\FloatBarrier
+
+\end{frame}
+
+
+
+\end{document}

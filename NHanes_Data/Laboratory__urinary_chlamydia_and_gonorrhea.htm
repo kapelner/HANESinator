@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes" lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+                    BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                    BORDER-TOP-STYLE: none;
+                    BORDER-RIGHT-STYLE: none;
+                    BORDER-LEFT-STYLE: none;
+                    TEXT-ALIGN: left;
+                    BORDER-BOTTOM-STYLE: none;
+                    }
+
+                    H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    MARGIN-TOP: 0px;
+                    FONT-WEIGHT: normal;
+                    FONT-SIZE: 2em;
+                    PADDING-BOTTOM: 10px;
+                    COLOR: #0c5205
+                    }
+
+                    H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    FONT-WEIGHT: normal;
+                    FONT-SIZE: 1.6em;
+                    COLOR: #0c5205
+                    }
+
+                    H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    FONT-WEIGHT: normal;
+                    FONT-SIZE: 1.5em;
+                    COLOR: #000
+                    }
+
+                    H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    FONT-WEIGHT: bold;
+                    FONT-SIZE: 1.3em;
+                    COLOR: #000
+                    }
+
+                    H5 {	FONT-WEIGHT: bold;
+                    FONT-SIZE: 1em;
+                    COLOR: #000;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                    }
+
+                    H5.specialnote {	FONT-WEIGHT: bold;
+                    FONT-STYLE: italic;
+                    FONT-SIZE: 1.2em;
+                    COLOR: #000;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    }
+
+                    A {COLOR:#0a29a5;
+                    TEXT-DECORATION: none}
+
+                    P {	FONT-SIZE: 1em;
+                    PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN: 0px 3em 1em;
+                    LINE-HEIGHT: 1.33em;
+                    TEXT-ALIGN: left;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    }
+
+                    UL {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN: 0px 3.5em 1em;
+                    LIST-STYLE-TYPE: disc
+                    }
+
+                    UL LI {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN-LEFT: 1.5em;
+                    MARGIN-TOP: 0.7em;
+                    MARGIN-BOTTOM: 0.7em
+                    }
+
+                    OL {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    MARGIN: 0px;
+                    PADDING-TOP: 0px;
+                    PADDING-LEFT: 2em;
+                    OVERFLOW: hidden;
+                    LIST-STYLE-TYPE: decimal
+                    }
+
+                    OL LI {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN-LEFT: 1.5em;
+                    MARGIN-TOP: 0.7em;
+                    MARGIN-BOTTOM: 0.7em
+                    }
+
+                    TABLE {	BORDER-RIGHT: #000 1px solid;
+                    PADDING-RIGHT: 2px;
+                    BORDER-TOP: #000 1px solid;
+                    PADDING-LEFT: 2px;
+                    PADDING-BOTTOM: 2px;
+                    BORDER-LEFT: #000 1px solid;
+                    PADDING-TOP: 2px;
+                    BORDER-BOTTOM: #000 1px solid;
+                    MAX-WIDTH: 600px;
+                    MARGIN: 0px auto 1em;
+                    BORDER-COLLAPSE: collapse;
+                    TABLE-LAYOUT: auto;
+                    page-break-inside: avoid;
+                    }
+
+                    th {	BORDER: #000 1px solid;
+                    PADDING: 5px;
+                    VERTICAL-ALIGN: bottom;
+                    TEXT-ALIGN: center;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    background: #f4f4e1; /*#f4f4e1*/
+                    }
+
+                    TD {	BORDER: #000 1px solid;
+                    PADDING-RIGHT: 5px;
+                    PADDING-LEFT: 5px;
+                    PADDING-BOTTOM: 5px;
+                    VERTICAL-ALIGN: top;
+                    PADDING-TOP: 5px;
+                    TEXT-ALIGN: left;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    }
+
+                    td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                    }
+
+                    TABLE CAPTION {	FONT-WEIGHT: normal;
+                    FONT-SIZE: 1.6em;
+                    PADDING-BOTTOM: 0.5em;
+                    FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                    }
+
+
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                    page-break-after:always
+                    }
+                    div#wrapper {width: 650px;}
+
+                    div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                    div#toc h3 {background-color:#f4f4e1; padding:3px}
+                    div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                    div#PageHeader {width: 650px;
+                    border-bottom: thin solid #999;}
+                    div#Sections {width: 650px;}
+                    div#Codebook {width: 650px;}
+                    div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                    div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                    div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                    div#References {width: 650px;page-break-after: always}
+                    div#Appendix {width: 650px;page-break-after: always}
+                    table.info {width:600px;
+                    display:block;
+                    border: 3px;
+                    inset: #000000;
+                    position: relative;
+                    left: 20px;
+                    margin-bottom: 20px;
+                    page-break-inside: avoid;
+                    }
+                    table.values   {width:600px;
+                    display:block;
+                    border: 2px;
+                    inset: #000000;
+                    position: relative;
+                    left: 20px;
+                    margin-bottom: 20px;
+                    page-break-inside: avoid;
+                    }
+
+                    .pagebreak {display: block;
+                    page-break-after: always;
+                    page-break-inside: avoid;}
+                    .pagebreak H3 {background-color: #c1d5b0
+                    }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Urinary Chlamydia and Gonorrhea ">
+    <meta name="DC.Subject" content="NHANES 2007-2008: Urinary Chlamydia and Gonorrhea  Data Documentation">
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng">
+    <link rel="Prev" title="NHANES  2007-2008 Laboratory page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Urinary Chlamydia and Gonorrhea  Data Documentation, Codebook, and Frequencies
+                    </title>
+    
+  </head>
+  <body onload="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/CHLMDA_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/CHLMDA_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/CHLMDA_E.htm#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+        </li>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/CHLMDA_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/CHLMDA_E.htm#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+        </li>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/CHLMDA_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/CHLMDA_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/CHLMDA_E.htm#URXUCL">URXUCL - Urinary Chlamydia</a>
+              </li>
+              <li>
+                <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/CHLMDA_E.htm#URXUGC">URXUGC - Urinary Gonorrhea</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Urinary Chlamydia and Gonorrhea  (CHLMDA_E)
+            </h3>
+        <h4>
+                Data File: CHLMDA_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: September, 2009</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Urinary Chlamydia and Gonorrhea 
+                (CHLMDA_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>September, 2009<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>Urinary Chlamydia and Gonorrhea, Sexually transmitted infections<br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>Sexually
+ transmitted infections caused by Chlamydia trachomatis may lead to 
+pelvic inflammatory disease, ectopic pregnancy, infertility, and chronic
+ pelvic pain in women. They are associated with increased risk of HIV 
+transmission. Pregnant women may transmit infection to their newborn, 
+causing serious medical complications.</p>
+<p>NHANES offers an opportunity to assess the prevalence of chlamydia 
+and gonococcal infection in the general population and to monitor trends
+ in prevalence as prevention programs are established and expanded. </p>
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>Participants 
+aged 14-39 years were tested. Public data file includes data for persons
+ 18-39 years of age. Please see Analytic Notes for Data Users about the 
+release of data for adolescents 14-17 years of age.</p>
+<h2><a name="Description_of_Laboratory_Methodology"></a>Description of Laboratory Methodology</h2><p>Urine
+ specimens were processed, stored and shipped to the Division of AIDS, 
+STD, and TB Laboratory Research, National Center for Infectious 
+Diseases, National Centers for Disease Control and Prevention for 
+analysis. Detailed specimen collection and processing instructions are 
+discussed in the NHANES Laboratory/Medical Technologists Procedures 
+Manual (LPM).</p>
+<p>The BDProbeTec CT Chlamydia trachomatis and Neisseria gonorrhoeae 
+Amplified DNA Assays are based on the simultaneous amplification and 
+detection of target DNA, using amplification primers and a fluorescent 
+labeled detector probe. The Strand Displacement Amplification (SDA) 
+reagents are dried in two separate disposable microwell strips. The 
+processed sample is added to the Priming Microwell, which contains the 
+amplification primers, fluorescent labeled detector probe, and other 
+reagents necessary for amplification. After incubation, the reaction 
+mixture is transferred to the Amplification Microwell, which contains 
+two enzymes (a DNA polymerase and a restriction endonuclease) necessary 
+for SDA. The Amplification Microwells are sealed to prevent 
+contamination and then incubated in a thermally controlled fluorescent 
+reader which monitors each reaction for the generation of amplified 
+products. The presence or absence of C. trachomatis and N. gonorrhoeae 
+is determined by relating the BDProbeTec ET MOTA (Method Other Than 
+Acceleration) scores for the sample to pre-determined cutoff values. The
+ MOTA score is a metric used to assess the magnitude of signal generated
+ as a result of the reaction.</p>
+<p>There were no changes (from the previous 2 years of NHANES) to equipment, lab methods or lab site. </p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>Read
+ the General Documentation of Laboratory Data file for detailed data 
+processing and editing protocols. The analytical methods are described 
+in the Analytic Notes for Data Users section below.</p>
+<p>Public data files include data for persons 18-39 years of age. 
+Urinary Chlamydia data for youth 14-17 years of age will only be 
+available in the Research Data Center (RDC) or through special 
+agreement. </p>
+<h2><a name="Laboratory_Quality_Assurance_and_Monitoring"></a>Laboratory Quality Assurance and Monitoring</h2><p>The
+ NHANES quality assurance and quality control (QA/QC) protocols meet the
+ 1988 Clinical Laboratory Improvement Act mandates. Detailed quality 
+control and quality assurance instructions are discussed in the NHANES 
+Laboratory/Medical Technologists Procedures Manual (LPM). Read the 
+General Documentation of Laboratory Data file for detailed QA/QC 
+protocols. A detailed description of the quality assurance and quality 
+control procedures can be found on the NHANES website.</p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>The analysis of 
+NHANES laboratory data must be conducted with the key survey design and 
+basic demographic variables. The NHANES Household Questionnaire Data 
+Files contain demographic data, health indicators, and other related 
+information collected during household interviews. They also contain all
+ survey design variables and sample weights for these age groups. The 
+phlebotomy file includes auxiliary information, such as the conditions 
+precluding venipuncture. The household questionnaire and phlebotomy 
+files may be linked to the laboratory data file using the unique survey 
+participant identifier SEQN.</p>
+<p>Exam sample weights should be used for analyses. Please refer to the 
+Analytic Guidelines for further details on the use of sample weights and
+ other analytic issues. The Analytic Guidelines are available on the 
+NHANES website.</p>
+<p>Collaborators may obtain the 2007-2008 NHANES Adolescent STD Special 
+Use Data file through a special agreement. The data set is a SAS file 
+containing 3 variables for examined participants aged 14-17 years. Other
+ interested researchers may use this file in the NCHS Research Data 
+Center (RDC). The variable descriptors and variable names are as 
+follows:</p>
+<p>Sequence number-Seqn </p>
+<p>Chlamydia result-URXUCL </p>
+<p>Gonorrhea result-URXUGC </p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 39 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="URXUCL"></a>URXUCL - Urinary Chlamydia</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URXUCL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urinary Chlamydia</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urinary Chlamydia</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 39 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">53</td>
+                <td class="values" align="right">53</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1999</td>
+                <td class="values" align="right">2052</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Indeterminate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2052</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">80</td>
+                <td class="values" align="right">2132</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="URXUGC"></a>URXUGC - Urinary Gonorrhea</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URXUGC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urinary Gonorrhea</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urinary Gonorrhea</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 39 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">2050</td>
+                <td class="values" align="right">2052</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Indeterminate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2052</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">80</td>
+                <td class="values" align="right">2132</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  
+</body></html>

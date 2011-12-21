@@ -1,0 +1,702 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes" lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+                    BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                    BORDER-TOP-STYLE: none;
+                    BORDER-RIGHT-STYLE: none;
+                    BORDER-LEFT-STYLE: none;
+                    TEXT-ALIGN: left;
+                    BORDER-BOTTOM-STYLE: none;
+                    }
+
+                    H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    MARGIN-TOP: 0px;
+                    FONT-WEIGHT: normal;
+                    FONT-SIZE: 2em;
+                    PADDING-BOTTOM: 10px;
+                    COLOR: #0c5205
+                    }
+
+                    H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    FONT-WEIGHT: normal;
+                    FONT-SIZE: 1.6em;
+                    COLOR: #0c5205
+                    }
+
+                    H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    FONT-WEIGHT: normal;
+                    FONT-SIZE: 1.5em;
+                    COLOR: #000
+                    }
+
+                    H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    FONT-WEIGHT: bold;
+                    FONT-SIZE: 1.3em;
+                    COLOR: #000
+                    }
+
+                    H5 {	FONT-WEIGHT: bold;
+                    FONT-SIZE: 1em;
+                    COLOR: #000;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                    }
+
+                    H5.specialnote {	FONT-WEIGHT: bold;
+                    FONT-STYLE: italic;
+                    FONT-SIZE: 1.2em;
+                    COLOR: #000;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    }
+
+                    A {COLOR:#0a29a5;
+                    TEXT-DECORATION: none}
+
+                    P {	FONT-SIZE: 1em;
+                    PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN: 0px 3em 1em;
+                    LINE-HEIGHT: 1.33em;
+                    TEXT-ALIGN: left;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    }
+
+                    UL {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN: 0px 3.5em 1em;
+                    LIST-STYLE-TYPE: disc
+                    }
+
+                    UL LI {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN-LEFT: 1.5em;
+                    MARGIN-TOP: 0.7em;
+                    MARGIN-BOTTOM: 0.7em
+                    }
+
+                    OL {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    MARGIN: 0px;
+                    PADDING-TOP: 0px;
+                    PADDING-LEFT: 2em;
+                    OVERFLOW: hidden;
+                    LIST-STYLE-TYPE: decimal
+                    }
+
+                    OL LI {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN-LEFT: 1.5em;
+                    MARGIN-TOP: 0.7em;
+                    MARGIN-BOTTOM: 0.7em
+                    }
+
+                    TABLE {	BORDER-RIGHT: #000 1px solid;
+                    PADDING-RIGHT: 2px;
+                    BORDER-TOP: #000 1px solid;
+                    PADDING-LEFT: 2px;
+                    PADDING-BOTTOM: 2px;
+                    BORDER-LEFT: #000 1px solid;
+                    PADDING-TOP: 2px;
+                    BORDER-BOTTOM: #000 1px solid;
+                    MAX-WIDTH: 600px;
+                    MARGIN: 0px auto 1em;
+                    BORDER-COLLAPSE: collapse;
+                    TABLE-LAYOUT: auto;
+                    page-break-inside: avoid;
+                    }
+
+                    th {	BORDER: #000 1px solid;
+                    PADDING: 5px;
+                    VERTICAL-ALIGN: bottom;
+                    TEXT-ALIGN: center;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    background: #f4f4e1; /*#f4f4e1*/
+                    }
+
+                    TD {	BORDER: #000 1px solid;
+                    PADDING-RIGHT: 5px;
+                    PADDING-LEFT: 5px;
+                    PADDING-BOTTOM: 5px;
+                    VERTICAL-ALIGN: top;
+                    PADDING-TOP: 5px;
+                    TEXT-ALIGN: left;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    }
+
+                    td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                    }
+
+                    TABLE CAPTION {	FONT-WEIGHT: normal;
+                    FONT-SIZE: 1.6em;
+                    PADDING-BOTTOM: 0.5em;
+                    FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                    }
+
+
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                    page-break-after:always
+                    }
+                    div#wrapper {width: 650px;}
+
+                    div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                    div#toc h3 {background-color:#f4f4e1; padding:3px}
+                    div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                    div#PageHeader {width: 650px;
+                    border-bottom: thin solid #999;}
+                    div#Sections {width: 650px;}
+                    div#Codebook {width: 650px;}
+                    div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                    div#Codebook dt {width: 140px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                    div#Codebook dd {float: left;width: 430px;margin: 0 0 0 0;padding: .5em;}
+                    div#References {width: 650px;page-break-after: always}
+                    table.info {width:600px;
+                    display:block;
+                    border: 3px;
+                    inset: #000000;
+                    position: relative;
+                    left: 20px;
+                    margin-bottom: 20px;
+                    page-break-inside: avoid;
+                    }
+                    table.values   {width:600px;
+                    display:block;
+                    border: 2px;
+                    inset: #000000;
+                    position: relative;
+                    left: 20px;
+                    margin-bottom: 20px;
+                    page-break-inside: avoid;
+                    }
+
+                    .pagebreak {display: block;
+                    page-break-after: always;
+                    page-break-inside: avoid;}
+                    .pagebreak H3 {background-color: #c1d5b0
+                    }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Blood Total Mercury and Blood Inorganic Mercury ">
+    <meta name="DC.Subject" content="NHANES 2007-2008: Blood Total Mercury and Blood Inorganic Mercury  Data Documentation">
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng">
+    <link rel="Prev" title="NHANES  2007-2008 Laboratory page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Blood Total Mercury and 
+Blood Inorganic Mercury  Data Documentation, Codebook, and Frequencies
+                    </title>
+    
+  </head>
+  <body onload="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+        </li>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+        </li>
+        <li>
+          <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#LBXTHG">LBXTHG - Mercury, total (ug/L)</a>
+              </li>
+              <li>
+                <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#LBDTHGSI">LBDTHGSI - Mercury, total (nmol/L)</a>
+              </li>
+              <li>
+                <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#LBXIHG">LBXIHG - Mercury, inorganic (ug/L)</a>
+              </li>
+              <li>
+                <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#LBDIHGSI">LBDIHGSI - Mercury, inorganic (nmol/L)</a>
+              </li>
+              <li>
+                <a href="http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/THgIHg_E.htm#LBDTHGLC">LBDTHGLC - Mercury, total comment code</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Blood Total Mercury and Blood Inorganic Mercury  (THgIHg_E)
+            </h3>
+        <h4>
+                Data File: THgIHg_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: September, 2009</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Blood Total Mercury and Blood Inorganic Mercury 
+                (THgIHg_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>September, 2009<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>none<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>Blood mercury,  Total mercury, Inorganic mercury<br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p><strong>Total Blood Mercury, Inorganic Mercury</strong></p>
+<p>Uncertainties exist regarding levels of exposure to methyl mercury 
+from fish consumption and potential health effects resulting from this 
+exposure. Past estimates of exposure to methyl mercury have been 
+obtained from results of food consumption surveys and measures of methyl
+ mercury in fish. Measures of a biomarker of exposure are needed for 
+improved exposure assessments. Blood mercury levels will be assessed in 
+two subpopulations particularly vulnerable to the health effects from 
+mercury exposure: children 1–5 years old and women of childbearing age.</p>
+<p>Blood measures of total and inorganic mercury will be important for 
+evaluation of exposure from exposure to mercury in interior latex paints
+ </p>
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>Participants aged 1 year and older, who do not meet any of the exclusion criteria, are eligible.</p>
+<h2><a name="Description_of_Laboratory_Methodology"></a>Description of Laboratory Methodology</h2><p>Whole
+ blood specimens are processed, stored, and shipped to the Division of 
+Laboratory Sciences, National Center for Environmental Health, and 
+Centers for Disease Control and Prevention for analysis.</p>
+<p><strong>Blood Total Mercury</strong></p>
+<p>Whole blood Hg concentrations are determined using inductively 
+coupled plasma mass spectrometry. This multi-element analytical 
+technique is based on quadrupole ICP-MS technology. Coupling radio 
+frequency power into a flowing argon stream, seeded with electrons, 
+creates the plasma. Predominate species in the plasma are positive argon
+ ions and electrons. Diluted whole blood samples are converted into an 
+aerosol, using a nebulizer inserted within a spray chamber. A portion of
+ the aerosol is transported through the spray chamber and then through 
+the central channel of the plasma, where it experiences temperatures of 
+6000–8000 ºK. This thermal energy atomizes and ionizes the sample. The 
+ions, along with the argon, enter the mass spectrometer through an 
+interface that separates the ICP, operating at atmospheric pressure 
+(approximately 760 torr), from the mass spectrometer, operating at 
+approximately 10<sup>–5</sup> torr. The mass spectrometer permits 
+detection of ions at each mass-to-charge ratio in rapid sequence, 
+allowing individual isotopes of an element to be determined. Once inside
+ the mass spectrometer, the ions first pass through the ion optics, then
+ the mass analyzing quadrupole before being detected as they strike the 
+surface of the detector. The ion optics focuses the ion beam using an 
+electrical field. Electrical signals, resulting from the detection of 
+the ions, are processed into digital information that is used to 
+indicate the intensity of the ions and subsequently the concentration of
+ the element. In this method, blood samples are diluted with 18 Mega-ohm
+ water and with diluent, containing 1% v/v tetramethylammonium hydroxide
+ (TMAH), 0.5% disodium ethylenediamine tetraacetate (EDTA), 10% ethyl 
+alcohol, 0.05% Triton X-100. Au is added to reduce intrinsic Hg memory 
+effects, Rh for internal standardization of Cd, and Bi for internal 
+standardization of Hg and Pb. The samples were prepared with the 
+following ratio:</p>
+<p>Sample:Water:Diluent = 1:1:48 correspondingly.</p>
+<p><strong>Inorganic Mercury</strong></p>
+<p>Inorganic mercury in blood is measured using stannous chloride as a 
+reductant, also utilizing microwave digestion. Mercury vapor (reduced 
+from inorganic mercury compounds) is measured via the same quartz cell 
+at 253.7 nm.</p>
+<p>The difference between total and inorganic mercury represents the 
+organic mercury in blood. Mercury analysis identifies cases of mercury 
+toxicity. The main organs affected by mercury are the brain and kidneys.
+ Psychic and emotional disturbances are the initial signs of chronic 
+intoxication by elemental mercury vapor or salts. Parasthesia and 
+neuralgia may develop. Renal disease, digestive disturbances, and ocular
+ lesions can also develop. Kidney toxicity is an important consequence 
+of exposure to mercury salts.</p>
+<p>There were no changes to the equipment or lab site from the previous 2 years. </p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>Read the <em>General Documentation on Laboratory Data</em> file for detailed data processing and editing protocols. The analytical methods are described in the <strong>Description of the</strong> <strong>Laboratory Methodology</strong> section. </p>
+<p>Two variables were created, from existing variables, and added to this data file. The formula for their creation is as follows:</p>
+<p>The total mercury in µg/L was converted to nmol/L by multiplying by 4.99.</p>
+<p>The inorganic mercury in µg/L was converted to nmol/L by multiplying by 4.99.</p>
+<p><strong>Detection Limits</strong></p>
+<p>The detection limits were constant for the analytes in the data set. 
+The variable named LBX___ provides the analytic result for that analyte.
+ In cases, where the result was below the limit of detection, the value 
+for that variable is the detection limit divided by the square root of 
+two. </p>
+<h2><a name="Laboratory_Quality_Assurance_and_Monitoring"></a>Laboratory Quality Assurance and Monitoring</h2><p>Read the <em>General Documentation on Laboratory Data</em> file for detailed quality control and monitoring protocols.</p>
+<p>The analytical methods are described in the <strong>Description of the Laboratory Methodology</strong> section. </p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>The analysis of 
+laboratory data must be conducted with the key survey design and basic 
+demographic variables. The NHANES Household Questionnaire Data Files 
+contain demographic data, health indicators, and other related 
+information collected during household interviews. They also contain all
+ survey design variables and sample weights for these age groups. The 
+phlebotomy file includes auxiliary information such as the conditions 
+precluding venipuncture. The household questionnaire and phlebotomy 
+files may be linked to the laboratory data file using the unique survey 
+participant identifier SEQN.</p>
+<p>Exam sample weights should be used for analyses. Please refer to the 
+Analytic Guidelines for further details on the use of sample weights and
+ other analytic issues. The Analytic Guidelines are available on the 
+NHANES website. </p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>
+                SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXTHG"></a>LBXTHG - Mercury, total (ug/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTHG</dd>
+            <dt>
+                SAS Label: </dt>
+            <dd>Mercury, total (ug/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mercury, total (ug/L)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.2 to 43.9</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8266</td>
+                <td class="values" align="right">8266</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1041</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDTHGSI"></a>LBDTHGSI - Mercury, total (nmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTHGSI</dd>
+            <dt>
+                SAS Label: </dt>
+            <dd>Mercury, total (nmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mercury, total (nmol/L)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 219.1</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8266</td>
+                <td class="values" align="right">8266</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1041</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXIHG"></a>LBXIHG - Mercury, inorganic (ug/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXIHG</dd>
+            <dt>
+                SAS Label: </dt>
+            <dd>Mercury, inorganic (ug/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mercury, inorganic (ug/L)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.25 to 14</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8162</td>
+                <td class="values" align="right">8162</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1145</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDIHGSI"></a>LBDIHGSI - Mercury, inorganic (nmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDIHGSI</dd>
+            <dt>
+                SAS Label: </dt>
+            <dd>Mercury, inorganic (nmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mercury, inorganic (nmol/L)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1.25 to 69.86</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8162</td>
+                <td class="values" align="right">8162</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1145</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDTHGLC"></a>LBDTHGLC - Mercury, total comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTHGLC</dd>
+            <dt>
+                SAS Label: </dt>
+            <dd>Mercury, total comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mercury, total comment code</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>1 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">6358</td>
+                <td class="values" align="right">6358</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">1908</td>
+                <td class="values" align="right">8266</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1041</td>
+                <td class="values" align="right">9307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  
+</body></html>

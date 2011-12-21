@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{The NHANES Data}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Background}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{The data used in this platform}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Methods for one Causal Investigation}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Data Selection}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Matching}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{Sensitivity Analysis}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.4}{Adjusting results for multiple comparisons}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Examples of Analyses}{}% 9
+\BOOKMARK [1][-]{section.4}{Our System and Concluding Remarks}{}% 10
+\BOOKMARK [1][-]{appendix.A}{R Code and User Guide to Running Analyses}{}% 11
+\BOOKMARK [2][-]{subsection.A.1}{Code for the end-user}{appendix.A}% 12
+\BOOKMARK [2][-]{subsection.A.2}{Code for the developer only}{appendix.A}% 13

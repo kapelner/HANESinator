@@ -1,0 +1,1055 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Air Quality Questionnaire" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Air Quality Questionnaire Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Questionnaire page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Air Quality Questionnaire Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="AQQ_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="AQQ_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="AQQ_E.htm#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+        </li>
+        <li>
+          <a href="AQQ_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="AQQ_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="AQQ_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ685">PAQ685 - Bad air quality change activities</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690a">PAQ690a - Wore a mask</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690b">PAQ690b - Spent less time outdoors</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690c">PAQ690c - Avoided roads that have heavy traffic</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690d">PAQ690d - Did less strenuous activities</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690e">PAQ690e - Took medication</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690f">PAQ690f - Closed windows of your house</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690g">PAQ690g - Drove my car less</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690h">PAQ690h - Canceled outdoor activities</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690i">PAQ690i - Exercised indoors instead of outdoors</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690j">PAQ690j - Used buses, trains, or subways</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690k">PAQ690k - Use or change air filter/air cleaner</a>
+              </li>
+              <li>
+                <a href="AQQ_E.htm#PAQ690o">PAQ690o - Other</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Air Quality Questionnaire (AQQ_E)
+            </h3>
+        <h4>
+                Data File: AQQ_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: November, 2010</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Air Quality Questionnaire
+                (AQQ_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>November, 2010<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>Includes questions related to air quality<br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>Two air quality questions were included in the physical activity questionnaire (prefix PAQ). The first (PAQ685), asked &#8220;During the past 12 months, when you thought or were informed air quality was bad, did you do anything differently?&#8221;. Respondents who answered yes to this question were then asked what they did differently.</p>
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>All survey participants 16 or more years of age were eligible.</p>
+<h2><a name="Interview_Setting_and_Mode_of_Administration"></a>Interview Setting and Mode of Administration</h2><p>The questions were asked before the physical examination, in the home, using the Computer-Assisted Personal Interviewing - CAPI (interviewer administered) system.</p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>Limited editing was done on the data. Some other responses (PAQ690o) were re-coded into the appropriate pre-coded response categories (PAQ690a-j). One new response category (PAQ690k) was created for responses that mentioned using or changing an air filter or air cleaner.</p>
+<p> </p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>Since the questions were asked in the household interview, the interview sample weights may be used in their analysis. However, if the data is joined with data from the MEC, the MEC sample weights should be used.</p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues. The Analytic Guidelines are available on the NHANES website.</p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ685"></a>PAQ685 - Bad air quality change activities</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ685</dd>
+            <dt>SAS Label: </dt>
+            <dd>Bad air quality change activities</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 12 months, when {you thought/SP thought} or {were/was} informed air quality was bad, {did you/did SP} do anything differently?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">777</td>
+                <td class="values" align="right">777</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">5224</td>
+                <td class="values" align="right">6001</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">SP never thought/not informed bad air quality</td>
+                <td class="values" align="right">544</td>
+                <td class="values" align="right">6545</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6545</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690a"></a>PAQ690a - Wore a mask</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690a</dd>
+            <dt>SAS Label: </dt>
+            <dd>Wore a mask</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">10</th>
+                <td class="values">Wore a mask</td>
+                <td class="values" align="right">81</td>
+                <td class="values" align="right">81</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">81</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't Know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">81</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6465</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690b"></a>PAQ690b - Spent less time outdoors</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690b</dd>
+            <dt>SAS Label: </dt>
+            <dd>Spent less time outdoors</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">11</th>
+                <td class="values">Spent less time outdoors</td>
+                <td class="values" align="right">547</td>
+                <td class="values" align="right">547</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5999</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690c"></a>PAQ690c - Avoided roads that have heavy traffic</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690c</dd>
+            <dt>SAS Label: </dt>
+            <dd>Avoided roads that have heavy traffic</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">12</th>
+                <td class="values">Avoided roads that have heavy traffic</td>
+                <td class="values" align="right">50</td>
+                <td class="values" align="right">50</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6496</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690d"></a>PAQ690d - Did less strenuous activities</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690d</dd>
+            <dt>SAS Label: </dt>
+            <dd>Did less strenuous activities</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">13</th>
+                <td class="values">Did less strenuous activities</td>
+                <td class="values" align="right">105</td>
+                <td class="values" align="right">105</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6441</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690e"></a>PAQ690e - Took medication</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690e</dd>
+            <dt>SAS Label: </dt>
+            <dd>Took medication</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">14</th>
+                <td class="values">Took medication</td>
+                <td class="values" align="right">39</td>
+                <td class="values" align="right">39</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6507</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690f"></a>PAQ690f - Closed windows of your house</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690f</dd>
+            <dt>SAS Label: </dt>
+            <dd>Closed windows of your house</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">15</th>
+                <td class="values">Closed windows of your house</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">194</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6352</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690g"></a>PAQ690g - Drove my car less</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690g</dd>
+            <dt>SAS Label: </dt>
+            <dd>Drove my car less</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">16</th>
+                <td class="values">Drove my car less</td>
+                <td class="values" align="right">90</td>
+                <td class="values" align="right">90</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6456</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690h"></a>PAQ690h - Canceled outdoor activities</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690h</dd>
+            <dt>SAS Label: </dt>
+            <dd>Canceled outdoor activities</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">17</th>
+                <td class="values">Canceled outdoors activities</td>
+                <td class="values" align="right">138</td>
+                <td class="values" align="right">138</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6408</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690i"></a>PAQ690i - Exercised indoors instead of outdoors</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690i</dd>
+            <dt>SAS Label: </dt>
+            <dd>Exercised indoors instead of outdoors</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">18</th>
+                <td class="values">Exercised indoors instead of outside</td>
+                <td class="values" align="right">80</td>
+                <td class="values" align="right">80</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6466</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690j"></a>PAQ690j - Used buses, trains, or subways</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690j</dd>
+            <dt>SAS Label: </dt>
+            <dd>Used buses, trains, or subways</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">19</th>
+                <td class="values">Used buses, trains, or subways</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">13</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6533</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690k"></a>PAQ690k - Use or change air filter/air cleaner</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690k</dd>
+            <dt>SAS Label: </dt>
+            <dd>Use or change air filter/air cleaner</dd>
+            <dt>English Text: </dt>
+            <dd class="info">
+            </dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">20</th>
+                <td class="values">Use or change air filter/air cleaner</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">33</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6513</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PAQ690o"></a>PAQ690o - Other</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PAQ690o</dd>
+            <dt>SAS Label: </dt>
+            <dd>Other</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of these {did you/did SP} do differently?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  CODE ALL THAT APPLY.  HAND CARD 07PAQ1</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>16 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">71</th>
+                <td class="values">Other</td>
+                <td class="values" align="right">34</td>
+                <td class="values" align="right">34</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">6512</td>
+                <td class="values" align="right">6546</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

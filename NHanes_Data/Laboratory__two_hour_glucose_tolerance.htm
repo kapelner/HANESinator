@@ -1,0 +1,1021 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Two-hour Oral Glucose Tolerance Test" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Two-hour Oral Glucose Tolerance Test Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Laboratory page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Two-hour Oral Glucose Tolerance Test Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="OGTT_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="OGTT_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="OGTT_E.htm#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+        </li>
+        <li>
+          <a href="OGTT_E.htm#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+        </li>
+        <li>
+          <a href="OGTT_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="OGTT_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="OGTT_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#WTSOG2YR">WTSOG2YR - OGTT Subsample 2 Year MEC Weight</a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#GTDSCMMN">GTDSCMMN - Glucose challenge Administer Time in min</a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#GTDDR1MN">GTDDR1MN - Time from fast glucose &amp; challenge (min)</a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#GTDBL2MN">GTDBL2MN - Time from fasting glucose &amp; OGTT (min) </a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#GTDDR2MN">GTDDR2MN - Time from glucose challenge &amp; OGTT(min) </a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#GTXDRANK">GTXDRANK - Amount of glucose challenge drank</a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#PHAFSTHR">PHAFSTHR - Total length of 'food fast', hours</a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#PHAFSTMN">PHAFSTMN - Total length of 'food fast', minutes</a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#GTDCODE">GTDCODE - Incomplete OGTT Comment Code</a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#LBXGLT">LBXGLT - Two Hour Glucose(OGTT) (mg/dL)</a>
+              </li>
+              <li>
+                <a href="OGTT_E.htm#LBDGLTSI">LBDGLTSI - Two Hour Glucose(OGTT) (mmol/L)</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Two-hour Oral Glucose Tolerance Test (OGTT_E)
+            </h3>
+        <h4>
+                Data File: OGTT_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: January, 2010</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Two-hour Oral Glucose Tolerance Test
+                (OGTT_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>January, 2010<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>Two-hour Oral Glucose Tolerance Test, Diabetes, Glucose, Insulin<br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>Diabetes mellitus was assessed by measures of fasting plasma glucose, two-hour glucose (OGTT) and serum insulin in participants, aged 12 years and over, who were examined in the morning (AM) session only. Glycohemoglobin measures were collected in a full sample and are available in a separate dataset, GHB_E. </p> 
+<p> Diabetes is a leading cause of disease and death in the United States. Eight million Americans are known to have diabetes, and an approximately equal number have undiagnosed diabetes. In 1993, nearly 18 percent of all deaths, for persons over the age of 25, were among people with diabetes. The prevalence of diabetes and overweight (one of the major risk factors for diabetes) continues to increase. Substantial new efforts to prevent or control diabetes have begun, including the Diabetes Prevention Trial and the National Diabetes Education Program. </p>
+<p> Diabetes testing provides population data to: 1) determine a national estimate of diabetes disease prevalence (diagnosed and undiagnosed), 2) identify the risk factors of diabetes disease; 3) permit a national cohort to be established for follow-up studies of this condition; and 4) provide critical information to clinicians and public health officials for the development of preventive care and community-based interventions.</p>
+
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>Participants, aged 12 years and older, who were examined in the morning session, were eligible.&#160; This is a subsample of the NHANES and requires the use of special weights (See Analytic Notes below).</p>
+<h2><a name="Description_of_Laboratory_Methodology"></a>Description of Laboratory Methodology</h2><p>Blood specimens were processed, stored and shipped to Fairview Medical Center Laboratory at the University of Minnesota, Minneapolis Minnesota for analysis. Detailed specimen collection and processing instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). </p>
+<p><strong>Glucose</strong></p>
+<p>Glucose concentration was determined by a hexokinase method. It is an endpoint enzymatic method with a sample blank correction. </p>
+<p>Beginning in 2005, an oral glucose tolerance test (OGTT) was added to the laboratory protocol. A fasting glucose blood test was performed on all participants, 12 years and older, who were examined in the morning session, after a 9 hour fast. After the initial venipuncture, participants were asked to drink a calibrated dose (generally 75 grams of glucose) of TrutolTM and had a second venipuncture 2 hours (plus or minus 15 minutes) after drinking the Trutol. </p>
+<p>There are seven exclusion criteria including hemophilia and chemotherapy safety exclusions, fasting less than 9 hours, taking insulin or oral medications for diabetes, refusing phlebotomy, and not drinking the entire Trutol solution within the allotted time. </p>
+<p>A detailed description of the laboratory methods for OGTT can be found in the Laboratory Procedures Manual. </p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>Read the General Documentation on Laboratory Data file for detailed data processing and editing protocols. The analytical methods are described in the <strong>Description of the Laboratory Methodology</strong> section. </p>
+<p>One calculated variable was created in this data file. The formula for its calculation is as follows: </p>
+<p>
+LBXGLT and LBDGLTSI: <br />
+The fasting glucose value in mg/dL (LBXGLT) was converted to mmol/L (LBDGLTSI) by multiplying by 0.05551 (rounded to 3 decimals).</p>
+<p>Detailed instructions on specimen collection and processing can be found on the NHANES website. </p>
+<h2><a name="Laboratory_Quality_Assurance_and_Monitoring"></a>Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES LPM. <em>Read the General Documentation on Laboratory Data</em> file for detailed QA/QC protocols. </p>
+<p>A detailed description of the quality assurance and quality control procedures can be found on the NHANES website. </p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p><strong>Glucose regression equations to compare 2007-2008 and 2005-2006 data:</strong> </p>
+<p>A crossover study was performed to compare the 2007-2008 glucose data to the 2005-2006 glucose data. The Roche/Hitachi 911 was used in 2005-2006 and the Roche ModP was used in 2007-2008. A Deming regression analysis was done and the following regressions were obtained for glucose (mg/dL): </p>
+<p>Y (Roche 911) = X (Roche ModP) – 1.139, n=143, r=0.997, slope was not significant. </p>
+<p>Y (Roche ModP) = X (Roche 911) + 1.148, n=143, r=0.997, slope was not significant. </p>
+<p>These regression equations should be used to trend the glucose data. </p>
+<p><strong>NHANES 2007-2008 Survey Design:</strong> <br />
+<br />
+The analysis of NHANES laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN. <br />
+<br />
+These are new variables that should help the user in the analysis of the two-hour glucose tolerance data: <br />
+GTDSCMMN is used to define <br />
+        "Glucose challenge Administer Time in minutes". <br />
+<br />
+GTDDR1MN is used to define: <br />
+        "Time from fast glucose &amp; challenge (min)" <br />
+GTDBL2MN is used to define: <br />
+        "Time from fasting glucose &amp; OGTT(min)" <br />
+GTDDR2MN is used to define: <br />
+        "Time from glucose challenge &amp; OGTT(min)" <br />
+GTXDRANK is used to define: <br />
+        "Amount of glucose challenge the SP drank" <br />
+GTDCODE is used to define: <br />
+        "Incomplete OGTT Comment Code" <br />
+<br />
+<strong>Sampling Weights</strong> <br />
+The analyst is strongly encouraged to use the OGTT sampling weights in this file to analyze 2007–2008 two-hour OGTT glucose levels. <br />
+<br />
+There will be two weight files associated with the subsample for the diabetes data. Use the fasting sample weights (WTSFA2YR) when analyzing the fasting glucose and insulin levels only. Use the OGTT sample weights (WTSOG2YR) when analyzing the insulin, fasting AND OGTT glucose levels or when analyzing ONLY OGTT glucose levels. NOTE: the fasting glucose and insulin weights and data are in a separate file (GLU_E). </p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WTSOG2YR"></a>WTSOG2YR - OGTT Subsample 2 Year MEC Weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTSOG2YR</dd>
+            <dt>SAS Label: </dt>
+            <dd>OGTT Subsample 2 Year MEC Weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">OGTT Subsample 2 Year MEC Weight</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 486575.123</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2779</td>
+                <td class="values" align="right">2779</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">536</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="GTDSCMMN"></a>GTDSCMMN - Glucose challenge Administer Time in min</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">GTDSCMMN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Glucose challenge Administer Time in min</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Glucose challenge Administer Time in minutes</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 10</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2283</td>
+                <td class="values" align="right">2283</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1032</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="GTDDR1MN"></a>GTDDR1MN - Time from fast glucose &amp; challenge (min)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">GTDDR1MN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Time from fast glucose &amp; challenge (min)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Time from fast glucose &amp; challenge (min)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">2 to 103</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2283</td>
+                <td class="values" align="right">2283</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1032</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="GTDBL2MN"></a>GTDBL2MN - Time from fasting glucose &amp; OGTT (min) </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">GTDBL2MN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Time from fasting glucose &amp; OGTT (min) </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Time from fasting glucose &amp; OGTT (min) </dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">103 to 162</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2249</td>
+                <td class="values" align="right">2249</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1066</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="GTDDR2MN"></a>GTDDR2MN - Time from glucose challenge &amp; OGTT(min) </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">GTDDR2MN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Time from glucose challenge &amp; OGTT(min) </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Time from glucose challenge &amp; OGTT(min) </dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">40 to 140</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2249</td>
+                <td class="values" align="right">2249</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1066</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="GTXDRANK"></a>GTXDRANK - Amount of glucose challenge drank</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">GTXDRANK</dd>
+            <dt>SAS Label: </dt>
+            <dd>Amount of glucose challenge drank</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Amount of glucose challenge drank</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 3</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2398</td>
+                <td class="values" align="right">2398</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">917</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHAFSTHR"></a>PHAFSTHR - Total length of 'food fast', hours</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHAFSTHR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total length of 'food fast', hours</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in hours) between when the examinee last ate or drank anything other than water and the time of the venipuncture.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 40</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3223</td>
+                <td class="values" align="right">3223</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">92</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="PHAFSTMN"></a>PHAFSTMN - Total length of 'food fast', minutes</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">PHAFSTMN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total length of 'food fast', minutes</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The time (in minutes) between when the examinee last ate or drank anything other than water and the time of the venipuncture.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 59</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3223</td>
+                <td class="values" align="right">3223</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">92</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="GTDCODE"></a>GTDCODE - Incomplete OGTT Comment Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">GTDCODE</dd>
+            <dt>SAS Label: </dt>
+            <dd>Incomplete OGTT Comment Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Incomplete OGTT Comment Code</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">OGTT Complete</td>
+                <td class="values" align="right">2233</td>
+                <td class="values" align="right">2233</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">20</th>
+                <td class="values">Hemophiliac</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">2237</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">21</th>
+                <td class="values">Cancer chemotheraphy within 4 weeks</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">2248</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">22</th>
+                <td class="values">Diabetic on medications</td>
+                <td class="values" align="right">357</td>
+                <td class="values" align="right">2605</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">23</th>
+                <td class="values">Refused venipuncture</td>
+                <td class="values" align="right">54</td>
+                <td class="values" align="right">2659</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">24</th>
+                <td class="values">Ill/faint during test</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">2667</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">25</th>
+                <td class="values">Venipuncture unsuccessful</td>
+                <td class="values" align="right">30</td>
+                <td class="values" align="right">2697</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">26</th>
+                <td class="values">Currently pregnant</td>
+                <td class="values" align="right">28</td>
+                <td class="values" align="right">2725</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">27</th>
+                <td class="values">Refused glucose challenge</td>
+                <td class="values" align="right">89</td>
+                <td class="values" align="right">2814</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">28</th>
+                <td class="values">Fasting less than 9 hours</td>
+                <td class="values" align="right">296</td>
+                <td class="values" align="right">3110</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">29</th>
+                <td class="values">Came late/left early</td>
+                <td class="values" align="right">37</td>
+                <td class="values" align="right">3147</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">30</th>
+                <td class="values">All remaining reasons</td>
+                <td class="values" align="right">168</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXGLT"></a>LBXGLT - Two Hour Glucose(OGTT) (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXGLT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Two Hour Glucose(OGTT) (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Two Hour Glucose(OGTT) (mg/dL)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">23 to 468</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2233</td>
+                <td class="values" align="right">2233</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1082</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDGLTSI"></a>LBDGLTSI - Two Hour Glucose(OGTT) (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDGLTSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Two Hour Glucose(OGTT) (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Two Hour Glucose(OGTT) (mmol/L)</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1.277 to 25.979</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2233</td>
+                <td class="values" align="right">2233</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1082</td>
+                <td class="values" align="right">3315</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

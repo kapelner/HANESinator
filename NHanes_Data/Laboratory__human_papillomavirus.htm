@@ -1,0 +1,2992 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Human Papillomavirus (HPV) DNA Results from Vaginal Swab Samples: Digene Hybrid Capture and Roche Linear Array " />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Human Papillomavirus (HPV) DNA Results from Vaginal Swab Samples: Digene Hybrid Capture and Roche Linear Array  Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Laboratory page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Human Papillomavirus (HPV) DNA Results from Vaginal Swab Samples: Digene Hybrid Capture and Roche Linear Array  Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="HPVSWR_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="HPVSWR_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="HPVSWR_E.htm#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+        </li>
+        <li>
+          <a href="HPVSWR_E.htm#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+        </li>
+        <li>
+          <a href="HPVSWR_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="HPVSWR_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="HPVSWR_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDRPCR">LBDRPCR - Roche HPV linear array summary result</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBXH2RL">LBXH2RL - Digene HPV Swab High Risk RLU/CB</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBXH3RL">LBXH3RL - Digene HPV Swab Low Risk RLU/CB</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDRHP">LBDRHP - Roche LA high positive globin control</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDRLP">LBDRLP - Roche LA low positive globin control</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR06">LBDR06 - HPV type 6</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR11">LBDR11 - HPV type 11</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR16">LBDR16 - HPV type 16</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR18">LBDR18 - HPV type 18</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR26">LBDR26 - HPV type 26</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR31">LBDR31 - HPV type 31</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR33">LBDR33 - HPV type 33</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR35">LBDR35 - HPV type 35</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR39">LBDR39 - HPV type 39</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR40">LBDR40 - HPV type 40</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR42">LBDR42 - HPV type 42</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR45">LBDR45 - HPV type 45</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR51">LBDR51 - HPV type 51</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR52">LBDR52 - HPV type 52</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR53">LBDR53 - HPV type 53</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR54">LBDR54 - HPV type 54</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR55">LBDR55 - HPV type 55</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR56">LBDR56 - HPV type 56</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR58">LBDR58 - HPV type 58</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR59">LBDR59 - HPV type 59</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR61">LBDR61 - HPV type 61</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR62">LBDR62 - HPV type 62</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR64">LBDR64 - HPV type 64</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR66">LBDR66 - HPV type 66</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR67">LBDR67 - HPV type 67</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR68">LBDR68 - HPV type 68</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR69">LBDR69 - HPV type 69</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR70">LBDR70 - HPV type 70</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR71">LBDR71 - HPV type 71</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR72">LBDR72 - HPV type 72</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR73">LBDR73 - HPV type 73</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR81">LBDR81 - HPV type 81</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR82">LBDR82 - HPV type 82</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR83">LBDR83 - HPV type 83</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR84">LBDR84 - HPV type 84</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDR89">LBDR89 - HPV type 89</a>
+              </li>
+              <li>
+                <a href="HPVSWR_E.htm#LBDRPI">LBDRPI - HPV type IS39</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Human Papillomavirus (HPV) DNA Results from Vaginal Swab Samples: Digene Hybrid Capture and Roche Linear Array  (HPVSWR_E)
+            </h3>
+        <h4>
+                Data File: HPVSWR_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: March, 2011</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Human Papillomavirus (HPV) DNA Results from Vaginal Swab Samples: Digene Hybrid Capture and Roche Linear Array 
+                (HPVSWR_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>March, 2011<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b><br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>Human papillomavirus (HPV) infection is one of the most common sexually transmitted infections in the United States. Cervical infection with certain types of HPV is a major risk factor for cervical cancer in women. The &ldquo;high-risk&rdquo; types of HPV (e.g., HPV 16, 18) are associated with cervical cancer and the &ldquo;low-risk&rdquo; types (e.g., HPV 6, 11) with genital warts. No national surveillance system exists to measure the full burden of HPV infection, and no reliable national population estimate of HPV exists. NHANES offers a unique opportunity to assess the prevalence of HPV infection in the general population.</p>
+<p>Reducing the prevalence of HPV infection is a Developmental Healthy People 2010 objective: &ldquo;Reducing the number of new HPV cases can help minimize the overall number of cases of high risk subtypes associated with cervical cancer in females...&rdquo; Detection and typing of HPV DNA in vaginal swabs (in conjunction with testing of NHANES sera for HPV antibody) will allow evaluation of trends in prevalence of type-specific HPV infection by age, sexual behavior, and race/ethnicity. Two HPV vaccines (Gardasil and Cervarix) are licensed and recommended for use in girls and women. Routine vaccination is recommended for girls 11 or 12 years of age, and catch-up vaccination through 26 years. One vaccine (Gardasil) is licensed and available for boys and men. As vaccine becomes more widely used, the national prevalence of HPV infection will be critical for evaluating vaccination strategies in the United States. </p><h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>Vaginal Swab - Females aged 14 to 59 years. <br />
+Public data file includes data for persons 18-59 years of age. Please see Analytic Notes for Data Users about the release of data for adolescents 14-17 years of age.</p><h2><a name="Description_of_Laboratory_Methodology"></a>Description of Laboratory Methodology</h2><p><strong>Vaginal Swab <br />
+</strong>Vaginal specimens were processed, stored and shipped to Atlanta, Ga. for analysis. Detailed specimen collection and processing instructions are discussed in the NHANES LPM. DNA from the vaginal swab is extracted for use in the tests described below: Digene Hybrid Capture (hc2), and Roche Linear Array. </p>
+<p><strong>Digene hc2 HPV DNA Test <br />
+</strong>LBXH2RL (Hybrid Capture high risk result) <br />
+LBXH3RL (Hybrid Capture low risk result) <br />
+The vaginal swab is extracted to obtain DNA. The DNA extracts are used in the Digene hc2 HPV DNA Test. This test, using Hybrid Capture 2 technology, is a nucleic acid hybridization microplate assay with signal amplification. It uses chemiluminescence for the qualitative detection of eighteen types of human papillomavirus (HPV) DNA in cervical specimens. The hc2 HPV DNA Test can differentiate between two HPV DNA groups: low-risk HPV types (LR) 6, 11, 42, 43, 44; and high/intermediate-risk HPV types (HR)16, 18, 31, 33, 35, 39, 45, 51, 52, 56, 58, 59, 68. It cannot determine the specific HPV type present. </p>
+<p>Specimens containing the target DNA hybridize with the HR or LR HPV RNA probe cocktail. The resultant RNA: DNA hybrids are captured onto the surface of a microplate well coated with antibodies specific for RNA: DNA hybrids. Immobilized hybrids are then reacted with alkaline phosphatase conjugated antibodies specific for the RNA: DNA hybrids, and detected with a chemiluminescent substrate. As the substrate is cleaved by the bound alkaline phosphatase, light is emitted which is measured as relative light units (RLUs) on a luminometer. The intensity of the light emitted denotes the presence or absence of target DNA in the specimen. An RLU measurement equal to or greater than the Cutoff Value indicates the presence of HPV DNA sequences in the specimen. An RLU measurement less than the Cutoff Value indicates the absence of the specific HPV DNA sequences tested or HPV DNA levels below the detection limit of the assay.&nbsp;</p>
+<p><strong>Roche Linear Array Assay <br />
+</strong>This assay uses Roche Linear Array HPV Genotyping test that is based on HPV L1 consensus polymerase chain reaction (PCR) with biotinylated PGMY09/11 primer sets. It also includes biotinylated &beta;-globin primers as an internal control for sample amplification. The primer mix amplifies essentially all HPV types found in the genital tract along with the human &beta;-globin gene. After amplification the samples are typed by hybridization to the typing strips followed by colorimetric detection. The strip is a linear array of probes specific for 37 HPV types (6, 11, 16, 18, 26, 31, 33, 35, 39, 40, 42, 45, 51, 52, 53, 54, 55, 56, 58, 59, 61, 62, 64, 66, 67, 68, 69, 70, 71, 72, 73, 81, 82, 83, 84, IS39, and 89) and for the positive &beta;-globin control as well. Types are read by comparing the reaction pattern to the typing template. Samples that are negative for HPV and the &beta;-globin control indicate lack of a suitable sample and are considered inadequate for interpretation. </p><h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>Read the LABDOC file for detailed data processing and editing protocols.</p><h2><a name="Laboratory_Quality_Assurance_and_Monitoring"></a>Laboratory Quality Assurance and Monitoring</h2><p>While HC2 is approved for clinical testing, the self-collected vaginal sample does not meet clinical guidelines. The HPV PCR tests are research tests. The HPV laboratory followed strict research QC/QA and was CLIA certified August 2008. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. The analytical methods are described in the <strong>Description of the Laboratory Methodology </strong>section.</p><h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>The analysis of NHANES 2005&ndash;2006 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2005&ndash;2006 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights. Certain sensitive data on respondents under 18 years of age (e.g. HPV typing results, sexual behavior variables) are not included in the public use files. These data may be requested as described in the NHANES guidelines. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN.</p>
+<p><strong>Vaginal Swab <br />
+Digene hc2 HPV DNA Test <br />
+</strong>An RLU measurement equal to or greater than the Cutoff Value of 1.0 indicates the presence of HPV DNA sequences in the specimen. An RLU measurement less than the Cutoff Value indicates the absence of the specific HPV DNA sequences tested or HPV DNA levels below the detection limit of the assay. </p>
+<p><strong>HPV PCR Assay <br />
+HPV Summary Variable <br />
+</strong>The HPV PCR Summary variable (LBDRPCR) indicates if at least one type is positive (LBDRPCR=1), the sample is negative (LBDRPCR=2), the sample is inadequate (LBDRPCR=3), or the sample is missing (LBDRPCR=.). </p>
+<p>If there is no Beta globin present (both LBDRHP and LBDRLP are negative) in the sample and no HPV type is detected, the sample is coded as inadequate. </p>
+<p>If any of the types on the strips (LBDR06-LBDRPI) are positive, the sample is coded as positive. If all of the types on the strip are coded as negative, and beta-globin is detected (either LBDRHP or LBDRLP is positive) the sample is coded as negative. </p>
+<p>Variables LBDRHP through LBDRPI are from the RUO Roche Linear Array HPV typing assay, however LBDR52 also includes information from a type-specific assay for HPV 52. The Linear Array typing strip includes an XR probe that hybridizes with HPV 52 as well as HPV types 33, 35 and 58. Samples positive for the XR probe and 33, 35, or 58 require specific testing to confirm the presence of HPV 52. </p></div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>
+          <li>Gravitt PE, Peyton CL, Alessi TQ, Wheeler CM, Coutlee F, Hildesheim A, Schiffman MH, Scott DR, Apple RJ. Improved Amplification of Genital Human Papillomaviruses. J Clin Microbiol 2000; 38: 357-361.</li>
+          <li>Hc2 HPV DNA Test Package Insert, Digene Corporation.</li>
+          <li>Steinau M, Swan DC, Unger ER. Type-specific reproducibility of the Roche Linear Array HPV genotyping test. J Clin Virol 42: 412-414, 2008.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDRPCR"></a>LBDRPCR - Roche HPV linear array summary result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDRPCR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Roche HPV linear array summary result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Roche HPV linear array (LA) summary result</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">802</td>
+                <td class="values" align="right">802</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">965</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXH2RL"></a>LBXH2RL - Digene HPV Swab High Risk RLU/CB</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXH2RL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Digene HPV Swab High Risk RLU/CB</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Digene HPV Swab High Risk RLU/CB</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 999.9</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1798</td>
+                <td class="values" align="right">1798</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">200</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXH3RL"></a>LBXH3RL - Digene HPV Swab Low Risk RLU/CB</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXH3RL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Digene HPV Swab Low Risk RLU/CB</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Digene HPV Swab Low Risk RLU/CB</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 986.8</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1798</td>
+                <td class="values" align="right">1798</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">200</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDRHP"></a>LBDRHP - Roche LA high positive globin control</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDRHP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Roche LA high positive globin control</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Roche LA high positive globin control</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">1758</td>
+                <td class="values" align="right">1758</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDRLP"></a>LBDRLP - Roche LA low positive globin control</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDRLP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Roche LA low positive globin control</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Roche LA low positive globin control</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">1746</td>
+                <td class="values" align="right">1746</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR06"></a>LBDR06 - HPV type 6</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR06</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 6</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 6</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">44</td>
+                <td class="values" align="right">44</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1723</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR11"></a>LBDR11 - HPV type 11</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR11</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 11</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 11</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1762</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR16"></a>LBDR16 - HPV type 16</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR16</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 16</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 16</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">97</td>
+                <td class="values" align="right">97</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1670</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR18"></a>LBDR18 - HPV type 18</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR18</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 18</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 18</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">35</td>
+                <td class="values" align="right">35</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1732</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR26"></a>LBDR26 - HPV type 26</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR26</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 26</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 26</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1759</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR31"></a>LBDR31 - HPV type 31</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR31</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 31</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 31</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">29</td>
+                <td class="values" align="right">29</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1738</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR33"></a>LBDR33 - HPV type 33</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR33</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 33</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 33</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1759</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR35"></a>LBDR35 - HPV type 35</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR35</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 35</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 35</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">37</td>
+                <td class="values" align="right">37</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1730</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR39"></a>LBDR39 - HPV type 39</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR39</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 39</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 39</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">42</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1725</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR40"></a>LBDR40 - HPV type 40</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR40</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 40</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 40</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">24</td>
+                <td class="values" align="right">24</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1743</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR42"></a>LBDR42 - HPV type 42</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR42</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 42</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 42</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">40</td>
+                <td class="values" align="right">40</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1727</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR45"></a>LBDR45 - HPV type 45</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR45</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 45</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 45
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">35</td>
+                <td class="values" align="right">35</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1732</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR51"></a>LBDR51 - HPV type 51</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR51</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 51</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 51</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">71</td>
+                <td class="values" align="right">71</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1696</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR52"></a>LBDR52 - HPV type 52</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR52</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 52</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 51</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">64</td>
+                <td class="values" align="right">64</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1703</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR53"></a>LBDR53 - HPV type 53</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR53</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 53</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 53</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">120</td>
+                <td class="values" align="right">120</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1647</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR54"></a>LBDR54 - HPV type 54</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR54</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 54</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 54</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">71</td>
+                <td class="values" align="right">71</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1696</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR55"></a>LBDR55 - HPV type 55</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR55</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 55</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 55</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">33</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1734</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR56"></a>LBDR56 - HPV type 56</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR56</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 56</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 56
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">44</td>
+                <td class="values" align="right">44</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1723</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR58"></a>LBDR58 - HPV type 58</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR58</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 58</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 58</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">43</td>
+                <td class="values" align="right">43</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1724</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR59"></a>LBDR59 - HPV type 59</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR59</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 59</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 59</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">53</td>
+                <td class="values" align="right">53</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1714</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR61"></a>LBDR61 - HPV type 61</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR61</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 61</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 61</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">110</td>
+                <td class="values" align="right">110</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1657</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR62"></a>LBDR62 - HPV type 62</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR62</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 62</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 62</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">98</td>
+                <td class="values" align="right">98</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1669</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR64"></a>LBDR64 - HPV type 64</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR64</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 64</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 64</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1765</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR66"></a>LBDR66 - HPV type 66</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR66</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 66</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 66</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">56</td>
+                <td class="values" align="right">56</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1711</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR67"></a>LBDR67 - HPV type 67</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR67</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 67</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 67</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">26</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1741</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR68"></a>LBDR68 - HPV type 68</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR68</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 68</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 68</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">39</td>
+                <td class="values" align="right">39</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1728</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR69"></a>LBDR69 - HPV type 69</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR69</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 69</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 69</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1761</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR70"></a>LBDR70 - HPV type 70</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR70</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 70</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 70</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">40</td>
+                <td class="values" align="right">40</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1727</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR71"></a>LBDR71 - HPV type 71</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR71</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 71</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 71</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">26</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1741</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR72"></a>LBDR72 - HPV type 72</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR72</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 72</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 72</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">24</td>
+                <td class="values" align="right">24</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1743</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR73"></a>LBDR73 - HPV type 73</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR73</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 73</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 73</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">34</td>
+                <td class="values" align="right">34</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1733</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR81"></a>LBDR81 - HPV type 81</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR81</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 81</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 81</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">53</td>
+                <td class="values" align="right">53</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1714</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR82"></a>LBDR82 - HPV type 82</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR82</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 82</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 82</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">10</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1757</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR83"></a>LBDR83 - HPV type 83</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR83</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 83</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 83</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">71</td>
+                <td class="values" align="right">71</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1696</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR84"></a>LBDR84 - HPV type 84</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR84</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 84</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 84</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">89</td>
+                <td class="values" align="right">89</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1678</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDR89"></a>LBDR89 - HPV type 89</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDR89</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type 89</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type 89</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">79</td>
+                <td class="values" align="right">79</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1688</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDRPI"></a>LBDRPI - HPV type IS39</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDRPI</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV type IS39</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV type IS39</dd>
+            <dt>Target Gender: </dt>
+            <dd> Females only</dd>
+            <dt>Target Age: </dt>
+            <dd>18 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Positive</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1761</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Inadequate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">231</td>
+                <td class="values" align="right">1998</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

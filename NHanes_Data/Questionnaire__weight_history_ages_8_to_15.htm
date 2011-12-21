@@ -1,0 +1,1849 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Weight History 8-15 years" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Weight History 8-15 years Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Questionnaire page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Weight History 8-15 years Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="WHQMEC_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="WHQMEC_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="WHQMEC_E.htm#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+        </li>
+        <li>
+          <a href="WHQMEC_E.htm#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+        </li>
+        <li>
+          <a href="WHQMEC_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="WHQMEC_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="WHQMEC_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ030M">WHQ030M - How do you consider your weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ500">WHQ500 - Trying to do about weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510A">WHQ510A - Want to look better</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510B">WHQ510B - Want to be healthier</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510C">WHQ510C - Want to be better at sports</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510D">WHQ510D - Get teased about my weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510E">WHQ510E - Think my clothes will fit better</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510F">WHQ510F - Think boys will like me better</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510G">WHQ510G - Think girls will like me better</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510H">WHQ510H - Friends are trying to lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510I">WHQ510I - Someone in family trying to lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510J">WHQ510J - Mother/father wants me to lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510K">WHQ510K - Teacher/coach wants me to lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510L">WHQ510L - Health professional wants me lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510P">WHQ510P - Want to be skinny/because I'm overweight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510N">WHQ510N - Want to feel good/better about self</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ510U">WHQ510U - Other reason</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ520">WHQ520 - How often tried to lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ530">WHQ530 - Been on a diet to lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ540">WHQ540 - Starved to lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ550">WHQ550 - Cut back on eating to lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ560">WHQ560 - Skipped meals to lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ570">WHQ570 - Exercised to lose weight</a>
+              </li>
+              <li>
+                <a href="WHQMEC_E.htm#WHQ580">WHQ580 - Eaten less sweets or fatty foods</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Weight History 8-15 years (WHQMEC_E)
+            </h3>
+        <h4>
+                Data File: WHQMEC_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: September, 2009</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Weight History 8-15 years
+                (WHQMEC_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>September, 2009<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>Personal interview data for adolescents, age 8-15 years, on topics related to body weight, including self-perception of weight, reasons for losing weight, and methods used to lose weight.   <br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>The Weight History section of the Mobile Examination Center (MEC) Interview (variable name prefix WHQMEC) provides personal interview data on topics related to body weight in adolescents 8-15 years of age. These topics include self-perception of weight, reasons for losing weight, and methods used to lose weight.</p>
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>The target sample for the questions in this section is adolescents, age 8-15 years. Frequency counts were verified during the preparation of the file.</p>
+
+<h2><a name="Interview_Setting_and_Mode_of_Administration"></a>Interview Setting and Mode of Administration</h2><p>The questions were asked in the MEC Interview, using an interviewer-administered Computer Assisted Personal Interviewing (CAPI) system.</p>
+<p>Proxy respondents were not permitted for this section.</p>
+<p>For details on the administration of the Weight History 8-15 years (WHQMEC_E) section, please refer to the NHANES 2007-08 MEC Interview Exam Manual and the Weight History (WHQMEC) Questionnaire on the NHANES website.</p>
+<h2><a name="Quality_Assurance_&amp;_Quality_Control"></a>Quality Assurance &amp; Quality Control</h2><p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire.</p>
+<p>For details on the quality assurance/quality control process for this component, please refer to the NHANES 2007-08 Interviewer Procedure Manuals on the NHANES website.</p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>The WHQ511 responses 22 (I don’t want to be fat) and 23 (I want to be skinny) were collapsed into the new category WHQ510P 26 (I want to be skinny/I don’t want to be fat/because I’m overweight or obese).</p>
+<p>WHQ510 30 (Other (specify)) responses such as “Because I’m fat” and “I think I’m overweight” also were recoded as WHQ510P 26.</p>
+<p>Frequency counts were verified during the preparation of the file.</p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>To provide 4 years of data for analysis, responses to WHQ510M (22) and WHQ510O (25) in the WHQMEC_D data file can be recoded as WHQ150P (26) in order to be comparable to the new category WHQ510P (26) in the WHQMEC_E data file.</p>
+<p>Responses to WHQ030m, which asks if adolescents consider themselves now to be fat or overweight, too thin, or about the right weight, can be compared with proxy responses to WHQ030e in the Early Childhood (ECQ) questionnaire section.</p>
+<p>Exam sample weights should be used for analyses.</p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues. The Analytic Guidelines are available on the NHANES website.</p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ030M"></a>WHQ030M - How do you consider your weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ030M</dd>
+            <dt>SAS Label: </dt>
+            <dd>How do you consider your weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Do you consider yourself now to be . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">fat or overweight,</td>
+                <td class="values" align="right">276</td>
+                <td class="values" align="right">276</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">too thin, or</td>
+                <td class="values" align="right">105</td>
+                <td class="values" align="right">381</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">about the right weight?</td>
+                <td class="values" align="right">953</td>
+                <td class="values" align="right">1334</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1334</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1335</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">92</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ500"></a>WHQ500 - Trying to do about weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ500</dd>
+            <dt>SAS Label: </dt>
+            <dd>Trying to do about weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of the following are you trying to do about your weight:</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">lose weight,</td>
+                <td class="values" align="right">494</td>
+                <td class="values" align="right">494</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">gain weight,</td>
+                <td class="values" align="right">161</td>
+                <td class="values" align="right">655</td>
+                <td class="values">WHQ520  </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">stay the same weight, or</td>
+                <td class="values" align="right">353</td>
+                <td class="values" align="right">1008</td>
+                <td class="values">WHQ520  </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">not trying to do anything about your weight?</td>
+                <td class="values" align="right">325</td>
+                <td class="values" align="right">1333</td>
+                <td class="values">WHQ520  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1333</td>
+                <td class="values">WHQ520  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1335</td>
+                <td class="values">WHQ520  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">92</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510A"></a>WHQ510A - Want to look better</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Want to look better</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">10</th>
+                <td class="values">I want to look better</td>
+                <td class="values" align="right">134</td>
+                <td class="values" align="right">134</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">134</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">139</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1288</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510B"></a>WHQ510B - Want to be healthier</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Want to be healthier</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">11</th>
+                <td class="values">I want to be healthier</td>
+                <td class="values" align="right">205</td>
+                <td class="values" align="right">205</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1222</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510C"></a>WHQ510C - Want to be better at sports</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Want to be better at sports</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">12</th>
+                <td class="values">I want to be better at sports and other physical activities</td>
+                <td class="values" align="right">110</td>
+                <td class="values" align="right">110</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1317</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510D"></a>WHQ510D - Get teased about my weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Get teased about my weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">13</th>
+                <td class="values">I get teased about my weight</td>
+                <td class="values" align="right">37</td>
+                <td class="values" align="right">37</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1390</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510E"></a>WHQ510E - Think my clothes will fit better</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510E</dd>
+            <dt>SAS Label: </dt>
+            <dd>Think my clothes will fit better</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">14</th>
+                <td class="values">I think my clothes will fit better</td>
+                <td class="values" align="right">55</td>
+                <td class="values" align="right">55</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1372</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510F"></a>WHQ510F - Think boys will like me better</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510F</dd>
+            <dt>SAS Label: </dt>
+            <dd>Think boys will like me better</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">15</th>
+                <td class="values">I think boys will like me better</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1421</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510G"></a>WHQ510G - Think girls will like me better</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510G</dd>
+            <dt>SAS Label: </dt>
+            <dd>Think girls will like me better</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">16</th>
+                <td class="values">I think girls will like me better</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">12</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1415</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510H"></a>WHQ510H - Friends are trying to lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510H</dd>
+            <dt>SAS Label: </dt>
+            <dd>Friends are trying to lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">17</th>
+                <td class="values">My friends are trying to lose weight</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">10</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1417</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510I"></a>WHQ510I - Someone in family trying to lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510I</dd>
+            <dt>SAS Label: </dt>
+            <dd>Someone in family trying to lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">18</th>
+                <td class="values">Someone in my family is trying to lose weight</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1407</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510J"></a>WHQ510J - Mother/father wants me to lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510J</dd>
+            <dt>SAS Label: </dt>
+            <dd>Mother/father wants me to lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">19</th>
+                <td class="values">My mother or father wants me to lose weight</td>
+                <td class="values" align="right">48</td>
+                <td class="values" align="right">48</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1379</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510K"></a>WHQ510K - Teacher/coach wants me to lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510K</dd>
+            <dt>SAS Label: </dt>
+            <dd>Teacher/coach wants me to lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">20</th>
+                <td class="values">My teacher or coach wants me to lose weight</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">3</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1424</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510L"></a>WHQ510L - Health professional wants me lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510L</dd>
+            <dt>SAS Label: </dt>
+            <dd>Health professional wants me lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">21</th>
+                <td class="values">A doctor, nurse, or other health professional wants me to lose weight</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1407</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510P"></a>WHQ510P - Want to be skinny/because I'm overweight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510P</dd>
+            <dt>SAS Label: </dt>
+            <dd>Want to be skinny/because I'm overweight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">26</th>
+                <td class="values">I want to be skinny/I donâ€™t want to be fat/because Iâ€™m or overweight or obese</td>
+                <td class="values" align="right">55</td>
+                <td class="values" align="right">55</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1372</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510N"></a>WHQ510N - Want to feel good/better about self</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510N</dd>
+            <dt>SAS Label: </dt>
+            <dd>Want to feel good/better about self</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply).  HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">24</th>
+                <td class="values">I want to feel good/better about myself</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1420</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ510U"></a>WHQ510U - Other reason</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ510U</dd>
+            <dt>SAS Label: </dt>
+            <dd>Other reason</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Why are you trying to lose weight?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">(Check all that apply). HAND CARD WHQ1.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">30</th>
+                <td class="values">Other reason</td>
+                <td class="values" align="right">19</td>
+                <td class="values" align="right">19</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1408</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ520"></a>WHQ520 - How often tried to lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ520</dd>
+            <dt>SAS Label: </dt>
+            <dd>How often tried to lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past year, how often have you tried to lose weight?  Would you say . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">never,</td>
+                <td class="values" align="right">639</td>
+                <td class="values" align="right">639</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">sometimes, or</td>
+                <td class="values" align="right">544</td>
+                <td class="values" align="right">1183</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">a lot?</td>
+                <td class="values" align="right">150</td>
+                <td class="values" align="right">1333</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1333</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1335</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">92</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ530"></a>WHQ530 - Been on a diet to lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ530</dd>
+            <dt>SAS Label: </dt>
+            <dd>Been on a diet to lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past year, how often have you been on a diet to lose weight?  Would you say . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">never,</td>
+                <td class="values" align="right">385</td>
+                <td class="values" align="right">385</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">sometimes, or</td>
+                <td class="values" align="right">264</td>
+                <td class="values" align="right">649</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">a lot?</td>
+                <td class="values" align="right">45</td>
+                <td class="values" align="right">694</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">694</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">696</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">731</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ540"></a>WHQ540 - Starved to lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ540</dd>
+            <dt>SAS Label: </dt>
+            <dd>Starved to lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past year, how often have you starved (not eaten) for a day or more to lose weight?  Would you say . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">never,</td>
+                <td class="values" align="right">534</td>
+                <td class="values" align="right">534</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">sometimes, or</td>
+                <td class="values" align="right">138</td>
+                <td class="values" align="right">672</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">a lot?</td>
+                <td class="values" align="right">19</td>
+                <td class="values" align="right">691</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">691</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">695</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">732</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ550"></a>WHQ550 - Cut back on eating to lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ550</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cut back on eating to lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past year, how often have you cut back on what you ate to lose weight?  Would you say . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">never,</td>
+                <td class="values" align="right">189</td>
+                <td class="values" align="right">189</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">sometimes, or</td>
+                <td class="values" align="right">415</td>
+                <td class="values" align="right">604</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">a lot?</td>
+                <td class="values" align="right">86</td>
+                <td class="values" align="right">690</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">690</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">695</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">732</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ560"></a>WHQ560 - Skipped meals to lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ560</dd>
+            <dt>SAS Label: </dt>
+            <dd>Skipped meals to lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past year, how often have you skipped meals to lose weight?  Would you say . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">never,</td>
+                <td class="values" align="right">425</td>
+                <td class="values" align="right">425</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">sometimes, or</td>
+                <td class="values" align="right">229</td>
+                <td class="values" align="right">654</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">a lot?</td>
+                <td class="values" align="right">37</td>
+                <td class="values" align="right">691</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">691</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">695</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">732</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ570"></a>WHQ570 - Exercised to lose weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ570</dd>
+            <dt>SAS Label: </dt>
+            <dd>Exercised to lose weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past year, how often have you exercised to lose weight?  Would you say . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">never,</td>
+                <td class="values" align="right">44</td>
+                <td class="values" align="right">44</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">sometimes, or</td>
+                <td class="values" align="right">352</td>
+                <td class="values" align="right">396</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">a lot?</td>
+                <td class="values" align="right">296</td>
+                <td class="values" align="right">692</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">692</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">695</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">732</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WHQ580"></a>WHQ580 - Eaten less sweets or fatty foods</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WHQ580</dd>
+            <dt>SAS Label: </dt>
+            <dd>Eaten less sweets or fatty foods</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past year, how often have you eaten less sweets or fatty foods to lose weight?  Would you say . . .</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>8 YEARS - 15 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">never,</td>
+                <td class="values" align="right">127</td>
+                <td class="values" align="right">127</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">sometimes, or</td>
+                <td class="values" align="right">441</td>
+                <td class="values" align="right">568</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">a lot?</td>
+                <td class="values" align="right">122</td>
+                <td class="values" align="right">690</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">690</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">695</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">732</td>
+                <td class="values" align="right">1427</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

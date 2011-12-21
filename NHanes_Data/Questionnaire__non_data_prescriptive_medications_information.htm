@@ -1,0 +1,2952 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                    BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                    BORDER-TOP-STYLE: none;
+                    BORDER-RIGHT-STYLE: none;
+                    BORDER-LEFT-STYLE: none;
+                    TEXT-ALIGN: left;
+                    BORDER-BOTTOM-STYLE: none;
+                    }
+
+                    H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    MARGIN-TOP: 0px;
+                    FONT-WEIGHT: normal;
+                    FONT-SIZE: 2em;
+                    PADDING-BOTTOM: 10px;
+                    COLOR: #0c5205
+                    }
+
+                    H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    FONT-WEIGHT: normal;
+                    FONT-SIZE: 1.6em;
+                    COLOR: #0c5205
+                    }
+
+                    H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    FONT-WEIGHT: normal;
+                    FONT-SIZE: 1.5em;
+                    COLOR: #000
+                    }
+
+                    H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                    FONT-WEIGHT: bold;
+                    FONT-SIZE: 1.3em;
+                    COLOR: #000
+                    }
+
+                    H5 {	FONT-WEIGHT: bold;
+                    FONT-SIZE: 1em;
+                    COLOR: #000;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                    }
+
+                    H5.specialnote {	FONT-WEIGHT: bold;
+                    FONT-STYLE: italic;
+                    FONT-SIZE: 1.2em;
+                    COLOR: #000;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    }
+
+                    A {COLOR:#0a29a5;
+                    TEXT-DECORATION: none}
+
+                    P {	FONT-SIZE: 1em;
+                    PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN: 0px 3em 1em;
+                    LINE-HEIGHT: 1.33em;
+                    TEXT-ALIGN: left;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    }
+
+                    UL {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN: 0px 3.5em 1em;
+                    LIST-STYLE-TYPE: disc
+                    }
+
+                    UL LI {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN-LEFT: 1.5em;
+                    MARGIN-TOP: 0.7em;
+                    MARGIN-BOTTOM: 0.7em
+                    }
+
+                    OL {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    MARGIN: 0px;
+                    PADDING-TOP: 0px;
+                    PADDING-LEFT: 2em;
+                    OVERFLOW: hidden;
+                    LIST-STYLE-TYPE: decimal
+                    }
+
+                    OL LI {	PADDING-RIGHT: 0px;
+                    PADDING-LEFT: 0px;
+                    PADDING-BOTTOM: 0px;
+                    PADDING-TOP: 0px;
+                    MARGIN-LEFT: 1.5em;
+                    MARGIN-TOP: 0.7em;
+                    MARGIN-BOTTOM: 0.7em
+                    }
+
+                    TABLE {	BORDER-RIGHT: #000 1px solid;
+                    PADDING-RIGHT: 2px;
+                    BORDER-TOP: #000 1px solid;
+                    PADDING-LEFT: 2px;
+                    PADDING-BOTTOM: 2px;
+                    BORDER-LEFT: #000 1px solid;
+                    PADDING-TOP: 2px;
+                    BORDER-BOTTOM: #000 1px solid;
+                    MAX-WIDTH: 600px;
+                    MARGIN: 0px auto 1em;
+                    BORDER-COLLAPSE: collapse;
+                    TABLE-LAYOUT: auto;
+                    page-break-inside: avoid;
+                    }
+
+                    th {	BORDER: #000 1px solid;
+                    PADDING: 5px;
+                    VERTICAL-ALIGN: bottom;
+                    TEXT-ALIGN: center;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    background: #f4f4e1; /*#f4f4e1*/
+                    }
+
+                    TD {	BORDER: #000 1px solid;
+                    PADDING-RIGHT: 5px;
+                    PADDING-LEFT: 5px;
+                    PADDING-BOTTOM: 5px;
+                    VERTICAL-ALIGN: top;
+                    PADDING-TOP: 5px;
+                    TEXT-ALIGN: left;
+                    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                    }
+
+                    td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                    }
+
+                    TABLE CAPTION {	FONT-WEIGHT: normal;
+                    FONT-SIZE: 1.6em;
+                    PADDING-BOTTOM: 0.5em;
+                    FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                    }
+
+
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                    page-break-after:always
+                    }
+                    div#wrapper {width: 650px;}
+
+                    div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                    div#toc h3 {background-color:#f4f4e1; padding:3px}
+                    div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                    div#PageHeader {width: 650px;
+                    border-bottom: thin solid #999;}
+                    div#Sections {width: 650px;}
+                    div#Codebook {width: 650px;}
+                    div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                    div#Codebook dt {width: 140px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                    div#Codebook dd {float: left;width: 430px;margin: 0 0 0 0;padding: .5em;}
+                    div#References {width: 650px;page-break-after: always}
+                    table.info {width:600px;
+                    display:block;
+                    border: 3px;
+                    inset: #000000;
+                    position: relative;
+                    left: 20px;
+                    margin-bottom: 20px;
+                    page-break-inside: avoid;
+                    }
+                    table.values   {width:600px;
+                    display:block;
+                    border: 2px;
+                    inset: #000000;
+                    position: relative;
+                    left: 20px;
+                    margin-bottom: 20px;
+                    page-break-inside: avoid;
+                    }
+
+                    .pagebreak {display: block;
+                    page-break-after: always;
+                    page-break-inside: avoid;}
+                    .pagebreak H3 {background-color: #c1d5b0
+                    }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Prescription Medications – Drug Information" />
+    <meta name="DC.Subject" content="NHANES 1988-2008: Prescription Medications – Drug Information Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  1988-2008 Questionnaire page" href="http://www.cdc.gov/nchs/nhanes/1988-2008/nhanes88_08.htm">
+      <title>
+                        NHANES 1988 - 2008: Prescription Medications – Drug Information Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="RXQ_DRUG.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="RXQ_DRUG.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="RXQ_DRUG.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul />
+          </div>
+        </li>
+        <li>
+          <a href="RXQ_DRUG.htm#Appendix_1:_Multum_Lexicon_End-User_License_Agreement">Appendix 1: Multum Lexicon End-User License Agreement</a>
+        </li>
+        <li>
+          <a href="RXQ_DRUG.htm#Appendix_2:_Multum_Lexicon_Therapeutic_Classification_Scheme">Appendix 2: Multum Lexicon Therapeutic Classification Scheme</a>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>1988 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Prescription Medications – Drug Information (RXQ_DRUG)
+            </h3>
+        <h4>
+                Data File: RXQ_DRUG.xpt
+            </h4>
+        <h5 class="left">
+                First Published: August, 2007</h5>
+        <h5 class="right">
+                Last Revised:  April, 2010</h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Prescription Medications – Drug Information
+                (RXQ_DRUG
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>1988
+                - 2008<br><b>First Published: </b>August, 2007<br><b>Revised: </b>April, 2010<br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>The Drug Information File provides the therapeutic drug classes associated with each drug and ingredient reported by a survey participant in the Prescription Medication Subsection of the Household Interview.<br><b>Record Source: </b>NHANES 1988
+                - 2008<br><b>Survey Methodology: </b>NHANES 1988
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>The Drug Information File contains additional data on the prescription drug(s) reported by a survey participant in the Prescription Medication Subsection of the Household Interview. Specifically, it provides the therapeutic drug classes associated with each drug and ingredient. </p>
+<p>NCHS used the Lexicon Plus®, a proprietary database of Cerner Multum, Inc. to assist with data collection, data editing and release. The Lexicon Plus is a comprehensive database of all prescription and some nonprescription drug products available in the U.S. drug market. Multum distributes the Lexicon Plus in Microsoft Access format and posts regular updates on its website. </p>
+<p>In accordance with Multum’s license agreement (Appendix 1), NCHS publications, tabulations, and software applications should cite the Multum Lexicon as the source and basis for the coding and classification of the NHANES drug data. </p>
+<p>For additional information on the Multum Lexicon Drug Database, please refer to the following Web site: <a href="http://www.multum.com/Lexicon.htm">http://www.multum.com/Lexicon.htm</a>. </p>
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>The December 2007 Multum Lexicon database was used for processing and editing the 2007-2008 prescription drug data and creating the RXQ_RX_E and RXQ_DRUG data release files. </p>
+<p><span style="text-decoration: underline;"><strong>RXDDRUG:</strong> Generic drug name</span></p>
+<p>All reported drug names were converted to a standard generic drug name for data release. For multi-ingredient products, the ingredients are listed in alphabetical order (i.e., Acetaminophen; Codeine).</p>
+<p>In some cases, medications were reported with insufficient detail to accurately identify the exact product. But there was still some information provided about the therapeutic class of the drug. These products have been released with the Multum Lexicon’s therapeutic category name followed by “- unspecified” (e.g., anti-infective-unspecified, hormones-unspecified).</p>
+<p><span style="text-decoration: underline;"><strong>RXDDRGID:</strong> Generic drug code</span></p>
+<p>Each generic drug name is associated with a unique generic drug code from Multum’s Lexicon Drug Database. There were some drug names reported by NHANES’ participants that were not found in the Drug Database. These have been assigned unique drug codes beginning with an “a” or “h”. Unspecified products with known therapeutic action have drug codes beginning with a “c” and are followed by their respective Multum therapeutic category code.</p>
+<p><span style="text-decoration: underline;"><strong>RXDINGFL:</strong> Single/Multiple ingredient drug</span></p>
+<p>This variable identifies whether the drug is composed of a single ingredient or multiple ingredients. RXDINGFL equals zero for “unspecified” drugs.</p>
+<p><span style="text-decoration: underline;"><strong>RXDDCI1A - RXDDCI4C:</strong> Multum drug therapeutic category id</span></p>
+<p><span style="text-decoration: underline;"><strong>RXDDCN1A - RXDDCN4C:</strong> Multum drug therapeutic category names <br />
+</span><br />
+Beginning the 2003-2004 data release, NCHS has used Multum’s therapeutic classification system (Appendix 2) to process the prescription medication questionnaire data. Past date releases have been updated using Multum’s therapeutic classification system.</p>
+<p>The Multum Lexicon provides a 3-level nested category system (refer to data file: RXQ_DRUG) that assigns a therapeutic classification to each drug and each ingredient of the drug (e.g., for naproxen: central nervous system agents [level 1]; analgesics [level 2]; nonsteroidal anti-inflammatory agents [level 3]). Not all drugs have 3 classification levels; some may only have 2 [e.g. for digoxin: cardiovascular agents [level 1]; inotropic agents [level 2]). Others only have one classification level.</p>
+<p>The variables RXDDCI1A to RXDDCI4C record the unique Multum drug category id, which is a numeric value from 1 to 362. The variables RXDDCN1A to RXDDCN4C record the corresponding Multum drug category name, which is a text entry. Variable names ending in ‘A’ are associated with level 1 therapeutic categories, those ending in ‘B’ are associated with level 2, and those ending in ‘C’ are associated with level 3.</p>
+<p>A drug may have up to four drug therapeutic categories. All drugs were assigned into a Multum drug category, even those drugs not found in Multum’s drug database. “Unspecified” drugs were assigned to their respective therapeutic category (e.g., hormones – unspecified: category id=97, category name=hormones). “Unknown” drugs (RXDDRUG=55555) were not assigned a therapeutic drug category.</p>
+<p><span style="text-decoration: underline;"><strong>RXDICI1A – RXDICI6C:</strong> Multum ingredient therapeutic category id</span></p>
+<p><span style="text-decoration: underline;"><strong>RXDICN1A – RXDICN6C:</strong> Multum ingredient therapeutic category names</span></p>
+<p>Multum uses a “combination” category for some multiple ingredient drugs. These include antihypertensive combinations, antiasthmatic combinations, upper respiratory combinations, psychotherapeutic combinations, bronchodilator combinations, sex hormone combinations, skeletal muscle relaxant combinations, and narcotic analgesic combinations. This categorization may be sufficient for certain analyses but not for others because it lacks information about the therapeutic effect of the individual ingredients that make up the combination. For example, the drug HYDROCHLOROTHIAZIDE; LOSARTAN is identified as an antihypertensive combination. Therefore, we know that this drug has an antihypertensive drug effect. However, based on this combination category we do not know that the drug’s single ingredients have the therapeutic effects of a diuretic and angiotensin II inhibitor, which is relevant for some analyses. As a result of this unique Multum combination therapeutic category, NCHS decided that, in addition to assigning therapeutic categories to each drug, each drug would also be assigned to the therapeutic categories of its ingredients. In the case of single ingredient drugs, the ingredient therapeutic categories would be the same as the drug therapeutic categories.</p>
+<p>This file provides up to 6 therapeutic ingredient categories for a drug based upon the unique ingredients that make up the drug. It is important to note that the file does not distinguish the therapeutic category of each ingredient. That is, the drug HYDROCHLOROTHIAZIDE; LOSARTAN has one drug therapeutic category (antihypertensive combination) and two ingredient therapeutic categories (diuretic and angiotensin II inhibitor). We do not specify that HYDROCHLOROTHIAZIDE is the diuretic and LOSARTAN is the angiotensin II inhibitor.</p>
+<p>The variables RXDICI1A to RXDICI6C record the unique Multum ingredient therapeutic category id, which is a numeric value from 1 to 362. The variables RXDICN1A to RXDICN6C record the corresponding Multum ingredient therapeutic category name, which is a text entry.</p>
+<p>Variable names ending in ‘A’ are associated with level 1 therapeutic categories, those ending in ‘B’ are associated with level 2, and those ending in ‘C’ are associated with level 3.</p>
+<p><strong>Data File Structure</strong></p>
+<p>The RXQ_DRUG file may be linked to the file on participants’ use of prescription drugs, RXQ_RX_E, by the variable RXDDRGID.</p>
+<p>Currently, RXQ_DRUG contains information on all drugs reported. New drugs will be appended as they are reported in future data releases. It contains drug (up to 4) and ingredient (up to 6) therapeutic category codes for each drug. It also has a variable that identifies if the drug is made up of a single or multiple ingredients. </p>
+<p>
+<table bordercolor="#000000" border="1">
+    <caption valign="top" align="left"><strong>Layout of RXQ_DRUG</strong></caption>
+    <thead>
+        <tr>
+            <th>Position</th>
+            <th>Variable Name</th>
+            <th>Type</th>
+            <th>Length</th>
+            <th>Label</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>RXDDRGID</td>
+            <td>Char</td>
+            <td>6</td>
+            <td>GENERIC DRUG CODE</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>RXDDRUG</td>
+            <td>Char</td>
+            <td>114</td>
+            <td>GENERIC DRUG NAME</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>RXDINGFL</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>SINGLE/MULTIPLE INGREDIENT DRUG</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0=Unspecified drug</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1=Single ingredient drug</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>2=Multiple ingredient drug</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>RXDDCI1A</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 1, LEV 1</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>RXDDCI1B</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 1, LEV 2</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>RXDDCI1C</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 1, LEV 3</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>RXDDCI2A</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 2, LEV 1</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>RXDDCI2B</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 2, LEV 2</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>RXDDCI2C</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 2, LEV 3</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>RXDDCI3A</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 3, LEV 1</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>RXDDCI3B</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 3, LEV 2</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>RXDDCI3C</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 3, LEV 3</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>RXDDCI4A</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 4, LEV 1</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>RXDDCI4B</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 4, LEV 2</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>RXDDCI4C</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>DRUG CATEGORY ID - CAT 4, LEV 3</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>RXDICI1A</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 1, LEV 1</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>RXDICI1B</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 1, LEV 2</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>RXDICI1C</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 1, LEV 3</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>RXDICI2A</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 2, LEV 1</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>RXDICI2B</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 2, LEV 2</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>RXDICI2C</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 2, LEV 3</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>RXDICI3A</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 3, LEV 1</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>RXDICI3B</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 3, LEV 2</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>RXDICI3C</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 3, LEV 3</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>RXDICI4A</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 4, LEV 1</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>RXDICI4B</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 4, LEV 2</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>RXDICI4C</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 4, LEV 3</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>RXDICI5A</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 5, LEV 1</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>RXDICI5B</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 5, LEV 2</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>RXDICI5C</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 5, LEV 3</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>RXDICI6A</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 6, LEV 1</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>RXDICI6B</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 6, LEV 2</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>RXDICI6C</td>
+            <td>Num</td>
+            <td>8</td>
+            <td>INGREDIENT CATEGORY ID - CAT 6, LEV 3</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>RXDDCN1A</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 1, LEV 1</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>RXDDCN1B</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 1, LEV 2</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>RXDDCN1C</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 1, LEV 3</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>RXDDCN2A</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 2, LEV 1</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>RXDDCN2B</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 2, LEV 2</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>RXDDCN2C</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 2, LEV 3</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>RXDDCN3A</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 3, LEV 1</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>RXDDCN3B</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 3, LEV 2</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>RXDDCN3C</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 3, LEV 3</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>RXDDCN4A</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 4, LEV 1</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>RXDDCN4B</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 4, LEV 2</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>RXDDCN4C</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>DRUG CATEGORY NAME - CAT 4, LEV 3</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>RXDICN1A</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 1, LEV 1</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>RXDICN1B</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 1, LEV 2</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>RXDICN1C</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 1, LEV 3</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>RXDICN2A</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 2, LEV 1</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>RXDICN2B</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 2, LEV 2</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>RXDICN2C</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 2, LEV 3</td>
+        </tr>
+        <tr>
+            <td>52</td>
+            <td>RXDICN3A</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 3, LEV 1</td>
+        </tr>
+        <tr>
+            <td>53</td>
+            <td>RXDICN3B</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 3, LEV 2</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td>RXDICN3C</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 3, LEV 3</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>RXDICN4A</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 4, LEV 1</td>
+        </tr>
+        <tr>
+            <td>56</td>
+            <td>RXDICN4B</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 4, LEV 2</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>RXDICN4C</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 4, LEV 3</td>
+        </tr>
+        <tr>
+            <td>58</td>
+            <td>RXDICN5A</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 5, LEV 1</td>
+        </tr>
+        <tr>
+            <td>59</td>
+            <td>RXDICN5B</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 5, LEV 2</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>RXDICN5C</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 5, LEV 3</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td>RXDICN6A</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 6, LEV 1</td>
+        </tr>
+        <tr>
+            <td>62</td>
+            <td>RXDICN6B</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 6, LEV 2</td>
+        </tr>
+        <tr>
+            <td>63</td>
+            <td>RXDICN6C</td>
+            <td>Char</td>
+            <td>60</td>
+            <td>INGREDIENT CATEGORY NAME - CAT 6, LEV 3</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>When using the therapeutic categories, it is important to remember that the drug therapeutic category variables (RXDDCIXX or RXDDCNXX) identify the therapeutic effect(s) of the drug, as a whole. The ingredient therapeutic category variables (RXDICIXX or RXDICNXX) identify the therapeutic effect(s) of the ingredients that make up the drug. Analysts should use the categorization that is appropriate for their analyses.</p>
+<p>Analysts should be aware of the &#8220;topical agents&#8221; therapeutic category (code=133), which includes some anti-infectives, steroids, and respiratory agents that are designated as topical, ophthalmic, otic, and nasal products. Refer to data file, RXQ_DRUG, for the Multum therapeutic classification scheme. Analyst should also be aware of &#8220;combination&#8221; therapeutic categories, as mentioned above.</p>
+<p>The drug information file is updated along with each cycle of prescription medication data release. Analyst should use the last revised version for the therapeutic classification. </p>
+<p>&nbsp;</p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+      </div>
+      <div id="Appendices" xmlns=""><a name="Appendix_1:_Multum_Lexicon_End-User_License_Agreement"></a><h2>Appendix 1: Multum Lexicon End-User License Agreement</h2><p>1. Introduction</p>
+<p>A. This License Agreement (the "License") applies to the Multum Lexicon database (the "Database"). This License does not apply to any other products or services of Cerner Multum, Inc. ("Multum"). A "work based on the Database" means either the Database or any derivative work under copyright law; i.e., a work containing the Database or a substantial portion of it, either verbatim or with modifications. A translation of the Database is included without limitation in the term "modification". Each end-user/licensee is addressed herein as "you". </p>
+<p>B. Your use of the Database acknowledges acceptance of these restrictions, disclaimers, and limitations. You expressly acknowledge and agree that Multum is not responsible for the results of your decisions resulting from the use of the Database, including, but not limited to, your choosing to seek or not to seek professional medical care, or from choosing or not choosing specific treatment based on the Database. </p>
+<p>C. Every effort has been made to ensure that the information provided in the Database is accurate, up-to-date, and complete, but no guarantee is made to that effect. In addition, the drug information contained herein may be time sensitive. </p>
+<p>D. Multum does not assume any responsibility for any aspect of healthcare administered or not administered with the aid of information the Database provides. </p>
+<p>2. Terms and Conditions for Copying, Distribution and Modification </p>
+<p>A. You may copy and distribute verbatim copies of the Database as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Database a copy of this License (the readme.txt file) along with the Database and anything else that is part of the package, which should be identified. </p>
+<p>B. You may modify your copy or copies of the Database or any portion of it to form a derivative work, and copy and distribute such modifications or work under the terms of Section 2.A. above, provided that you also meet all of these conditions: </p>
+<p>i) You must cause the modified files to carry prominent notices stating that they are derived from the Multum Lexicon database from Cerner Multum, Inc. and that you changed the files and the date of any change(s). </p>
+<p>ii) If you incorporate modified files into a computer program, you must cause it, when started running for interactive use in the most ordinary way, to print or display an announcement including an appropriate copyright notice, a notice that you have modified the Multum Lexicon database from Cerner Multum, Inc., and a notice that there is no warranty (or that you provide the warranty) and telling the user how to view a copy of this License.</p>
+<p>C. It is not the intent of this section to claim rights or contest your rights to work written entirely by you; rather, the intent is to exercise the right to control the distribution of derivative or collective works based on the Database. </p>
+<p>D. You may copy and distribute the Database (or a work based on it, under Section 2.B.) in an encoded form under the terms of Sections 2.A. and 2.B. above provided that you also do one of the following: </p>
+<p>i) Accompany it with the complete corresponding machine-readable plain text, which must be distributed under the terms of Sections 2.A and 2.B. above on a medium customarily used for software interchange; or,</p>
+<p>ii) Accompany it with a written offer to give any third party, for no charge, a complete machine-readable copy of the Database (and the entirety of your derivative work based on it, under Section 2.B.), to be distributed under the terms of Sections 2.A. and 2.B. above on a medium customarily used for software interchange. </p>
+<p>E. You may not copy, modify, sublicense, or distribute the Database except as expressly provided under this License. Any attempt otherwise to copy, modify, sublicense or distribute the Database will automatically terminate your rights under this License. However, parties who have received copies, or rights, from you under this License will not have their licenses terminated so long as such parties remain in full compliance. </p>
+<p>F. You are not required to accept this License. However, nothing else grants you permission to copy, modify or distribute the Database or its derivative works. These actions are prohibited by law if you do not accept this License. Therefore, by copying, modifying or distributing the Database (or any work based on the Database), you indicate your acceptance of this License to do so, and all its terms and conditions for copying, distributing or modifying the Database or works based on it. </p>
+<p>G. Each time you redistribute the Database (or any work based on the Database), the recipient automatically receives a license from Multum to copy, distribute or modify the Database subject to these terms and conditions. You may not impose any further restrictions on the recipients' exercise of the rights granted herein. You are not responsible for enforcing compliance by third parties to this License. </p>
+<p>3. Disclaimer of Warranties; Limitation of Damages </p>
+<p>A. BECAUSE THE DATABASE IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE PROGRAM OR DATA, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING. MULTUM AND/OR OTHER PARTIES PROVIDE THE DATABASE "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED, STATUTORY OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE DATABASE IS WITH YOU. SHOULD THE DATABASE PROVE DEFECTIVE, INCOMPLETE, OR INACCURATE, YOU ASSUME THE RESPONSIBILITY AND COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. </p>
+<p>B. IN NO EVENT (UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING) WILL MULTUM, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE DATABASE AS PERMITTED ABOVE, BE LIABLE FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR INDIRECT DAMAGES, INCLUDING DAMAGES FOR LOSS OF PROFITS, LOSS OF BUSINESS, OR DOWN TIME, EVEN IF MULTUM OR ANY OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. </p>
+<p>C. IN ADDITION, WITHOUT LIMITING THE FOREGOING, THE DATABASE HAS BEEN DESIGNED FOR USE IN THE UNITED STATES ONLY AND COVERS THE DRUG PRODUCTS USED IN PRACTICE IN THE UNITED STATES. MULTUM PROVIDES NO CLINICAL INFORMATION OR CHECKS FOR DRUGS NOT AVAILABLE FOR SALE IN THE UNITED STATES AND CLINICAL PRACTICE PATTERNS OUTSIDE THE UNITED STATES MAY DIFFER SUBSTANTIALLY FROM INFORMATION SUPPLIED BY THE DATABASE. MULTUM DOES NOT WARRANT THAT USES OUTSIDE THE UNITED STATES ARE APPROPRIATE. </p>
+<p>D. You acknowledge that updates to the Database are at the sole discretion of Multum. Multum makes no representations or warranties whatsoever, express or implied, with respect to the compatibility of the Database, or future releases thereof, with any computer hardware or software, nor does Multum represent or warrant the continuity of the features or the facilities provided by or through the Database as between various releases thereof. </p>
+<p>E. Any warranties expressly provided herein do not apply if: (i) the end-user alters, mishandles or improperly uses, stores or installs all, or any part, of the Database, (ii) the end-user uses, stores or installs the Database on a computer system which fails to meet the specifications provided by Multum, or (iii) the breach of warranty arises out of or in connection with acts or omissions of persons other than Multum. </p>
+<p>4. Assumption of Risk, Disclaimer of Liability, Indemnity </p>
+<p>A. THE END-USER ASSUMES ALL RISK FOR SELECTION AND USE OF THE DATABASE AND CONTENT PROVIDED THEREON. MULTUM SHALL NOT BE RESPONSIBLE FOR ANY ERRORS, MISSTATEMENTS, INACCURACIES OR OMISSIONS REGARDING CONTENT DELIVERED THROUGH THE DATABASE OR ANY DELAYS IN OR INTERRUPTIONS OF SUCH DELIVERY. </p>
+<p>B. THE END-USER ACKNOWLEDGES THAT MULTUM: (A) HAS NO CONTROL OF OR RESPONSIBILITY FOR THE END-USER'S USE OF THE DATABASE OR CONTENT PROVIDED THEREON, (B) HAS NO KNOWLEDGE OF THE SPECIFIC OR UNIQUE CIRCUMSTANCES UNDER WHICH THE DATABASE OR CONTENT PROVIDED THEREON MAY BE USED BY THE END-USER, (C) UNDERTAKES NO OBLIGATION TO SUPPLEMENT OR UPDATE CONTENT OF THE DATABASE, AND (D) HAS NO LIABILITY TO ANY PERSON FOR ANY DATA OR INFORMATION INPUT ON THE DATABASE BY PERSONS OTHER THAN MULTUM. </p>
+<p>C. MULTUM SHALL NOT BE LIABLE TO ANY PERSON (INCLUDING BUT NOT LIMITED TO THE END-USER AND PERSONS TREATED BY OR ON BEHALF OF THE END-USER) FOR, AND THE END-USER AGREES TO INDEMNIFY AND HOLD MULTUM HARMLESS FROM ANY CLAIMS, LAWSUITS, PROCEEDINGS, COSTS, ATTORNEYS' FEES, DAMAGES OR OTHER LOSSES (COLLECTIVELY, "LOSSES") ARISING OUT OF OR RELATING TO (A) THE END-USER'S USE OF THE DATABASE OR CONTENT PROVIDED THEREON OR ANY EQUIPMENT FURNISHED IN CONNECTION THEREWITH AND (B) ANY DATA OR INFORMATION INPUT ON THE DATABASE BY END-USER, IN ALL CASES INCLUDING BUT NOT LIMITED TO LOSSES FOR TORT, PERSONAL INJURY, MEDICAL MALPRACTICE OR PRODUCT LIABILITY. </p>
+<p>5. Miscellaneous </p>
+<p>A. You warrant that you have authority within the organization you identified during registration for the Database to enter into license agreements with other organizations including Multum. </p>
+<p>B. You agree that Multum may identify you and/or your organization by name as a "licensee", "licensed user", or "licensing organization" of the Database or a "client" of Multum in Multum's external market communications. You also agree that Multum may issue, if it desires, a press release stating that you and/or your organization have licensed the Database. </p>
+<p>C. If conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot distribute so as to satisfy simultaneously your obligations under this License and any other obligations, then as a consequence you may not distribute the Database at all. </p>
+<p>D. If any portion of this License is held invalid or unenforceable under any particular circumstance, the balance of this License is intended to apply and the License as a whole is intended to apply in other circumstances. </p>
+<p>E. If the distribution and/or use of the Database is or becomes restricted in certain countries either by patents or by copyrighted interfaces, Multum may add an explicit geographical distribution limitation excluding those countries, so that distribution is permitted only in or among countries not thus excluded. In such case, this License incorporates the limitation as if written in the body of this License. </p>
+<p>Multum Lexicon <br />
+Copyright (c) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 <br />
+Cerner Multum, Inc. <br />
+2000 South Colorado Blvd, Suite 11000 <br />
+Denver, Colorado 80222 <br />
+Document revised Jan 03, 2007 </p>
+<a name="Appendix_2:_Multum_Lexicon_Therapeutic_Classification_Scheme"></a><h2>Appendix 2: Multum Lexicon Therapeutic Classification Scheme</h2><table bordercolor="#000000" border="1">
+    <caption valign="top" align="left"></caption>
+    <thead>
+        <tr>
+            <th>First Level Category ID</th>
+            <th>First Level Category Name</th>
+            <th>Second Level Category ID</th>
+            <th>Second Level Category Name</th>
+            <th>Third Level Category ID</th>
+            <th>Third Level Category Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>2</td>
+            <td>AMEBICIDES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>3</td>
+            <td>ANTHELMINTICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>4</td>
+            <td>ANTIFUNGALS</td>
+            <td>235</td>
+            <td>POLYENES</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>4</td>
+            <td>ANTIFUNGALS</td>
+            <td>236</td>
+            <td>AZOLE ANTIFUNGALS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>4</td>
+            <td>ANTIFUNGALS</td>
+            <td>237</td>
+            <td>MISCELLANEOUS ANTIFUNGALS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>5</td>
+            <td>ANTIMALARIAL AGENTS</td>
+            <td>238</td>
+            <td>ANTIMALARIAL QUINOLINES</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>5</td>
+            <td>ANTIMALARIAL AGENTS</td>
+            <td>239</td>
+            <td>MISCELLANEOUS ANTIMALARIALS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>5</td>
+            <td>ANTIMALARIAL AGENTS</td>
+            <td>328</td>
+            <td>ANTIMALARIAL COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>6</td>
+            <td>ANTITUBERCULOSIS AGENTS</td>
+            <td>231</td>
+            <td>NICOTINIC ACID DERIVATIVES</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>6</td>
+            <td>ANTITUBERCULOSIS AGENTS</td>
+            <td>232</td>
+            <td>RIFAMYCIN DERIVATIVES</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>6</td>
+            <td>ANTITUBERCULOSIS AGENTS</td>
+            <td>234</td>
+            <td>MISCELLANEOUS ANTITUBERCULOSIS AGENTS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>6</td>
+            <td>ANTITUBERCULOSIS AGENTS</td>
+            <td>329</td>
+            <td>ANTITUBERCULOSIS COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>7</td>
+            <td>ANTIVIRAL AGENTS</td>
+            <td>175</td>
+            <td>PROTEASE INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>7</td>
+            <td>ANTIVIRAL AGENTS</td>
+            <td>176</td>
+            <td>NRTIS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>7</td>
+            <td>ANTIVIRAL AGENTS</td>
+            <td>177</td>
+            <td>MISCELLANEOUS ANTIVIRALS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>7</td>
+            <td>ANTIVIRAL AGENTS</td>
+            <td>227</td>
+            <td>NNRTIS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>7</td>
+            <td>ANTIVIRAL AGENTS</td>
+            <td>228</td>
+            <td>ADAMANTANE ANTIVIRALS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>7</td>
+            <td>ANTIVIRAL AGENTS</td>
+            <td>229</td>
+            <td>PURINE NUCLEOSIDES</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>7</td>
+            <td>ANTIVIRAL AGENTS</td>
+            <td>281</td>
+            <td>NEURAMINIDASE INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>7</td>
+            <td>ANTIVIRAL AGENTS</td>
+            <td>327</td>
+            <td>ANTIVIRAL COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>7</td>
+            <td>ANTIVIRAL AGENTS</td>
+            <td>330</td>
+            <td>ANTIVIRAL INTERFERONS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>9</td>
+            <td>CEPHALOSPORINS</td>
+            <td>159</td>
+            <td>FIRST GENERATION CEPHALOSPORINS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>9</td>
+            <td>CEPHALOSPORINS</td>
+            <td>160</td>
+            <td>SECOND GENERATION CEPHALOSPORINS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>9</td>
+            <td>CEPHALOSPORINS</td>
+            <td>161</td>
+            <td>THIRD GENERATION CEPHALOSPORINS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>10</td>
+            <td>LEPROSTATICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>11</td>
+            <td>MACROLIDE DERIVATIVES</td>
+            <td>304</td>
+            <td>MACROLIDES</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>11</td>
+            <td>MACROLIDE DERIVATIVES</td>
+            <td>305</td>
+            <td>KETOLIDES</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>12</td>
+            <td>MISCELLANEOUS ANTIBIOTICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>13</td>
+            <td>PENICILLINS</td>
+            <td>222</td>
+            <td>PENICILLINASE RESISTANT PENICILLINS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>13</td>
+            <td>PENICILLINS</td>
+            <td>223</td>
+            <td>ANTIPSEUDOMONAL PENICILLINS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>13</td>
+            <td>PENICILLINS</td>
+            <td>224</td>
+            <td>AMINOPENICILLINS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>13</td>
+            <td>PENICILLINS</td>
+            <td>225</td>
+            <td>BETA-LACTAMASE INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>13</td>
+            <td>PENICILLINS</td>
+            <td>226</td>
+            <td>NATURAL PENICILLINS</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>14</td>
+            <td>QUINOLONES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>15</td>
+            <td>SULFONAMIDES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>16</td>
+            <td>TETRACYCLINES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>17</td>
+            <td>URINARY ANTI-INFECTIVES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>18</td>
+            <td>AMINOGLYCOSIDES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ANTI-INFECTIVES</td>
+            <td>240</td>
+            <td>LINCOMYCIN DERIVATIVES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>ANTINEOPLASTICS</td>
+            <td>21</td>
+            <td>ALKYLATING AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>ANTINEOPLASTICS</td>
+            <td>23</td>
+            <td>ANTIMETABOLITES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>ANTINEOPLASTICS</td>
+            <td>24</td>
+            <td>HORMONES/ANTINEOPLASTICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>ANTINEOPLASTICS</td>
+            <td>25</td>
+            <td>MISCELLANEOUS ANTINEOPLASTICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>ANTINEOPLASTICS</td>
+            <td>324</td>
+            <td>ANTINEOPLASTIC INTERFERONS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>ANTINEOPLASTICS</td>
+            <td>343</td>
+            <td>TYROSINE KINASE INHIBITORS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>BIOLOGICALS</td>
+            <td>32</td>
+            <td>COLONY STIMULATING FACTORS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>BIOLOGICALS</td>
+            <td>34</td>
+            <td>IN VIVO DIAGNOSTIC BIOLOGICALS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>BIOLOGICALS</td>
+            <td>36</td>
+            <td>RECOMBINANT HUMAN ERYTHROPOIETINS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>41</td>
+            <td>AGENTS FOR HYPERTENSIVE EMERGENCIES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>42</td>
+            <td>ANGIOTENSIN CONVERTING ENZYME INHIBITORS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>43</td>
+            <td>ANTIADRENERGIC AGENTS, PERIPHERALLY ACTING</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>44</td>
+            <td>ANTIADRENERGIC AGENTS, CENTRALLY ACTING</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>45</td>
+            <td>ANTIANGINAL AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>46</td>
+            <td>ANTIARRHYTHMIC AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>47</td>
+            <td>BETA-ADRENERGIC BLOCKING AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>47</td>
+            <td>BETA-ADRENERGIC BLOCKING AGENTS</td>
+            <td>274</td>
+            <td>CARDIOSELECTIVE BETA BLOCKERS</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>47</td>
+            <td>BETA-ADRENERGIC BLOCKING AGENTS</td>
+            <td>275</td>
+            <td>NON-CARDIOSELECTIVE BETA BLOCKERS</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>48</td>
+            <td>CALCIUM CHANNEL BLOCKING AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>49</td>
+            <td>DIURETICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>49</td>
+            <td>DIURETICS</td>
+            <td>154</td>
+            <td>LOOP DIURETICS</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>49</td>
+            <td>DIURETICS</td>
+            <td>155</td>
+            <td>POTASSIUM-SPARING DIURETICS</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>49</td>
+            <td>DIURETICS</td>
+            <td>156</td>
+            <td>THIAZIDE DIURETICS</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>49</td>
+            <td>DIURETICS</td>
+            <td>157</td>
+            <td>CARBONIC ANHYDRASE INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>49</td>
+            <td>DIURETICS</td>
+            <td>158</td>
+            <td>MISCELLANEOUS DIURETICS</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>50</td>
+            <td>INOTROPIC AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>51</td>
+            <td>MISCELLANEOUS CARDIOVASCULAR AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>52</td>
+            <td>PERIPHERAL VASODILATORS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>53</td>
+            <td>VASODILATORS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>54</td>
+            <td>VASOPRESSORS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>55</td>
+            <td>ANTIHYPERTENSIVE COMBINATIONS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>56</td>
+            <td>ANGIOTENSIN II INHIBITORS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>303</td>
+            <td>AGENTS FOR PULMONARY HYPERTENSION</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>340</td>
+            <td>ALDOSTERONE RECEPTOR ANTAGONISTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>CARDIOVASCULAR AGENTS</td>
+            <td>342</td>
+            <td>RENIN INHIBITORS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>58</td>
+            <td>ANALGESICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>58</td>
+            <td>ANALGESICS</td>
+            <td>59</td>
+            <td>MISCELLANEOUS ANALGESICS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>58</td>
+            <td>ANALGESICS</td>
+            <td>60</td>
+            <td>NARCOTIC ANALGESICS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>58</td>
+            <td>ANALGESICS</td>
+            <td>61</td>
+            <td>NONSTEROIDAL ANTI-INFLAMMATORY AGENTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>58</td>
+            <td>ANALGESICS</td>
+            <td>62</td>
+            <td>SALICYLATES</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>58</td>
+            <td>ANALGESICS</td>
+            <td>63</td>
+            <td>ANALGESIC COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>58</td>
+            <td>ANALGESICS</td>
+            <td>191</td>
+            <td>NARCOTIC ANALGESIC COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>58</td>
+            <td>ANALGESICS</td>
+            <td>193</td>
+            <td>ANTIMIGRAINE AGENTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>58</td>
+            <td>ANALGESICS</td>
+            <td>278</td>
+            <td>COX-2 INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>199</td>
+            <td>HYDANTOIN ANTICONVULSANTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>200</td>
+            <td>SUCCINIMIDE ANTICONVULSANTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>201</td>
+            <td>BARBITURATE ANTICONVULSANTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>203</td>
+            <td>BENZODIAZEPINE ANTICONVULSANTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>311</td>
+            <td>DIBENZAZEPINE ANTICONVULSANTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>345</td>
+            <td>FATTY ACID DERIVATIVE ANTICONVULSANTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>346</td>
+            <td>GAMMA-AMINOBUTYRIC ACID REUPTAKE INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>347</td>
+            <td>GAMMA-AMINOBUTYRIC ACID ANALOGS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>348</td>
+            <td>TRIAZINE ANTICONVULSANTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>350</td>
+            <td>PYRROLIDINE ANTICONVULSANTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>64</td>
+            <td>ANTICONVULSANTS</td>
+            <td>351</td>
+            <td>CARBONIC ANHYDRASE INHIBITOR ANTICONVULSANTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>65</td>
+            <td>ANTIEMETIC/ANTIVERTIGO AGENTS</td>
+            <td>195</td>
+            <td>5HT3 RECEPTOR ANTAGONISTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>65</td>
+            <td>ANTIEMETIC/ANTIVERTIGO AGENTS</td>
+            <td>196</td>
+            <td>PHENOTHIAZINE ANTIEMETICS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>65</td>
+            <td>ANTIEMETIC/ANTIVERTIGO AGENTS</td>
+            <td>197</td>
+            <td>ANTICHOLINERGIC ANTIEMETICS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>65</td>
+            <td>ANTIEMETIC/ANTIVERTIGO AGENTS</td>
+            <td>198</td>
+            <td>MISCELLANEOUS ANTIEMETICS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>66</td>
+            <td>ANTIPARKINSON AGENTS</td>
+            <td>205</td>
+            <td>ANTICHOLINERGIC ANTIPARKINSON AGENTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>66</td>
+            <td>ANTIPARKINSON AGENTS</td>
+            <td>276</td>
+            <td>DOPAMINERGIC ANTIPARKINSONISM AGENTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>67</td>
+            <td>ANXIOLYTICS, SEDATIVES, AND HYPNOTICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>67</td>
+            <td>ANXIOLYTICS, SEDATIVES, AND HYPNOTICS</td>
+            <td>68</td>
+            <td>BARBITURATES</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>67</td>
+            <td>ANXIOLYTICS, SEDATIVES, AND HYPNOTICS</td>
+            <td>69</td>
+            <td>BENZODIAZEPINES</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>67</td>
+            <td>ANXIOLYTICS, SEDATIVES, AND HYPNOTICS</td>
+            <td>70</td>
+            <td>MISCELLANEOUS ANXIOLYTICS, SEDATIVES AND HYPNOTICS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>71</td>
+            <td>CNS STIMULANTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>73</td>
+            <td>MUSCLE RELAXANTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>73</td>
+            <td>MUSCLE RELAXANTS</td>
+            <td>178</td>
+            <td>SKELETAL MUSCLE RELAXANTS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>73</td>
+            <td>MUSCLE RELAXANTS</td>
+            <td>179</td>
+            <td>SKELETAL MUSCLE RELAXANT COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>80</td>
+            <td>MISCELLANEOUS CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>253</td>
+            <td>ANOREXIANTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>312</td>
+            <td>CHOLINERGIC AGONISTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>CENTRAL NERVOUS SYSTEM AGENTS</td>
+            <td>313</td>
+            <td>CHOLINESTERASE INHIBITORS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>81</td>
+            <td>COAGULATION MODIFIERS</td>
+            <td>82</td>
+            <td>ANTICOAGULANTS</td>
+            <td>261</td>
+            <td>HEPARINS</td>
+        </tr>
+        <tr>
+            <td>81</td>
+            <td>COAGULATION MODIFIERS</td>
+            <td>82</td>
+            <td>ANTICOAGULANTS</td>
+            <td>262</td>
+            <td>COUMARINS AND INDANDIONES</td>
+        </tr>
+        <tr>
+            <td>81</td>
+            <td>COAGULATION MODIFIERS</td>
+            <td>83</td>
+            <td>ANTIPLATELET AGENTS</td>
+            <td>211</td>
+            <td>PLATELET AGGREGATION INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>81</td>
+            <td>COAGULATION MODIFIERS</td>
+            <td>85</td>
+            <td>MISCELLANEOUS COAGULATION MODIFIERS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>88</td>
+            <td>ANTACIDS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>90</td>
+            <td>ANTIDIARRHEALS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>91</td>
+            <td>DIGESTIVE ENZYMES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>92</td>
+            <td>GALLSTONE SOLUBILIZING AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>93</td>
+            <td>GI STIMULANTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>94</td>
+            <td>H2 ANTAGONISTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>95</td>
+            <td>LAXATIVES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>96</td>
+            <td>MISCELLANEOUS GI AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>272</td>
+            <td>PROTON PUMP INHIBITORS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>277</td>
+            <td>5-AMINOSALICYLATES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>354</td>
+            <td>H. PYLORI ERADICATION AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>355</td>
+            <td>FUNCTIONAL BOWEL DISORDER AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>355</td>
+            <td>FUNCTIONAL BOWEL DISORDER AGENTS</td>
+            <td>89</td>
+            <td>ANTICHOLINERGICS/ANTISPASMODICS</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>355</td>
+            <td>FUNCTIONAL BOWEL DISORDER AGENTS</td>
+            <td>356</td>
+            <td>SEROTONINERGIC NEUROENTERIC MODULATORS</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>GASTROINTESTINAL AGENTS</td>
+            <td>355</td>
+            <td>FUNCTIONAL BOWEL DISORDER AGENTS</td>
+            <td>362</td>
+            <td>CHLORIDE CHANNEL ACTIVATORS</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>98</td>
+            <td>ADRENAL CORTICAL STEROIDS</td>
+            <td>301</td>
+            <td>GLUCOCORTICOIDS</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>98</td>
+            <td>ADRENAL CORTICAL STEROIDS</td>
+            <td>302</td>
+            <td>MINERALOCORTICOIDS</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>100</td>
+            <td>MISCELLANEOUS HORMONES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>101</td>
+            <td>SEX HORMONES</td>
+            <td>102</td>
+            <td>CONTRACEPTIVES</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>101</td>
+            <td>SEX HORMONES</td>
+            <td>182</td>
+            <td>ANDROGENS AND ANABOLIC STEROIDS</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>101</td>
+            <td>SEX HORMONES</td>
+            <td>183</td>
+            <td>ESTROGENS</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>101</td>
+            <td>SEX HORMONES</td>
+            <td>185</td>
+            <td>PROGESTINS</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>101</td>
+            <td>SEX HORMONES</td>
+            <td>186</td>
+            <td>SEX HORMONE COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>101</td>
+            <td>SEX HORMONES</td>
+            <td>187</td>
+            <td>MISCELLANEOUS SEX HORMONES</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>101</td>
+            <td>SEX HORMONES</td>
+            <td>288</td>
+            <td>5-ALPHA-REDUCTASE INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>103</td>
+            <td>THYROID DRUGS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>217</td>
+            <td>BISPHOSPHONATES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td>HORMONES</td>
+            <td>295</td>
+            <td>GROWTH HORMONES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>106</td>
+            <td>ANTIDOTES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>107</td>
+            <td>CHELATING AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>108</td>
+            <td>CHOLINERGIC MUSCLE STIMULANTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>109</td>
+            <td>LOCAL INJECTABLE ANESTHETICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>110</td>
+            <td>MISCELLANEOUS UNCATEGORIZED AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>111</td>
+            <td>PSORALENS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>113</td>
+            <td>GENITOURINARY TRACT AGENTS</td>
+            <td>263</td>
+            <td>IMPOTENCE AGENTS</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>113</td>
+            <td>GENITOURINARY TRACT AGENTS</td>
+            <td>264</td>
+            <td>URINARY ANTISPASMODICS</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>113</td>
+            <td>GENITOURINARY TRACT AGENTS</td>
+            <td>265</td>
+            <td>URINARY PH MODIFIERS</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>113</td>
+            <td>GENITOURINARY TRACT AGENTS</td>
+            <td>266</td>
+            <td>MISCELLANEOUS GENITOURINARY TRACT AGENTS</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>192</td>
+            <td>ANTIRHEUMATICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>270</td>
+            <td>ANTIPSORIATICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>MISCELLANEOUS AGENTS</td>
+            <td>320</td>
+            <td>SMOKING CESSATION AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>115</td>
+            <td>NUTRITIONAL PRODUCTS</td>
+            <td>116</td>
+            <td>IRON PRODUCTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>115</td>
+            <td>NUTRITIONAL PRODUCTS</td>
+            <td>117</td>
+            <td>MINERALS AND ELECTROLYTES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>115</td>
+            <td>NUTRITIONAL PRODUCTS</td>
+            <td>119</td>
+            <td>VITAMINS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>115</td>
+            <td>NUTRITIONAL PRODUCTS</td>
+            <td>121</td>
+            <td>INTRAVENOUS NUTRITIONAL PRODUCTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>123</td>
+            <td>ANTIHISTAMINES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>124</td>
+            <td>ANTITUSSIVES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>125</td>
+            <td>BRONCHODILATORS</td>
+            <td>126</td>
+            <td>METHYLXANTHINES</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>125</td>
+            <td>BRONCHODILATORS</td>
+            <td>180</td>
+            <td>ADRENERGIC BRONCHODILATORS</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>125</td>
+            <td>BRONCHODILATORS</td>
+            <td>181</td>
+            <td>BRONCHODILATOR COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>125</td>
+            <td>BRONCHODILATORS</td>
+            <td>299</td>
+            <td>ANTICHOLINERGIC BRONCHODILATORS</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>127</td>
+            <td>DECONGESTANTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>128</td>
+            <td>EXPECTORANTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>129</td>
+            <td>MISCELLANEOUS RESPIRATORY AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>130</td>
+            <td>RESPIRATORY INHALANT PRODUCTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>130</td>
+            <td>RESPIRATORY INHALANT PRODUCTS</td>
+            <td>296</td>
+            <td>INHALED CORTICOSTEROIDS</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>130</td>
+            <td>RESPIRATORY INHALANT PRODUCTS</td>
+            <td>297</td>
+            <td>MUCOLYTICS</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>130</td>
+            <td>RESPIRATORY INHALANT PRODUCTS</td>
+            <td>298</td>
+            <td>MAST CELL STABILIZERS</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>131</td>
+            <td>ANTIASTHMATIC COMBINATIONS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>132</td>
+            <td>UPPER RESPIRATORY COMBINATIONS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td>RESPIRATORY AGENTS</td>
+            <td>243</td>
+            <td>LEUKOTRIENE MODIFIERS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>134</td>
+            <td>ANORECTAL PREPARATIONS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>135</td>
+            <td>ANTISEPTIC AND GERMICIDES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>137</td>
+            <td>TOPICAL ANTI-INFECTIVES</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>138</td>
+            <td>TOPICAL STEROIDS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>139</td>
+            <td>TOPICAL ANESTHETICS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>140</td>
+            <td>MISCELLANEOUS TOPICAL AGENTS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>141</td>
+            <td>TOPICAL STEROIDS WITH ANTI-INFECTIVES</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>143</td>
+            <td>TOPICAL ACNE AGENTS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>144</td>
+            <td>TOPICAL ANTIPSORIATICS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>248</td>
+            <td>TOPICAL EMOLLIENTS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>290</td>
+            <td>TOPICAL ANTIBIOTICS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>291</td>
+            <td>TOPICAL ANTIVIRALS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>136</td>
+            <td>DERMATOLOGICAL AGENTS</td>
+            <td>292</td>
+            <td>TOPICAL ANTIFUNGALS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>146</td>
+            <td>MOUTH AND THROAT PRODUCTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>163</td>
+            <td>OPHTHALMIC ANTI-INFECTIVES</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>164</td>
+            <td>OPHTHALMIC GLAUCOMA AGENTS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>165</td>
+            <td>OPHTHALMIC STEROIDS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>166</td>
+            <td>OPHTHALMIC STEROIDS WITH ANTI-INFECTIVES</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>167</td>
+            <td>OPHTHALMIC ANTI-INFLAMMATORY AGENTS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>168</td>
+            <td>OPHTHALMIC LUBRICANTS AND IRRIGATIONS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>169</td>
+            <td>MISCELLANEOUS OPHTHALMIC AGENTS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>267</td>
+            <td>OPHTHALMIC ANTIHISTAMINES AND DECONGESTANTS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>286</td>
+            <td>MYDRIATICS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>287</td>
+            <td>OPHTHALMIC ANESTHETICS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>147</td>
+            <td>OPHTHALMIC PREPARATIONS</td>
+            <td>321</td>
+            <td>OPHTHALMIC DIAGNOSTIC AGENTS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>148</td>
+            <td>OTIC PREPARATIONS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>148</td>
+            <td>OTIC PREPARATIONS</td>
+            <td>170</td>
+            <td>OTIC ANTI-INFECTIVES</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>148</td>
+            <td>OTIC PREPARATIONS</td>
+            <td>171</td>
+            <td>OTIC STEROIDS WITH ANTI-INFECTIVES</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>148</td>
+            <td>OTIC PREPARATIONS</td>
+            <td>172</td>
+            <td>MISCELLANEOUS OTIC AGENTS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>151</td>
+            <td>VAGINAL PREPARATIONS</td>
+            <td>268</td>
+            <td>VAGINAL ANTI-INFECTIVES</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>151</td>
+            <td>VAGINAL PREPARATIONS</td>
+            <td>269</td>
+            <td>MISCELLANEOUS VAGINAL AGENTS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>247</td>
+            <td>NASAL PREPARATIONS</td>
+            <td>245</td>
+            <td>NASAL STEROIDS</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td>TOPICAL AGENTS</td>
+            <td>247</td>
+            <td>NASAL PREPARATIONS</td>
+            <td>246</td>
+            <td>NASAL ANTIHISTAMINES AND DECONGESTANTS</td>
+        </tr>
+        <tr>
+            <td>153</td>
+            <td>PLASMA EXPANDERS</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>218</td>
+            <td>ALTERNATIVE MEDICINES</td>
+            <td>219</td>
+            <td>NUTRACEUTICAL PRODUCTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>218</td>
+            <td>ALTERNATIVE MEDICINES</td>
+            <td>220</td>
+            <td>HERBAL PRODUCTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>249</td>
+            <td>ANTIDEPRESSANTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>249</td>
+            <td>ANTIDEPRESSANTS</td>
+            <td>76</td>
+            <td>MISCELLANEOUS ANTIDEPRESSANTS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>249</td>
+            <td>ANTIDEPRESSANTS</td>
+            <td>208</td>
+            <td>SSRI ANTIDEPRESSANTS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>249</td>
+            <td>ANTIDEPRESSANTS</td>
+            <td>209</td>
+            <td>MISCELLANEOUS ANTIDEPRESSANTS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>249</td>
+            <td>ANTIDEPRESSANTS</td>
+            <td>209</td>
+            <td>TRICYCLIC ANTIDEPRESSANTS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>249</td>
+            <td>ANTIDEPRESSANTS</td>
+            <td>250</td>
+            <td>MONOAMINE OXIDASE INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>249</td>
+            <td>ANTIDEPRESSANTS</td>
+            <td>306</td>
+            <td>PHENYLPIPERAZINE ANTIDEPRESSANTS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>249</td>
+            <td>ANTIDEPRESSANTS</td>
+            <td>307</td>
+            <td>TETRACYCLIC ANTIDEPRESSANTS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>249</td>
+            <td>ANTIDEPRESSANTS</td>
+            <td>308</td>
+            <td>SSNRI ANTIDEPRESSANTS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>251</td>
+            <td>ANTIPSYCHOTICS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>251</td>
+            <td>ANTIPSYCHOTICS</td>
+            <td>77</td>
+            <td>MISCELLANEOUS ANTIPSYCHOTIC AGENTS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>251</td>
+            <td>ANTIPSYCHOTICS</td>
+            <td>79</td>
+            <td>PSYCHOTHERAPEUTIC COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>251</td>
+            <td>ANTIPSYCHOTICS</td>
+            <td>210</td>
+            <td>PHENOTHIAZINE ANTIPSYCHOTICS</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>251</td>
+            <td>ANTIPSYCHOTICS</td>
+            <td>280</td>
+            <td>THIOXANTHENES</td>
+        </tr>
+        <tr>
+            <td>242</td>
+            <td>PSYCHOTHERAPEUTIC AGENTS</td>
+            <td>251</td>
+            <td>ANTIPSYCHOTICS</td>
+            <td>341</td>
+            <td>ATYPICAL ANTIPSYCHOTICS</td>
+        </tr>
+        <tr>
+            <td>254</td>
+            <td>IMMUNOLOGIC AGENTS</td>
+            <td>33</td>
+            <td>IMMUNE GLOBULINS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>254</td>
+            <td>IMMUNOLOGIC AGENTS</td>
+            <td>39</td>
+            <td>MISCELLANEOUS BIOLOGICALS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>254</td>
+            <td>IMMUNOLOGIC AGENTS</td>
+            <td>104</td>
+            <td>IMMUNOSUPPRESSIVE AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>254</td>
+            <td>IMMUNOLOGIC AGENTS</td>
+            <td>256</td>
+            <td>INTERFERONS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>254</td>
+            <td>IMMUNOLOGIC AGENTS</td>
+            <td>257</td>
+            <td>MONOCLONAL ANTIBODIES</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>19</td>
+            <td>ANTIHYPERLIPIDEMIC AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>19</td>
+            <td>ANTIHYPERLIPIDEMIC AGENTS</td>
+            <td>173</td>
+            <td>HMG-COA REDUCTASE INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>19</td>
+            <td>ANTIHYPERLIPIDEMIC AGENTS</td>
+            <td>174</td>
+            <td>MISCELLANEOUS ANTIHYPERLIPIDEMIC AGENTS</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>19</td>
+            <td>ANTIHYPERLIPIDEMIC AGENTS</td>
+            <td>241</td>
+            <td>FIBRIC ACID DERIVATIVES</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>19</td>
+            <td>ANTIHYPERLIPIDEMIC AGENTS</td>
+            <td>252</td>
+            <td>BILE ACID SEQUESTRANTS</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>19</td>
+            <td>ANTIHYPERLIPIDEMIC AGENTS</td>
+            <td>316</td>
+            <td>CHOLESTEROL ABSORPTION INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>19</td>
+            <td>ANTIHYPERLIPIDEMIC AGENTS</td>
+            <td>317</td>
+            <td>ANTIHYPERLIPIDEMIC COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>99</td>
+            <td>ANTIDIABETIC AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>99</td>
+            <td>ANTIDIABETIC AGENTS</td>
+            <td>213</td>
+            <td>SULFONYLUREAS</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>99</td>
+            <td>ANTIDIABETIC AGENTS</td>
+            <td>214</td>
+            <td>NON-SULFONYLUREAS</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>99</td>
+            <td>ANTIDIABETIC AGENTS</td>
+            <td>215</td>
+            <td>INSULIN</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>99</td>
+            <td>ANTIDIABETIC AGENTS</td>
+            <td>216</td>
+            <td>ALPHA-GLUCOSIDASE INHIBITORS</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>99</td>
+            <td>ANTIDIABETIC AGENTS</td>
+            <td>271</td>
+            <td>THIAZOLIDINEDIONES</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>99</td>
+            <td>ANTIDIABETIC AGENTS</td>
+            <td>282</td>
+            <td>MEGLITINIDES</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>99</td>
+            <td>ANTIDIABETIC AGENTS</td>
+            <td>309</td>
+            <td>MISCELLANEOUS ANTIDIABETIC AGENTS</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>99</td>
+            <td>ANTIDIABETIC AGENTS</td>
+            <td>314</td>
+            <td>ANTIDIABETIC COMBINATIONS</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>194</td>
+            <td>ANTIGOUT AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>289</td>
+            <td>ANTIHYPERURICEMIC AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>293</td>
+            <td>GLUCOSE ELEVATING AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>359</td>
+            <td>PERIPHERALLY ACTING ANTIOBESITY AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>358</td>
+            <td>METABOLIC AGENTS</td>
+            <td>361</td>
+            <td>MISCELLANEOUS METABOLIC AGENTS</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1758 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Polyfluorinated Compounds " />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Polyfluorinated Compounds  Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Laboratory page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Polyfluorinated Compounds  Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="PFC_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="PFC_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="PFC_E.htm#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+        </li>
+        <li>
+          <a href="PFC_E.htm#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+        </li>
+        <li>
+          <a href="PFC_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="PFC_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#WTSC2YR">WTSC2YR - Two-year MEC weights of subsample C</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXEPAH">LBXEPAH - 2-(N-ethyl-PFOSA) acetate</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDEPAHL">LBDEPAHL - 2-(N-ethyl-PFOSA) acetate comment</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXPFDE">LBXPFDE - Perfluorodecanoic acid  </a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDPFDEL">LBDPFDEL - Perfluorodecanoic acid comment</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXPFOA">LBXPFOA - Perfluorooctanoic acid  </a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDPFOAL">LBDPFOAL - Perfluorooctanoic acid comment  </a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXPFOS">LBXPFOS - Perfluorooctane sulfonic acid</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDPFOSL">LBDPFOSL - Perfluorooctane sulfonic acid comment</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXPFHS">LBXPFHS - Perfluorohexane sulfonic acid  </a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDPFHSL">LBDPFHSL - Perfluorohexane sulfonic acid comment</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXMPAH">LBXMPAH - 2-(N-methyl-PFOSA) acetate  </a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDMPAHL">LBDMPAHL - 2-(N-methyl-PFOSA) acetate comment</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXPFBS">LBXPFBS - Perfluorobutane sulfonic acid  </a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDPFBSL">LBDPFBSL - Perfluorobutane sulfonic acid comment</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXPFHP">LBXPFHP - Perfluoroheptanoic acid</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDPFHPL">LBDPFHPL - Perfluoroheptanoic acid comment</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXPFNA">LBXPFNA - Perfluorononanoic acid   </a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDPFNAL">LBDPFNAL - Perfluorononanoic acid comment</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXPFSA">LBXPFSA - Perfluorooctane sulfonamide</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDPFSAL">LBDPFSAL - Perfluorooctane sulfonamide comment</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXPFUA">LBXPFUA - Perfluoroundecanoic acid    </a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDPFUAL">LBDPFUAL - Perfluoroundecanoic acid comment</a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBXPFDO">LBXPFDO - Perfluorododecanoic acid </a>
+              </li>
+              <li>
+                <a href="PFC_E.htm#LBDPFDOL">LBDPFDOL - Perfluorododecanoic acid comment</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Polyfluorinated Compounds  (PFC_E)
+            </h3>
+        <h4>
+                Data File: PFC_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: October, 2010</h5>
+        <h5 class="right">
+                Last Revised:  September, 2011</h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Polyfluorinated Compounds 
+                (PFC_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>October, 2010<br><b>Revised: </b>September, 2011<br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>Polyfluorinated Compounds <br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>Organic fluorochemicals are used in multiple commercial applications including surfactants, lubricants, paints, polishes, food packaging and fire-retarding foams. Several polyfluorinated surfactants, a group of these polyfluorochemicals (PFCs), are ubiquitous contaminants found both in humans and animals worldwide, and there is increased concern regarding the toxicity of these polyfluorinated compounds, including perfluorooctanoic acid (PFOA) and perfluorooctane sulfonate (PFOS). PFOS has been used in a wide variety of industrial and consumer products including protective coatings for carpets and apparel, paper coatings, insecticide formulations, and surfactants. In May 2000, the 3M Company, the sole manufacturer of PFOS in the United States and the principal manufacturer worldwide, announced that it was discontinuing the production of perfluorooctanyl fluoride-based chemistries, including PFOS. PFOA is used primarily to produce its salts which are used in the production of fluoroelastomers and fluoropolymers, such as polytetrafluoroethylene (PTFE) and polyvinylidine fluoride (PVDF). PFOA is still being produced. PTFE has numerous uses in many industrial and consumer products, including coatings on textiles and carpet; uses in the automotive, mechanical, aerospace, chemical, electrical, medical, and building/construction industries; personal care products; and non-stick coatings on cookware. PVDF is used primarily in electrical/electronics, building/construction, and chemical processing industrial sectors.</p>
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>Participants aged 12 years and older who met the subsample requirements. </p>
+<h2><a name="Description_of_Laboratory_Methodology"></a>Description of Laboratory Methodology</h2><p>Solid phase extraction coupled to High Performance Liquid Chromatography-Turbo Ion Spray ionization-tandem Mass Spectrometry (online SPE-HPLC-TIS-MS/MS) is used for the quantitative detection of perfluorooctane sulfonamide (PFOSA), 2-(N-methyl-perfluorooctane sulfonamido) acetic acid (Me-PFOSA-AcOH), 2-(N-ethyl-perfluorooctane sulfonamido) acetic acid (Et-PFOSA-AcOH), perfluorobutane sulfonate (PFBuS), perfluorohexane sulfonate (PFHxS), perfluorooctane sulfonate (PFOS), perfluoroheptanoate (PFHpA), perfluorooctanoate (PFOA), perfluorononanoate (PFNA), perfluorodecanoate (PFDeA), perfluoroundecanoate (PFUA), and perfluorododecanoate (PFDoA) (Kuklenyik Z, et al. 2005). Briefly, after dilution with formic acid, one aliquot of 100 &#956;L of serum is injected into a commercial column switching system allowing for concentration and chromatographic separation of the analytes. Detection and quantification are done using tandem mass spectrometry (Kuklenyik Z, et al. 2005). </p>
+<h2><a name="Laboratory_Quality_Assurance_and_Monitoring"></a>Laboratory Quality Assurance and Monitoring</h2><p>Serum specimens are processed, stored, and shipped to the Division of Environmental Health Laboratory Sciences, National Center for Environmental Health, Centers for Disease Control and Prevention for analysis. </p>
+<p>Detailed specimen collection and processing instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Vials are stored under appropriate frozen (&#8211;20&#176;C) conditions until they are shipped to National Center for Environmental Health for testing.</p>
+<p><strong>Mobile Examination Centers (MECs)</strong> <br />
+Laboratory team performance is monitored using several techniques. NCHS and contract consultants use a structured quality assurance evaluation during unscheduled visits to evaluate both the quality of the laboratory work and the quality-control procedures. Each laboratory staff person is observed for equipment operation, specimen collection and preparation; testing procedures and constructive feedback are given to each staff. Formal retraining sessions are conducted annually to ensure that required skill levels were maintained.</p>
+<p>The NHANES QA/QC protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the NHANES LPM.</p>
+<p><strong>Analytical Laboratories</strong><br />
+NHANES uses several methods to monitor the quality of the analyses performed by the contract laboratories. In the MEC, these methods include performing blind split samples collected on &#8220;dry run&#8221; sessions. In addition, contract laboratories randomly perform repeat testing on 2.0% of all specimens. </p>
+<p>NCHS developed and distributed a quality control protocol for all the contract laboratories which outlined the Westgard rules used when running NHANES specimens. Progress reports containing any problems encountered during shipping or receipt of specimens, summary statistics for each control pool, QC graphs, instrument calibration, reagents, and any special considerations are submitted to NCHS and Westat quarterly. The reports are reviewed for trends or shifts in the data. The laboratories are required to explain any identified areas of concern. </p>
+<p>All QC procedures recommended by the manufacturers were followed. Reported results for all assays meet the Division of Laboratory Science&#8217;s quality control and quality assurance performance criteria for accuracy and precision (similar to specifications outlined by Westgard (1981)) (Caudil SP, et al. 2008).</p>
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p><b>Subsample weights </b></p>
+<p>Serum polyfluorinated chemicals were measured in a one third subsample of persons 12 years and over. Special sample weights are required to analyze these data properly. Specific sample weights for this subsample are included in this data file and should be used when analyzing these data.</p>
+<p><b>Variance estimation </b></p>
+<p>The analysis of NHANES laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES Demographic Data File contains demographic and sample design variables. The recommended procedure for variance estimation requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) in the demographic data file.</p>
+<p><b>Links to NHANES Data Files</b></p>
+<p>This laboratory data file can be linked to the other NHANES data files using the unique survey participant identifier SEQN.</p>
+<p><b>Detection Limits </b></p>
+<p>The detection limits were constant for all of the analytes in the data set. Two variables are provided for each of these analytes. The variable named LBD___LC indicates whether the result was below the limit of detection. There are two values: “0” and “1””. “0” means that the result was at or above the limit of detection. “1” indicates that the result was below the limit of detection.</p>
+<p>The other variable named LBX___ provides the analytic result for that analyte.</p>
+<p>The constant lower limits of detection for each polyfluorochemical is: </p>
+<p>
+<table bordercolor="#000000" border="1">
+    <caption valign="top" align="left"></caption>
+    <thead>
+        <tr>
+            <th>Analyte</th>
+            <th>Item Id</th>
+            <th>LLOD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Perfluorooctanoic acid</td>
+            <td>LBXPFOA</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>Perfluorooctane sulfonic acid</td>
+            <td>LBXPFOS</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>Perfluorohexane sulfonic acid</td>
+            <td>LBXPFHS</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>2-(N-Ethyl-perfluorooctane sulfonamido) acetic acid</td>
+            <td>LBXEPAH</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>2-(N-Methyl-perfluorooctane sulfonamido) acetic acid</td>
+            <td>LBXMPAH</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>Pefluorodecanoic acid</td>
+            <td>LBXPFDE</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>Perfluorobutane sulfonic acid</td>
+            <td>LBXPFBS</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>Perfluoroheptanoic acid</td>
+            <td>LBXPFHP</td>
+            <td>0.4</td>
+        </tr>
+        <tr>
+            <td>Perfluorononanoic acid</td>
+            <td>LBXPFNA</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>Perfluorooctane sulfonamide</td>
+            <td>LBXPFSA</td>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>Perfluoroundecanoic acid</td>
+            <td>LBXPFUA</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>Perflurododecanoic acid</td>
+            <td>LBXPFDO</td>
+            <td>0.2</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues.</p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>
+          <li><p>Caudill SP, Schleicher RL, Pirkle JL. Multi-rule quality control for the age-related eye disease study. Statist Med 2008;27:4094-4106.</p></li>
+          <li><p>Kuklenyik Z, Needham LL, Calafat AM. Measurement of 18 perfluorinated organic acids and amides in human serum using on-line solid-phase extraction. Anal Chem 2005;77:6085-6091.</p></li>
+          <li><p>Westgard J.O., Barry P.L., Hunt M.R. Clin Chem (1981) 493.</p>
+</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="WTSC2YR"></a>WTSC2YR - Two-year MEC weights of subsample C</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTSC2YR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Two-year MEC weights of subsample C</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Two-year MEC weights of subsample C  
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 520135.04901</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2294</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXEPAH"></a>LBXEPAH - 2-(N-ethyl-PFOSA) acetate</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXEPAH</dd>
+            <dt>SAS Label: </dt>
+            <dd>2-(N-ethyl-PFOSA) acetate</dd>
+            <dt>English Text: </dt>
+            <dd class="info">2-(N-Ethyl-perfluorooctane sulfonamido) acetic acid
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.14 to 1.5</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDEPAHL"></a>LBDEPAHL - 2-(N-ethyl-PFOSA) acetate comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDEPAHL</dd>
+            <dt>SAS Label: </dt>
+            <dd>2-(N-ethyl-PFOSA) acetate comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">2-(N-Ethyl-perfluorooctane sulfonamido) acetic acid comment code
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">72</td>
+                <td class="values" align="right">72</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">2028</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXPFDE"></a>LBXPFDE - Perfluorodecanoic acid  </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPFDE</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorodecanoic acid  </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Pefluorodecanoic acid 
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.14 to 25.2</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDPFDEL"></a>LBDPFDEL - Perfluorodecanoic acid comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPFDEL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorodecanoic acid comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Pefluorodecanoic acid comment code
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">1433</td>
+                <td class="values" align="right">1433</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">667</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXPFOA"></a>LBXPFOA - Perfluorooctanoic acid  </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPFOA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorooctanoic acid  </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorooctanoic acid</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.07 to 104</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDPFOAL"></a>LBDPFOAL - Perfluorooctanoic acid comment  </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPFOAL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorooctanoic acid comment  </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorooctanoic acid comment code</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">2098</td>
+                <td class="values" align="right">2098</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXPFOS"></a>LBXPFOS - Perfluorooctane sulfonic acid</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPFOS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorooctane sulfonic acid</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorooctane sulfonic acid
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.14 to 253</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDPFOSL"></a>LBDPFOSL - Perfluorooctane sulfonic acid comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPFOSL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorooctane sulfonic acid comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorooctane sulfonic acid comment code
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">2097</td>
+                <td class="values" align="right">2097</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXPFHS"></a>LBXPFHS - Perfluorohexane sulfonic acid  </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPFHS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorohexane sulfonic acid  </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorohexane sulfonic acid
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.07 to 81.6</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDPFHSL"></a>LBDPFHSL - Perfluorohexane sulfonic acid comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPFHSL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorohexane sulfonic acid comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorohexane sulfonic acid comment code
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">2084</td>
+                <td class="values" align="right">2084</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXMPAH"></a>LBXMPAH - 2-(N-methyl-PFOSA) acetate  </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXMPAH</dd>
+            <dt>SAS Label: </dt>
+            <dd>2-(N-methyl-PFOSA) acetate  </dd>
+            <dt>English Text: </dt>
+            <dd class="info">2-(N-Methyl-perfluorooctane sulfonamido) acetic acid
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.14 to 14</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDMPAHL"></a>LBDMPAHL - 2-(N-methyl-PFOSA) acetate comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDMPAHL</dd>
+            <dt>SAS Label: </dt>
+            <dd>2-(N-methyl-PFOSA) acetate comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">2-(N-Methyl-perfluorooctane sulfonamido) acetic acid comment code
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">1459</td>
+                <td class="values" align="right">1459</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">641</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXPFBS"></a>LBXPFBS - Perfluorobutane sulfonic acid  </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPFBS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorobutane sulfonic acid  </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorobutane sulfonic acid
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.07 to 0.4</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDPFBSL"></a>LBDPFBSL - Perfluorobutane sulfonic acid comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPFBSL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorobutane sulfonic acid comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorobutane sulfonic acid comment code
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">18</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">2082</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXPFHP"></a>LBXPFHP - Perfluoroheptanoic acid</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPFHP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluoroheptanoic acid</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluoroheptanoic acid
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.28 to 2.9</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDPFHPL"></a>LBDPFHPL - Perfluoroheptanoic acid comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPFHPL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluoroheptanoic acid comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluoroheptanoic acid comment code
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">159</td>
+                <td class="values" align="right">159</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">1941</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXPFNA"></a>LBXPFNA - Perfluorononanoic acid   </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPFNA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorononanoic acid   </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorononanoic acid  
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.07 to 31.4</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDPFNAL"></a>LBDPFNAL - Perfluorononanoic acid comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPFNAL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorononanoic acid comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorononanoic acid comment code   
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">2090</td>
+                <td class="values" align="right">2090</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXPFSA"></a>LBXPFSA - Perfluorooctane sulfonamide</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPFSA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorooctane sulfonamide</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorooctane sulfonamide 
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.07 to 0.2</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDPFSAL"></a>LBDPFSAL - Perfluorooctane sulfonamide comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPFSAL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorooctane sulfonamide comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluorooctane sulfonamide comment code
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">13</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">2087</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXPFUA"></a>LBXPFUA - Perfluoroundecanoic acid    </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPFUA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluoroundecanoic acid    </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluoroundecanoic acid  
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.14 to 10.3</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDPFUAL"></a>LBDPFUAL - Perfluoroundecanoic acid comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPFUAL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluoroundecanoic acid comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perfluoroundecanoic acid comment code
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">627</td>
+                <td class="values" align="right">627</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">1473</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBXPFDO"></a>LBXPFDO - Perfluorododecanoic acid </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPFDO</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorododecanoic acid </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perflurododecanoic acid
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0.14 to 2.3</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2100</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="LBDPFDOL"></a>LBDPFDOL - Perfluorododecanoic acid comment</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPFDOL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Perfluorododecanoic acid comment</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Perflurododecanoic acid comment code
+</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>12 YEARS - 150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0</th>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">50</td>
+                <td class="values" align="right">50</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">2050</td>
+                <td class="values" align="right">2100</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">194</td>
+                <td class="values" align="right">2294</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

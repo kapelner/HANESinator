@@ -1,0 +1,2974 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+                  BODY { 	FONT: 75% Verdana, Arial, Helvetica, sans-serif;
+                  BORDER-TOP-STYLE: none;
+                  BORDER-RIGHT-STYLE: none;
+                  BORDER-LEFT-STYLE: none;
+                  TEXT-ALIGN: left;
+                  BORDER-BOTTOM-STYLE: none;
+                  }
+
+                  H1 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  MARGIN-TOP: 0px;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 2em;
+                  PADDING-BOTTOM: 10px;
+                  COLOR: #0c5205
+                  }
+
+                  H2 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  COLOR: #0c5205
+                  }
+
+                  H3 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.5em;
+                  COLOR: #000
+                  }
+
+                  H4 {	FONT-FAMILY: "Trebuchet MS", Arial, sans-serif;
+                  FONT-WEIGHT: bold;
+                  FONT-SIZE: 1.3em;
+                  COLOR: #000
+                  }
+
+                  H5 {	FONT-WEIGHT: bold;
+                  FONT-SIZE: 1em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+                  }
+
+                  H5.specialnote {	FONT-WEIGHT: bold;
+                  FONT-STYLE: italic;
+                  FONT-SIZE: 1.2em;
+                  COLOR: #000;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  A {COLOR:#0a29a5;
+                  TEXT-DECORATION: none}
+
+                  P {	FONT-SIZE: 1em;
+                  PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3em 1em;
+                  LINE-HEIGHT: 1.33em;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  UL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN: 0px 3.5em 1em;
+                  LIST-STYLE-TYPE: disc
+                  }
+
+                  UL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  OL {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  MARGIN: 0px;
+                  PADDING-TOP: 0px;
+                  PADDING-LEFT: 2em;
+                  OVERFLOW: hidden;
+                  LIST-STYLE-TYPE: decimal
+                  }
+
+                  OL LI {	PADDING-RIGHT: 0px;
+                  PADDING-LEFT: 0px;
+                  PADDING-BOTTOM: 0px;
+                  PADDING-TOP: 0px;
+                  MARGIN-LEFT: 1.5em;
+                  MARGIN-TOP: 0.7em;
+                  MARGIN-BOTTOM: 0.7em
+                  }
+
+                  TABLE {	BORDER-RIGHT: #000 1px solid;
+                  PADDING-RIGHT: 2px;
+                  BORDER-TOP: #000 1px solid;
+                  PADDING-LEFT: 2px;
+                  PADDING-BOTTOM: 2px;
+                  BORDER-LEFT: #000 1px solid;
+                  PADDING-TOP: 2px;
+                  BORDER-BOTTOM: #000 1px solid;
+                  MAX-WIDTH: 600px;
+                  MARGIN: 0px auto 1em;
+                  BORDER-COLLAPSE: collapse;
+                  TABLE-LAYOUT: auto;
+                  page-break-inside: avoid;
+                  }
+
+                  th {	BORDER: #000 1px solid;
+                  PADDING: 5px;
+                  VERTICAL-ALIGN: bottom;
+                  TEXT-ALIGN: center;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  background: #f4f4e1; /*#f4f4e1*/
+                  }
+
+                  TD {	BORDER: #000 1px solid;
+                  PADDING-RIGHT: 5px;
+                  PADDING-LEFT: 5px;
+                  PADDING-BOTTOM: 5px;
+                  VERTICAL-ALIGN: top;
+                  PADDING-TOP: 5px;
+                  TEXT-ALIGN: left;
+                  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+                  }
+
+                  td.values2 { text-align: RIGHT ; vertical-align:top;
+
+                  }
+
+                  TABLE CAPTION {	FONT-WEIGHT: normal;
+                  FONT-SIZE: 1.6em;
+                  PADDING-BOTTOM: 0.5em;
+                  FONT-FAMILY: Trebuchet MS, Arial, sans-serif
+                  }
+
+
+                  div#LocatorRecord {width: 650px;
+                  border-color: #999;
+                  border-style:solid;
+                  border-width: thin;
+                  padding: 5px;
+                  margin-bottom: 10px;
+                  margin-top: 10px;
+                  page-break-after:always
+                  }
+                  div#wrapper {width: 650px;}
+
+                  div#toc {position: fixed; overflow: scroll; height: 95%; top:10px; left:700px; float:left; z-index:10;border-color:#CCC; border-style: solid; border-width:1px;}
+                  div#toc h3 {background-color:#f4f4e1; padding:3px}
+                  div#toc ul, li {margin-left: 3px; margin-right: 5px;}
+                  div#PageHeader {width: 650px;
+                  border-bottom: thin solid #999;}
+                  div#Sections {width: 650px;}
+                  div#Codebook {width: 650px;}
+                  div#Codebook dl {width: 600px; margin: 2em 0 10px 40px ;padding: 0;}
+                  div#Codebook dt {width: 150px;float: left;margin: 0 0 0 0;padding: .5em;font-weight: bold;}
+                  div#Codebook dd {float: left;width: 420px;margin: 0 0 0 0;padding: .5em;}
+                  div#References {width: 650px;page-break-after: always}
+                  div#Appendix {width: 650px;page-break-after: always}
+                  table.info {width:600px;
+                  display:block;
+                  border: 3px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+                  table.values   {width:600px;
+                  display:block;
+                  border: 2px;
+                  inset: #000000;
+                  position: relative;
+                  left: 20px;
+                  margin-bottom: 20px;
+                  page-break-inside: avoid;
+                  }
+
+                  .pagebreak {display: block;
+                  page-break-after: always;
+                  page-break-inside: avoid;}
+                  .pagebreak H3 {background-color: #c1d5b0
+                  }
+                </style>
+    <style media="print" type="text/css">
+                    div#toc {display: none;}
+                    div#LocatorRecord {width: 650px;
+                    border-color: #999;
+                    border-style:solid;
+                    border-width: thin;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 300px;
+                    page-break-after:always
+                    }
+                </style>
+    <script language="javascript" type="text/javascript"><!--
+                        
+                    function toggle(element) {
+                        var nSpan = document.getElementById(element);
+                            if (nSpan.style.display == 'none') {
+	                        nSpan.style.display = 'block';
+	                        }
+                            else {
+	                        nSpan.style.display = 'none'
+	                        }
+                    }    
+                        
+                        
+                    function fixPageBreaks() {
+                    if (navigator.appName != 'Netscape')
+						{
+                    var oDiv = document.getElementById('Codebook');
+                    if (oDiv.firstChild) {
+                    var cbkTitle = oDiv.firstChild;
+                    var oChild = cbkTitle.nextSibling;
+                    //var pChild = oChild.nextSibling;
+
+                    while (oChild) {
+
+                    if (oChild.nodeType == 1) {
+                    var pChild = oChild.nextSibling;
+                    var boxHeight = oChild.offsetHeight;
+                    var boxHeight2 = pChild.offsetHeight;
+                    totalHeight = boxHeight + boxHeight2;
+                    //alert(totalHeight);
+
+                    if (totalHeight < 850) {
+                        //alert("Height is less than 850")
+                        //oChild.style.backgroundColor = '#cccccc';
+                        oChild.style.pageBreakAfter = 'auto';
+
+                        if (pChild.nextSibling) {
+                            oChild = pChild.nextSibling;
+                            if (oChild.nextSibling) { }
+                            else { oChild.pageBreakAfter = 'auto'; break; }
+                        }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break; }
+
+
+                    }
+                    else {
+                        //alert("Height is more than 850")
+                        if (oChild.nextSibling) { oChild = oChild.nextSibling; }
+                        else { oChild.pageBreakAfter = 'auto'; break;}
+                        if (pChild.nextSibling) { /*pChild = pChild.nextSibling;*/ }
+                        else { oChild.pageBreakAfter = 'auto'; pChild.pageBreakAfter = 'auto'; break;}
+                    }
+                }
+            }
+        }
+        }
+    }
+    
+     
+    --></script><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Drug Use (Ages 20+)" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Drug Use (Ages 20+) Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES  2007-2008 Questionnaire page" href="http://www.cdc.gov/nchs/nhanes/2007-2008/nhanes07_08.htm">
+      <title>
+                        NHANES 2007 - 2008: Drug Use (Ages 20+) Data Documentation, Codebook, and Frequencies
+                    </title>
+    </link>
+  </head>
+  <body onLoad="fixPageBreaks()">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>
+          <a href="DUQ_E.htm#Component_Description">Component Description</a>
+        </li>
+        <li>
+          <a href="DUQ_E.htm#Eligible_Sample">Eligible Sample</a>
+        </li>
+        <li>
+          <a href="DUQ_E.htm#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+        </li>
+        <li>
+          <a href="DUQ_E.htm#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+        </li>
+        <li>
+          <a href="DUQ_E.htm#Data_Processing_and_Editing">Data Processing and Editing</a>
+        </li>
+        <li>
+          <a href="DUQ_E.htm#Analytic_Notes">Analytic Notes</a>
+        </li>
+        <li>
+          <a href="#References">References</a>
+        </li>
+        <li>Codebook
+                        <div id="CodebookLinks">
+            <ul>
+              <li>
+                <a href="DUQ_E.htm#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUAISC">DUAISC - Interview status code</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ200">DUQ200 - Ever used marijuana or hashish</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ210">DUQ210 - Age when first tried marijuana</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ220Q">DUQ220Q - Last time used marijuana or hashish</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ220U">DUQ220U - Last time used marijuana or hashish/unit</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ230">DUQ230 - # days used marijuana or hashish/month</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ240">DUQ240 - Ever used cocaine/heroin/methamphetamine</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ250">DUQ250 - Ever use any form of cocaine</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ260">DUQ260 - Age first used cocaine</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ270Q">DUQ270Q - Last time you used cocaine, in any form</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ270U">DUQ270U - Last time you used cocaine/unit</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ272">DUQ272 - # of time you used cocaine</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ280">DUQ280 - # of days used cocaine/month</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ290">DUQ290 - Ever used heroin</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ300">DUQ300 - Age first used heroin</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ310Q">DUQ310Q - Last time used heroin</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ310U">DUQ310U - Last time used heroin/unit</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ320">DUQ320 - # of days used heroin/month</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ330">DUQ330 - Ever used methamphetamine</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ340">DUQ340 - Age first used methamphetamine</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ350Q">DUQ350Q - Last time used methamphetamine</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ350U">DUQ350U - Last time used methamphetamine/unit</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ352">DUQ352 - # times used methamphetamine</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ360">DUQ360 - # days used methamphetamine/month</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ370">DUQ370 - Ever use a needle to inject illegal drug</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ380A">DUQ380A - Drugs injected - Cocaine</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ380B">DUQ380B - Drugs injected - Heroin</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ380C">DUQ380C - Drugs injected - Methamphetamine</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ380D">DUQ380D - Drugs injected - Steroids</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ380E">DUQ380E - Drugs injected - Any other drugs</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ390">DUQ390 - Age first injected drugs</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ400Q">DUQ400Q - Last time injected drugs</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ400U">DUQ400U - Last time injected drugs/unit</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ410">DUQ410 - # times injected drugs/lifetime</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ420">DUQ420 - How often did you inject drugs</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ425">DUQ425 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="DUQ_E.htm#DUQ430">DUQ430 - Ever been in rehabilitation program</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>
+                National Health and Nutrition Examination Survey
+            </h1>
+        <h2>2007 - 2008 Data Documentation, Codebook, and Frequencies
+            </h2>
+        <h3>Drug Use (Ages 20+) (DUQ_E)
+            </h3>
+        <h4>
+                Data File: DUQ_E.xpt
+            </h4>
+        <h5 class="left">
+                First Published: January, 2010</h5>
+        <h5 class="right">
+                Last Revised:  
+                        NA
+                    </h5>
+      </div>
+      <div id="LocatorRecord" xmlns="">
+        <h2>Locator Record</h2>
+        <p><b>Title: </b>Drug Use (Ages 20+)
+                (DUQ_E
+                )<br><b>Contact Number: </b>1-866-441-NCHS<br><b>Years of Content: </b>2007
+                - 2008<br><b>First Published: </b>January, 2010<br><b>Revised: </b>
+                        NA
+                    <br><b>Access Constraints: </b>None<br><b>Use Constraints: </b>None<br><b>Geographic Coverage: </b>National<br><b>Subject:</b>The drug use questions (DUQ) focused on lifetime and current use of marijuana or hashish, cocaine, heroin, and methamphetamine, as well as intravenous use of drugs.<br><b>Record Source: </b>NHANES 2007
+                - 2008<br><b>Survey Methodology: </b>NHANES 2007
+                - 2008
+                is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S.<br><b>Medium: </b>NHANES Web site; SAS transport files
+            </p>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2><a name="Component_Description"></a>Component Description</h2><p>The drug use questions (DUQ) focused on lifetime and current use of marijuana or hashish, cocaine, heroin, and methamphetamine, as well as intravenous use of drugs.</p> 
+<h2><a name="Eligible_Sample"></a>Eligible Sample</h2><p>Survey participants aged 12-69 years were eligible. Mentally impaired individuals, or participants who were unable to understand English or Spanish, were not asked these questions. Only data from participants aged 20-69 years are included in this release. Special use data files for participants 12-19 years are available through the NCHS Research Data Center (RDC).</p> 
+<h2><a name="Interview_Setting_and_Mode_of_Administration"></a>Interview Setting and Mode of Administration</h2><p>The drug use questionnaire was administered to survey participants 12-69 years old, during the physical examination at the examination center, in a private room, using the Audio Computer Assisted Self Interview (ACASI) system.</p>
+<p>The ACASI was conducted in either English or Spanish. The ACASI enables participants to hear questions through earphones as well as read questions on the computer screen. Participants move at their own speed and touch the screen to indicate their response. No proxy participants or translators were used in situations when the participants could not self-report.</p>
+<h2><a name="Quality_Assurance_&amp;_Quality_Control"></a>Quality Assurance &amp; Quality Control</h2><p>ACASI software included consistency checks, including range checks, valid response checks, and checks for logical relationships. The ACASI system was programmed to alert participants of potential data entry errors or problems. When a response was entered, that had been programmed as unlikely, participants were allowed to proceed after confirming that their entry was correct. When a response was entered that had been programmed as an error, participants were prohibited from continuing with the ACASI until the error was corrected.</p> 
+<h2><a name="Data_Processing_and_Editing"></a>Data Processing and Editing</h2><p>Frequency counts were checked, “skip” patterns were verified, and the reasonableness of question responses was reviewed</p> 
+<h2><a name="Analytic_Notes"></a>Analytic Notes</h2><p>The questionnaire has not changed since the 2005-2006 drug use release, however for certain questions the age range was changed from 12-59 to 12-69.  Analysts should pay close attention to age ranges.</p>
+<p>Please refer to the NHANES Analytic Guidelines and the on-line NHANES Tutorial for further details on the use of sample weights and other analytic issues. Both of these are available on the NHANES website.</p>
+<p>Special use data files for participants 12-19 years will be available through the NCHS Research Data Center (RDC).</p>
+</div>
+      <div id="References" xmlns=""><a name="References"></a><h2>References</h2>
+        <ul>N/A.</ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3><a name="SEQN"></a>SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUAISC"></a>DUAISC - Interview status code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUAISC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Interview status code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Drug use questionnaire status code</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Complete</td>
+                <td class="values" align="right">4128</td>
+                <td class="values" align="right">4128</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Partial Exam</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">4129</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Not Done</td>
+                <td class="values" align="right">496</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                End of Section
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ200"></a>DUQ200 - Ever used marijuana or hashish</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ200</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever used marijuana or hashish</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The following questions ask about use of drugs not prescribed by a doctor. Please remember that your answers to these questions are strictly confidential. The first questions are about marijuana and hashish. Marijuana is also called pot or grass. Marijuana is usually smoked, either in cigarettes, called joints, or in a pipe. It is sometimes cooked in food. Hashish is a form of marijuana that is also called 'hash.' It is usually smoked in a pipe. Another form of hashish is hash oil. Have you ever, even once, used marijuana or hashish?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1811</td>
+                <td class="values" align="right">1811</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">1444</td>
+                <td class="values" align="right">3255</td>
+                <td class="values">DUQ240  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">3264</td>
+                <td class="values">DUQ240  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">3268</td>
+                <td class="values">DUQ240  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1357</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ210"></a>DUQ210 - Age when first tried marijuana</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ210</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when first tried marijuana</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old were you the first time you used marijuana or hashish?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HARD EDIT VALUES:  0-69 Error message:  "Your response cannot exceed 69 years.  Please press the "Back" button, press "Clear," and try again." ENTER AGE IN YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 69</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 51</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1808</td>
+                <td class="values" align="right">1808</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1810</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1811</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2814</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ220Q"></a>DUQ220Q - Last time used marijuana or hashish</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ220Q</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time used marijuana or hashish</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long has it been since you last used marijuana or hashish?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF DAYS, WEEKS, MONTHS, OR YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 321</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1740</td>
+                <td class="values" align="right">1740</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">1773</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">38</td>
+                <td class="values" align="right">1811</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2814</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ220U"></a>DUQ220U - Last time used marijuana or hashish/unit</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ220U</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time used marijuana or hashish/unit</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long has it been since you last used marijuana or hashish?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER UNIT</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Days</td>
+                <td class="values" align="right">301</td>
+                <td class="values" align="right">301</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Weeks</td>
+                <td class="values" align="right">87</td>
+                <td class="values" align="right">388</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Months</td>
+                <td class="values" align="right">187</td>
+                <td class="values" align="right">575</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Years</td>
+                <td class="values" align="right">1166</td>
+                <td class="values" align="right">1741</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">1773</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">38</td>
+                <td class="values" align="right">1811</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2814</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ230"></a>DUQ230 - # days used marijuana or hashish/month</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ230</dd>
+            <dt>SAS Label: </dt>
+            <dd># days used marijuana or hashish/month</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 30 days, on how many days did you use marijuana or hashish?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HARD EDIT VALUES:  1-30.  Error message:  "Your response cannot exceed 30 days.  Please press the "Back" button, press "Clear," and try again." ENTER A NUMBER</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 30</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 30</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">389</td>
+                <td class="values" align="right">389</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">391</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">392</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4233</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ240"></a>DUQ240 - Ever used cocaine/heroin/methamphetamine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ240</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever used cocaine/heroin/methamphetamine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever used cocaine, crack cocaine, heroin, or methamphetamine?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">695</td>
+                <td class="values" align="right">695</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">3406</td>
+                <td class="values" align="right">4101</td>
+                <td class="values">DUQ370  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">4113</td>
+                <td class="values">DUQ370  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">4128</td>
+                <td class="values">DUQ370  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ250"></a>DUQ250 - Ever use any form of cocaine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ250</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever use any form of cocaine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The following questions are about cocaine, including all the different forms of cocaine such as powder, 'crack', 'free base', and coca paste.  Have you ever, even once, used cocaine, in any form?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">660</td>
+                <td class="values" align="right">660</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">693</td>
+                <td class="values">DUQ290  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">694</td>
+                <td class="values">DUQ290  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">695</td>
+                <td class="values">DUQ290  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3930</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ260"></a>DUQ260 - Age first used cocaine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ260</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age first used cocaine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old were you the first time you used cocaine, in any form?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HARD EDIT VALUES:  0-69 Error message:  "Your response cannot exceed 69 years.  Please press the "Back" button, press "Clear," and try again." HARD EDIT:  DUQ.260 must be equal to or less than current age.  Error message:  "Your response is greater than your recorded age.  Please press the "Back" button, press "Clear," and try again." ENTER AGE IN YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 69</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 50</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">619</td>
+                <td class="values" align="right">619</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">619</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">620</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4005</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ270Q"></a>DUQ270Q - Last time you used cocaine, in any form</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ270Q</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time you used cocaine, in any form</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long has it been since you last used cocaine, in any form?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF DAYS, WEEKS, MONTHS, OR YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 365</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">604</td>
+                <td class="values" align="right">604</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">614</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">620</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4005</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ270U"></a>DUQ270U - Last time you used cocaine/unit</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ270U</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time you used cocaine/unit</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long has it been since you last used cocaine, in any form?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER UNIT</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Days</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">51</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Weeks</td>
+                <td class="values" align="right">28</td>
+                <td class="values" align="right">79</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Months</td>
+                <td class="values" align="right">57</td>
+                <td class="values" align="right">136</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Years</td>
+                <td class="values" align="right">468</td>
+                <td class="values" align="right">604</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">614</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">620</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4005</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ272"></a>DUQ272 - # of time you used cocaine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ272</dd>
+            <dt>SAS Label: </dt>
+            <dd># of time you used cocaine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During your life, altogether how many times have you used cocaine, in any form?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Once</td>
+                <td class="values" align="right">50</td>
+                <td class="values" align="right">50</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">2-5 times</td>
+                <td class="values" align="right">147</td>
+                <td class="values" align="right">197</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">6-19 times</td>
+                <td class="values" align="right">122</td>
+                <td class="values" align="right">319</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">20-49 times</td>
+                <td class="values" align="right">119</td>
+                <td class="values" align="right">438</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">5</th>
+                <td class="values">50-99 times</td>
+                <td class="values" align="right">68</td>
+                <td class="values" align="right">506</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">6</th>
+                <td class="values">100 times or more</td>
+                <td class="values" align="right">107</td>
+                <td class="values" align="right">613</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">619</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">620</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4005</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ280"></a>DUQ280 - # of days used cocaine/month</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ280</dd>
+            <dt>SAS Label: </dt>
+            <dd># of days used cocaine/month</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 30 days, on how many days did you use cocaine, in any form?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HARD EDIT VALUES:  1-30.  Error message:  "Your response cannot exceed 30 days.  Please press the "Back" button, press "Clear," and try again." ENTER A NUMBER</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 30</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 30</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">71</td>
+                <td class="values" align="right">71</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">71</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">72</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4553</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ290"></a>DUQ290 - Ever used heroin</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ290</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever used heroin</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The following questions are about heroin.  Have you ever, even once, used heroin?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">86</td>
+                <td class="values" align="right">86</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">608</td>
+                <td class="values" align="right">694</td>
+                <td class="values">DUQ330  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">694</td>
+                <td class="values">DUQ330  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">695</td>
+                <td class="values">DUQ330  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3930</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ300"></a>DUQ300 - Age first used heroin</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ300</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age first used heroin</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old were you the first time you used heroin?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HARD EDIT VALUES:  0-59 Error message:  "Your response cannot exceed 59 years.  Please press the "Back" button, press "Clear," and try again." HARD EDIT:  DUQ.300 must be equal to or less than current age.  Error message:  "Your response is greater than your recorded age.  Please press the "Back" button, press "Clear," and try again." ENTER AGE IN YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 69</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">9 to 46</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">75</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4550</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ310Q"></a>DUQ310Q - Last time used heroin</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ310Q</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time used heroin</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long has it been since you last used heroin?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF DAYS, WEEKS, MONTHS, OR YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">0 to 90</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">73</td>
+                <td class="values" align="right">73</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4550</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ310U"></a>DUQ310U - Last time used heroin/unit</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ310U</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time used heroin/unit</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long has it been since you last used heroin?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER UNIT</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Days</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Weeks</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Months</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">10</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Years</td>
+                <td class="values" align="right">63</td>
+                <td class="values" align="right">73</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4550</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ320"></a>DUQ320 - # of days used heroin/month</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ320</dd>
+            <dt>SAS Label: </dt>
+            <dd># of days used heroin/month</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 30 days, on how many days did you use heroin?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HARD EDIT VALUES:  1-30.  Error message:  "Your response cannot exceed 30 days.  Please press the "Back" button, press "Clear," and try again."ENTER A NUMBER</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 30</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 30</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4619</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ330"></a>DUQ330 - Ever used methamphetamine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ330</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever used methamphetamine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The following questions are about methamphetamine, also known as crank, crystal, ice or speed.  Have you ever, even once, used methamphetamine?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">254</td>
+                <td class="values" align="right">254</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">441</td>
+                <td class="values" align="right">695</td>
+                <td class="values">DUQ370  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">695</td>
+                <td class="values">DUQ370  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">695</td>
+                <td class="values">DUQ370  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3930</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ340"></a>DUQ340 - Age first used methamphetamine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ340</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age first used methamphetamine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old were you the first time you used methamphetamine?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HARD EDIT VALUES:  0-59 Error message:  "Your response cannot exceed 59 years.  Please press the "Back" button, press "Clear," and try again." HARD EDIT:  DUQ340 must be equal to or less than current age.  Error message:  "Your response is greater than your recorded age.  Please press the "Back" button, press "Clear," and try again." ENTER AGE IN YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 69</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">7 to 50</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">240</td>
+                <td class="values" align="right">240</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">240</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">240</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4385</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ350Q"></a>DUQ350Q - Last time used methamphetamine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ350Q</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time used methamphetamine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long has it been since you last used methamphetamine?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF DAYS, WEEKS, MONTHS, OR YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 241</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">238</td>
+                <td class="values" align="right">238</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">239</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">240</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4385</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ350U"></a>DUQ350U - Last time used methamphetamine/unit</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ350U</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time used methamphetamine/unit</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long has it been since you last used methamphetamine?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER UNIT</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Days</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">12</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Weeks</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">16</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Months</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">32</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Years</td>
+                <td class="values" align="right">206</td>
+                <td class="values" align="right">238</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">239</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">240</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4385</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ352"></a>DUQ352 - # times used methamphetamine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ352</dd>
+            <dt>SAS Label: </dt>
+            <dd># times used methamphetamine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During your life, altogether how many times have you used methamphetamine?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Once</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">22</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">2-5 times</td>
+                <td class="values" align="right">54</td>
+                <td class="values" align="right">76</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">6-19 times</td>
+                <td class="values" align="right">57</td>
+                <td class="values" align="right">133</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">20-49 times</td>
+                <td class="values" align="right">36</td>
+                <td class="values" align="right">169</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">5</th>
+                <td class="values">50-99 times</td>
+                <td class="values" align="right">23</td>
+                <td class="values" align="right">192</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">6</th>
+                <td class="values">100 times or more</td>
+                <td class="values" align="right">47</td>
+                <td class="values" align="right">239</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">240</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">240</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4385</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ360"></a>DUQ360 - # days used methamphetamine/month</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ360</dd>
+            <dt>SAS Label: </dt>
+            <dd># days used methamphetamine/month</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 30 days, on how many days did you use methamphetamine?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HARD EDIT VALUES:  1-30.  Error message:  "Your response cannot exceed 30 days.  Please press the "Back" button, press "Clear," and try again." ENTER A NUMBER</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 30</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 20</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4610</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ370"></a>DUQ370 - Ever use a needle to inject illegal drug</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ370</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever use a needle to inject illegal drug</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The following questions are about the different ways that certain drugs can be used.  Have you ever, even once, used a needle to inject a drug not prescribed by a doctor?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">113</td>
+                <td class="values" align="right">113</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">4004</td>
+                <td class="values" align="right">4117</td>
+                <td class="values">DUQ425  </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">4118</td>
+                <td class="values">DUQ425  </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">4128</td>
+                <td class="values">DUQ425  </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">497</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ380A"></a>DUQ380A - Drugs injected - Cocaine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ380A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Drugs injected - Cocaine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of the following drugs have you injected using a needle?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">SHOW ALL FIVE ITEMS ON SINGLE ACASI SCREEN HARD EDIT:  AT LEAST ONE ITEM IN DUQ380 MUST BE SELECTED. Error message:  "Earlier you reported using a needle to inject drugs not prescribed by a doctor.  Which of these drugs did you inject?"</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Cocaine</td>
+                <td class="values" align="right">59</td>
+                <td class="values" align="right">59</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">59</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">60</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4565</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ380B"></a>DUQ380B - Drugs injected - Heroin</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ380B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Drugs injected - Heroin</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of the following drugs have you injected using a needle?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">SHOW ALL FIVE ITEMS ON SINGLE ACASI SCREEN HARD EDIT:  AT LEAST ONE ITEM IN DUQ380 MUST BE SELECTED. Error message:  "Earlier you reported using a needle to inject drugs not prescribed by a doctor.  Which of these drugs did you inject?"</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Heroin</td>
+                <td class="values" align="right">45</td>
+                <td class="values" align="right">45</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4580</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ380C"></a>DUQ380C - Drugs injected - Methamphetamine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ380C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Drugs injected - Methamphetamine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of the following drugs have you injected using a needle?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">SHOW ALL FIVE ITEMS ON SINGLE ACASI SCREEN HARD EDIT:  AT LEAST ONE ITEM IN DUQ380 MUST BE SELECTED. Error message:  "Earlier you reported using a needle to inject drugs not prescribed by a doctor.  Which of these drugs did you inject?"</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Methamphetamine</td>
+                <td class="values" align="right">34</td>
+                <td class="values" align="right">34</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4591</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ380D"></a>DUQ380D - Drugs injected - Steroids</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ380D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Drugs injected - Steroids</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of the following drugs have you injected using a needle?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">SHOW ALL FIVE ITEMS ON SINGLE ACASI SCREEN HARD EDIT:  AT LEAST ONE ITEM IN DUQ380 MUST BE SELECTED. Error message:  "Earlier you reported using a needle to inject drugs not prescribed by a doctor.  Which of these drugs did you inject?"</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Steroids</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">10</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4615</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ380E"></a>DUQ380E - Drugs injected - Any other drugs</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ380E</dd>
+            <dt>SAS Label: </dt>
+            <dd>Drugs injected - Any other drugs</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of the following drugs have you injected using a needle?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">SHOW ALL FIVE ITEMS ON SINGLE ACASI SCREEN HARD EDIT:  AT LEAST ONE ITEM IN DUQ380 MUST BE SELECTED. Error message:  "Earlier you reported using a needle to inject drugs not prescribed by a doctor.  Which of these drugs did you inject?"</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">5</th>
+                <td class="values">Any other drugs</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">26</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4599</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ390"></a>DUQ390 - Age first injected drugs</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ390</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age first injected drugs</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old were you when you first used a needle to inject any drug not prescribed by a doctor?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HARD EDIT VALUES:  0-69 Error message:  "Your response cannot exceed 69 years.  Please press the "Back" button, press "Clear," and try again." HARD EDIT:  DUQ390 must be equal to or less than current age.  Error message:  "Your response is greater than your recorded age.  Please press the "Back" button, press "Clear," and try again." ENTER AGE IN YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 69</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">9 to 61</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">110</td>
+                <td class="values" align="right">110</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">113</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">113</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4512</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ400Q"></a>DUQ400Q - Last time injected drugs</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ400Q</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time injected drugs</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long ago has it been since you last used a needle to inject a drug not prescribed by a doctor?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF DAYS, WEEKS, MONTHS, OR YEARS</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1 to 251</th>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">109</td>
+                <td class="values" align="right">109</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7777</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">111</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9999</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">113</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4512</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ400U"></a>DUQ400U - Last time injected drugs/unit</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ400U</dd>
+            <dt>SAS Label: </dt>
+            <dd>Last time injected drugs/unit</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How long ago has it been since you last used a needle to inject a drug not prescribed by a doctor?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER UNIT</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Days</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">Weeks</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">12</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">Months</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">17</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">Years</td>
+                <td class="values" align="right">92</td>
+                <td class="values" align="right">109</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">111</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">113</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4512</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ410"></a>DUQ410 - # times injected drugs/lifetime</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ410</dd>
+            <dt>SAS Label: </dt>
+            <dd># times injected drugs/lifetime</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During your life, altogether how many times have you injected drugs not prescribed by a doctor?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Once</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">20</td>
+                <td class="values">DUQ430  </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">2-5 times</td>
+                <td class="values" align="right">29</td>
+                <td class="values" align="right">49</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">6-19 times</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">20-49 times</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">81</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">5</th>
+                <td class="values">50-99 times</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">90</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">6</th>
+                <td class="values">100 times or more</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">112</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">77</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">112</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">99</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">113</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4512</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ420"></a>DUQ420 - How often did you inject drugs</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ420</dd>
+            <dt>SAS Label: </dt>
+            <dd>How often did you inject drugs</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Think about the period of your life when you injected drugs the most often.  How often did you inject then?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">More than once a day,</td>
+                <td class="values" align="right">27</td>
+                <td class="values" align="right">27</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">About once a day,</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">40</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">3</th>
+                <td class="values">At least once a week but not every day,</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">62</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">4</th>
+                <td class="values">At least once a month but not every week,</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">80</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">5</th>
+                <td class="values">Less than once a month</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">92</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">92</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">93</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4532</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ425"></a>DUQ425 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ425</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 5  CHECK ITEM 425.  IF SP HAS USED MARIJUANA (CODED '1' IN DUQ.200 OR SP HAS USED COCAINE, HEROIN, OR METHAMPHETAMINE (CODED '1') IN DUQ.240, OR SP HAS INJECTED ANY DRUG NOT PRESCRIBED BY A DOCTOR (CODED '1') IN DUQ.370, GO TO DUQ.430.  OTHERWISE, GO TO END OF SECTION.</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 69 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3><a name="DUQ430"></a>DUQ430 - Ever been in rehabilitation program</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DUQ430</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever been in rehabilitation program</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever been in a drug treatment or drug rehabilitation program?</dd>
+            <dt>Target Gender: </dt>
+            <dd> Both males and females</dd>
+            <dt>Target Age: </dt>
+            <dd>20 YEARS - 59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th class="values">Code or Value</th>
+                <th class="values">Value Description</th>
+                <th class="values">Count</th>
+                <th class="values">Cumulative</th>
+                <th class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="values">1</th>
+                <td class="values">Yes</td>
+                <td class="values" align="right">190</td>
+                <td class="values" align="right">190</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">2</th>
+                <td class="values">No</td>
+                <td class="values" align="right">1669</td>
+                <td class="values" align="right">1859</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">7</th>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1860</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">9</th>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1861</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <th class="values">.</th>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2764</td>
+                <td class="values" align="right">4625</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
